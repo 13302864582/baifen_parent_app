@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    >
+
+    <include
+        layout="@layout/welearn_header_view"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:background="@color/login_background_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/binding_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/binding_info_textview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/text_binding_info"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/skip_binding"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:padding="5dp"
+                    android:text="@string/text_binding_skip"
+                    android:textColor="@color/welearn_blue"
+                    android:textSize="14sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white">
+
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_phone_no"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/text_input_phone_num"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:minHeight="55dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_above="@id/et_phone_no"
+                    android:background="@color/login_line"
+                    android:visibility="gone" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@id/et_phone_no"
+                    android:layout_alignRight="@id/et_phone_no"
+                    android:layout_below="@id/et_phone_no"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/colore5e5e5" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white">
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/text_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:minHeight="55dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignLeft="@id/et_pwd"
+                    android:layout_alignRight="@id/et_pwd"
+                    android:layout_below="@id/et_pwd"
+                    android:layout_marginLeft="15dp"
+                    android:background="@color/colore5e5e5" />
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white">
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_confrim_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/register_confirm_pwd"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:minHeight="55dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/et_confrim_pwd"
+                    android:layout_marginLeft="0dp"
+                    android:background="@color/login_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/login_background_color">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="15dp"
+                    android:gravity="right"
+                    android:text="@string/yaoqingma"
+                    android:textColor="@color/colorf74344"
+                    android:textSize="12sp"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:minHeight="55dp">
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="0dp"
+                    android:background="@color/login_line" />
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_invite_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/input_invite_code"
+                    android:inputType="number"
+                    android:maxLength="15"
+                    android:minHeight="55dp"
+                    android:paddingLeft="15dp"
+                    android:paddingRight="15dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/et_invite_code"
+                    android:background="@color/login_line"
+                    android:visibility="visible" />
+
+
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/submit_reg_btn_phone_register"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/selector_login_btn"
+                android:text="@string/text_next_step"
+                android:textColor="@drawable/selector_login_btn_textcolor"
+                android:textSize="17sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="170dip"
+    android:layout_height="170dip"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/voice_dialog_bg"
+    android:padding="20dp" >
+
+    <ImageView
+        android:id="@+id/dialog_img"
+        android:layout_width="90dip"
+        android:layout_height="90dip"
+        android:contentDescription="@null"
+        android:src="@drawable/record_animate_01" />
+
+</LinearLayout>

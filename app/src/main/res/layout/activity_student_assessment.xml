@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:background="#ffffff"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:text="老师星级:"
+            android:textColor="#636363"
+            android:textSize="13sp" />
+
+        <RatingBar
+            android:id="@+id/star_lv_rb_stupingjia"
+            style="@style/adoptHomeWorkRatingBar"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/adoptHomeWorkRatingBarStartHei"
+            android:layout_marginLeft="30dp"
+            android:clickable="false"
+            android:rating="0" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#f4f4f4"
+        android:paddingBottom="15dp"
+        android:paddingLeft="18dp"
+        android:paddingTop="15dp"
+        android:text="评价详情"
+        android:textColor="#636363"
+        android:textSize="13sp" />
+
+    <ListView
+        android:id="@+id/pingjia_lv_stupingjia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff" >
+    </ListView>
+
+</LinearLayout>

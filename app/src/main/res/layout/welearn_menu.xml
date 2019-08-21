@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0f0f0" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="172dp"
+            android:background="@color/welearn_blue" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/menu_acc_head_icon"
+                android:layout_width="@dimen/menu_persion_icon_size"
+                android:layout_height="@dimen/menu_persion_icon_size"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="35dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/default_contact_image" />
+
+            <TextView
+                android:id="@+id/menu_acc_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/menu_acc_head_icon"
+                android:layout_marginLeft="16dp"
+                android:layout_toRightOf="@+id/menu_acc_head_icon"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="16sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/menu_stu_num"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_acc_name"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/menu_acc_head_icon"
+                android:textColor="#E0FFFFFF"
+                android:textSize="12sp"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/menu_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/menu_acc_head_icon"
+                android:layout_below="@+id/menu_acc_head_icon"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="-3dp"
+                android:layout_marginTop="15dp"
+                android:drawableLeft="@drawable/icon_money"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/menu_credit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/menu_acc_head_icon"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/menu_money"
+                android:drawableLeft="@drawable/icon_credit"
+                android:drawablePadding="5dp"
+                android:gravity="center_vertical"
+                android:textColor="@color/TextColorWhite"
+                android:textSize="12sp" />
+        </RelativeLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/menu_recharge"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_recharge"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/leftbar_ic_glod"
+                        android:text="@string/menu_recharge" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_cramschool"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_cramschool"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/myclass_nac_icon"
+                        android:text="@string/menu_cramschool" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_microcoach"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_microcoach"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/class_icon"
+                        android:text="@string/menu_microcoach" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_my_ask"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_my_ask"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/leftbar_ic_question"
+                        android:text="@string/menu_my_ask" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_my_homework"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_my_homework"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/leftbar_ic_work"
+                        android:text="@string/menu_my_homework" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+                <!-- 辅导券start -->
+
+                <RelativeLayout
+                    android:id="@+id/menu_my_fudaoquan"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_my_fudaoquan"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/coach_coupon_icon"
+                        android:text="@string/menu_my_fudaoquan" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+                <!--  辅导券end  -->
+              
+
+                <RelativeLayout
+                       android:visibility="gone"
+                    android:id="@+id/menu_learning_situation_analysis"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_learning_situation_analysis"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/icon_learning_situation_analysis"
+                        android:text="@string/menu_learning_situation_analysis" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:visibility="gone"
+                    android:background="#27000000" />
+               
+
+                <RelativeLayout
+                    android:id="@+id/menu_persion_info"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_person_info"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/icon_persion_info"
+                        android:text="@string/contact_person_info" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_settings"
+                    style="@style/welearnMenuItemLayout" >
+
+                    <TextView
+                        android:id="@+id/item_settings"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/icon_settings"
+                        android:text="@string/settings" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_check_update"
+                    style="@style/welearnMenuItemLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/check_update_tv"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/icon_check_update"
+                        android:text="@string/check_updata" />
+
+                    <ImageView
+                        android:id="@+id/tips_update_iv_setting"
+                        android:layout_width="7dp"
+                        android:layout_height="7dp"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginLeft="7dp"
+                        android:layout_toRightOf="@+id/check_update_tv"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/ic_unread_redpoint"
+                        android:visibility="gone" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#27000000"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:id="@+id/menu_about_us"
+                    style="@style/welearnMenuItemLayout"
+                    android:visibility="gone" >
+
+                    <TextView
+                        android:id="@+id/item_about"
+                        style="@style/welearnMenuItemTxtStyle"
+                        android:drawableLeft="@drawable/icon_about"
+                        android:text="@string/about_us" />
+
+                    <ImageView
+                        style="@style/welearnMenuItemArrorStyle"
+                        android:contentDescription="@string/app_name" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1px"
+                    android:background="#77000000"
+                    android:visibility="gone" />
+
+                <RelativeLayout
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone" >
+
+                    <ImageView
+                        android:id="@+id/qr_imageview"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/app_name"
+                        android:src="@drawable/default_contact_image" />
+
+                    <TextView
+                        android:id="@+id/tips"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/qr_imageview"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/two_dimensional_code_download"
+                        android:textColor="#9e9e9e"
+                        android:textSize="11sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="right"
+        android:contentDescription="@string/app_name"
+        android:src="@drawable/menu_right_shade_img" />
+
+</FrameLayout>

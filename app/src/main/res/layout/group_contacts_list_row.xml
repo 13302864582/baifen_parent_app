@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/group_contacts_list_row_header" />
+
+    <TextView
+        android:id="@+id/rowSegLine"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dip"
+        android:layout_marginLeft="23dip"
+
+        android:background="#e6e6e6" />
+
+    <LinearLayout
+        android:id="@+id/contactRowLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="23dip"
+        android:layout_marginRight="23dip" >
+
+        <ImageView
+            android:id="@+id/contactImage"
+            android:layout_width="@dimen/group_contacts_list_avatar_size"
+            android:layout_height="@dimen/group_contacts_list_avatar_size"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="10.5dip"
+            android:layout_marginTop="10.5dip"
+            android:adjustViewBounds="false"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:src="@drawable/default_contact_image" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <!-- android:orientation="horizontal" > -->
+
+                <TextView
+                    android:id="@+id/contactName"
+                    android:layout_width="171dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.5dip"
+                    android:paddingLeft="21dip"
+                    android:singleLine="true"
+                    android:text="@string/name"
+                    android:textColor="#242424"
+                    android:textSize="15.5sp" />
+
+                <ImageView
+                    android:id="@+id/relationType"
+                    android:layout_width="30dp"
+                    android:layout_height="18dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginTop="11.5dip"
+                    android:contentDescription="@string/app_name"
+                    android:src="@drawable/ic_vip_tag"
+                    android:textColor="#6b6b6b"
+                    android:textSize="13sp"
+                    android:visibility="invisible" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/extraInfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.5dip"
+                    android:paddingLeft="21dip"
+                    android:singleLine="true"
+                    android:textColor="#6b6b6b"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/techSchoolInfo"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4.5dip"
+                    android:textColor="#6b6b6b"
+                    android:textSize="13sp"
+                    android:visibility="gone" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

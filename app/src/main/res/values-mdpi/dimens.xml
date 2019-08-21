@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+<!-- 	<dimen name="MyRatingBarWid">135dip</dimen> -->
+<!-- 	<dimen name="MyRatingBarHei">18dip</dimen> -->
+	<dimen name="MyRatingBarStartWid">27dip</dimen>
+	<dimen name="MyRatingBarStartHei">16dip</dimen>
+</resources>

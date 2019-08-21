@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/header"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/welearn_title_bar_and_status_hight"
+    android:background="#e5ffffff"
+    android:paddingTop="@dimen/welearn_status_bar_height">
+
+    <RelativeLayout
+        android:id="@+id/back_layout"
+        android:layout_width="@dimen/welearn_title_bar_hight"
+        android:layout_height="@dimen/welearn_title_bar_hight"
+        android:background="@drawable/welearn_bg_title_bar_icon"
+        android:visibility="visible">
+
+        <ImageView
+            android:id="@+id/back_iv"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:contentDescription="@string/app_name"
+            android:duplicateParentState="true"
+            android:scaleType="center"
+            android:src="@drawable/selector_back_icon"
+            android:visibility="visible" />
+
+        <ImageView
+            android:id="@+id/tips_first_use"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="7dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_unread_redpoint"
+            android:visibility="gone" />"
+
+        <TextView
+            android:id="@+id/back_tv"
+            style="@style/welearn_Titlebar_Second_Text_Style"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:clickable="false"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="上一步"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/title_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/welearn_title_bar_hight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/welearn_title_bar_back_padding_left"
+        android:duplicateParentState="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/title"
+            style="@style/welearn_Titlebar_Primary_Text_Style"
+            android:layout_centerHorizontal="true"
+            android:maxWidth="220dp"
+            android:text="@string/app_name"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            style="@style/welearn_Titlebar_Second_Text_Style"
+            android:layout_below="@id/title"
+            android:layout_centerHorizontal="true"
+            android:textColor="@android:color/black"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout_dots_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/welearn_title_bar_hight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="@dimen/welearn_title_bar_back_padding_left"
+        android:duplicateParentState="true"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:id="@+id/dots_ll"
+            android:layout_width="wrap_content"
+            android:layout_height="23dp"
+            android:background="@null"
+            android:gravity="center"
+            android:orientation="horizontal"></LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/next_setp_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/welearn_title_bar_hight"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/welearn_bg_title_bar_icon"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/next_step_btn"
+            style="@style/welearn_Titlebar_Second_Text_Style"
+            android:layout_centerVertical="true"
+            android:clickable="false"
+            android:ellipsize="none"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingLeft="@dimen/welearn_title_bar_back_padding_left"
+            android:paddingRight="6dp"
+            android:paddingTop="5dp"
+            android:singleLine="true"
+            android:text="下一步"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/next_step_btn2"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:drawableRight="@drawable/selector_biaozhu_btn"
+
+            android:gravity="center"
+            android:paddingLeft="6dp"
+            android:paddingRight="6dp"
+            android:singleLine="true"
+            android:text="显示批注"
+
+            android:textSize="14sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/next_step_img"
+            style="@style/welearn_Titlebar_Icon_Style"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@+id/next_step_btn"
+            android:clickable="false"
+            android:contentDescription="@string/app_name"
+            android:padding="5dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/bg_actionbar_addcontact_selector"
+            android:visibility="gone" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:layout_alignParentBottom="true"
+        android:background="#bbbbbb" />
+
+</RelativeLayout>

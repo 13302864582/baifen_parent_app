@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="please_wait">请稍候</string>
+    <string name="text_check_network">网络连接失败,请检查网络</string>
+    <string name="text_request_failed">请求失败</string>
+
+</resources>

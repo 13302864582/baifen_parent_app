@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/welearn_header_view"
+        android:visibility="visible" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background_color"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:id="@+id/layout_input_phone"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="0dp"
+                android:layout_marginTop="40dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.1dp"
+                    android:background="@color/login_line" />
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_phone_no"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/text_input_phone_num"
+                    android:inputType="number"
+                    android:textColorHint="@color/login_input_color"
+                    android:maxLength="14"
+                    android:minHeight="50dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textColor="#9e9e9e"
+                    android:textSize="16sp" />
+
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.1dp"
+                android:layout_alignLeft="@id/layout_input_phone"
+                android:layout_alignRight="@id/layout_input_phone"
+                android:layout_below="@id/layout_input_phone"
+                android:background="@color/login_line" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_validate_code"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:drawablePadding="15dp"
+                    android:hint="@string/register_verification_code"
+                    android:textColorHint="@color/login_input_color"
+                    android:inputType="number"
+                    android:maxLength="6"
+                    android:minHeight="50dp"
+                    android:padding="6dp"
+                    android:singleLine="true"
+                    android:textColor="#9e9e9e"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.1dp"
+                    android:layout_alignLeft="@id/et_validate_code"
+                    android:layout_alignRight="@id/et_validate_code"
+                    android:layout_below="@id/et_validate_code"
+                    android:background="@color/login_line" />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="0dp"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btn_validate_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginRight="40dp"
+                        android:background="@null"
+                        android:text="@string/text_get_verification_code"
+                        android:textColor="@color/color1e1e1e"
+                        android:textSize="16sp" />
+
+                    <View
+                        android:id="@+id/view_shuxian"
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:layout_toLeftOf="@id/btn_validate_code"
+                        android:background="@color/login_line"
+                        android:minHeight="50dp" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="match_parent"
+                android:layout_height="42dp"
+                android:layout_marginLeft="31dp"
+                android:layout_marginRight="31dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/selector_login_btn"
+                android:text="@string/forget_pwd_next_btn"
+                android:textColor="@drawable/selector_login_btn_textcolor"
+                android:textSize="14sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

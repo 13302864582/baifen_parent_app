@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left|center_vertical"
+            android:layout_marginTop="25dip"
+            android:gravity="left|center_vertical"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/gold_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/text_pay_answer_price"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/chongzhi_btn"
+                android:layout_width="60dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/chongzhi_btn_selector" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="159dip"
+            android:layout_height="50dip"
+            android:layout_marginTop="15dip"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/price_minus_btn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_minus_price_btn_selector"
+                android:clickable="true"
+                android:contentDescription="@null" />
+
+            <TextView
+                android:id="@+id/question_price"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center_horizontal"
+                android:text="1.0"
+                android:textColor="#fb0606"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/price_plus_btn"
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/bg_add_price_btn_selector"
+                android:clickable="true"
+                android:contentDescription="@null" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dip"
+            android:text="@string/text_pay_answer_price_tips"
+            android:textColor="#9e9e9e"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="17dp"
+            android:src="@drawable/ic_tips_pay_ask_laoshi" />
+    
+
+</LinearLayout>

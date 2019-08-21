@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+
+
+    <LinearLayout
+        android:id="@+id/tec_good_subject_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_marginTop="164dp"
+        android:background="#FFFFFF"
+        android:orientation="vertical">
+        <View
+
+            android:layout_width="match_parent"
+            android:layout_height="0.2dp"
+
+            android:background="#dddddf" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="16dp"
+            android:text="@string/good_subjects"
+            android:textColor="#1e1e1e"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tec_good_subject_xiao_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:paddingLeft="16dp"
+            android:textColor="#8d8d8d"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tec_good_subject_chu_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp"
+            android:textColor="#8d8d8d"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tec_good_subject_gao_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:paddingLeft="16dp"
+            android:textColor="#8d8d8d"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="89dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/information_teacher_acception_icon" />
+
+            <TextView
+                android:id="@+id/tv_cainalv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+
+                android:text="采纳率"
+                android:textColor="#8d8d8d"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="11dp"
+            android:background="#dddddf" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/information_teacher_task_icon" />
+
+            <TextView
+                android:id="@+id/tv_zuoye"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+
+                android:text="已批作业"
+                android:textColor="#8d8d8d"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="11dp"
+            android:background="#dddddf" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="89dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:src="@drawable/information_teacher_problem_icon" />
+
+            <TextView
+                android:id="@+id/tv_nanti"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+
+
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+
+                android:text="已答难题"
+                android:textColor="#8d8d8d"
+                android:textSize="11sp" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddf" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#F2F2F2"
+        android:gravity="bottom"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:text="老师评分"
+        android:textColor="#8d8d8d"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddf" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="67dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:text="态度"
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_tai1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_tai2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_tai3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_tai4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_tai5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:src="@drawable/star_btn_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="0.2dp"
+            android:layout_height="36dp"
+            android:layout_gravity="center_vertical"
+            android:background="#dddddf" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="67dp"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+
+                android:text="能力"
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_neng1"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_neng2"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_neng3"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_neng4"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="5dp"
+                    android:src="@drawable/star_btn_normal" />
+
+                <ImageView
+                    android:id="@+id/iv_neng5"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+
+                    android:src="@drawable/star_btn_normal" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddf" />
+
+    <TextView
+
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:background="#F2F2F2"
+        android:gravity="bottom"
+        android:paddingBottom="6dp"
+        android:paddingLeft="16dp"
+        android:text="评论"
+        android:textColor="#8d8d8d"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#dddddf" />
+
+
+</LinearLayout>

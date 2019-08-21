@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/stu_publish_homework_image_size"
+    android:layout_height="@dimen/stu_publish_homework_image_size"
+    android:gravity="center">
+    <!-- <RelativeLayout
+         android:layout_width="@dimen/stu_publish_homework_image_size"
+         android:layout_height="@dimen/stu_publish_homework_image_size" >
+
+         <ImageView
+             android:id="@+id/home_work_image_iv"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_centerInParent="true"
+             android:layout_centerVertical="true"
+             android:layout_margin="5dp"
+             android:contentDescription="@string/app_name"
+             android:scaleType="centerCrop"
+             android:src="@mipmap/ic_launcher" />
+
+         <ImageView
+             android:id="@+id/home_work_delete_iv"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="3dp"
+             android:layout_marginBottom="3dp"
+             android:contentDescription="@string/app_name"
+             android:minHeight="20dp"
+             android:minWidth="20dp"
+             android:src="@drawable/ic_camera_choice_del_selector" />
+     </RelativeLayout>-->
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/home_work_image_iv"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/publish_add_image_selector" />
+
+        <ImageView
+            android:id="@+id/home_work_delete_iv"
+            android:layout_width="15dip"
+            android:layout_height="15dip"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="15dp"
+            android:contentDescription="@null"
+            android:background="@drawable/ic_camera_choice_del_selector"
+            android:visibility="gone" />
+    </FrameLayout>
+
+
+</LinearLayout>

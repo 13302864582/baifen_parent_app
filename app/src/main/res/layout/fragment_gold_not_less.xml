@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:id="@+id/dayday_signin_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gasview_item_selector"
+        android:clickable="true"
+        android:visibility="gone" >
+
+        <ImageView
+            android:id="@+id/dayday_signin_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_dayday_sign_in_icon" />
+
+        <TextView
+            android:id="@+id/dayday_signin_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/text_dayday_signin"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/unsign_intoday_point_iv_mygold"
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/ic_unread_redpoint"
+            android:visibility="invisible" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="111" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:text="@string/text_dayday_signin_tip"
+            android:textColor="@color/welearn_gray"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_setting_jump" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:background="#dadada"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/current_gold_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_gasview_item_selector"
+        android:clickable="false" >
+
+        <ImageView
+            android:id="@+id/current_gold_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_current_gold" />
+
+        <TextView
+            android:id="@+id/current_gold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/text_current_gold"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="111" />
+
+        <TextView
+            android:id="@+id/current_gold_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="100"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/current_gold_num_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dp"
+            android:text="学点"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/friend_gold_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gasview_item_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/friend_gold_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_gold_friend" />
+
+        <TextView
+            android:id="@+id/friend_gold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/text_friend_gold"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="111" />
+
+        <!--
+             <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:text="@string/invite_ad"
+            android:textColor="@color/welearn_gray"
+            android:textSize="13sp" />        -->
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_setting_jump" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="14dip"
+        android:layout_marginRight="14dip"
+        android:background="#dadada" />
+
+    <LinearLayout
+        android:id="@+id/pay_gold_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/bg_gasview_item_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/pay_gold_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_gold_pay" />
+
+        <TextView
+            android:id="@+id/pay_gold_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/text_pay_gold"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="111" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:text="@string/pay_ad"
+            android:textColor="@color/welearn_gray"
+            android:textSize="13sp"
+            android:visibility="gone" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_setting_jump" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/binding_phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dip"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/bg_gasview_item_selector"
+        android:clickable="true" >
+
+        <ImageView
+            android:id="@+id/binding_phone_image"
+            android:layout_width="22dip"
+            android:layout_height="22dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="18dip"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_mobile" />
+
+        <TextView
+            android:id="@+id/binding_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="17dip"
+            android:text="@string/text_binding_phone_item"
+            android:textColor="#242424"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="111" />
+
+        <TextView
+            android:id="@+id/binding_phone_sub_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="9dp"
+            android:text="@string/text_binding_phone_item_sub"
+            android:textColor="@color/welearn_gray"
+            android:textSize="13sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="17dip"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_setting_jump" />
+    </LinearLayout>
+
+</LinearLayout>

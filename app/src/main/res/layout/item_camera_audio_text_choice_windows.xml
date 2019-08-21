@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/photo_view_camera_text_choice_container"
+    android:layout_width="match_parent"
+    android:layout_height="94dip"
+    android:layout_gravity="bottom"
+    android:background="@drawable/bg_voice_text_choice"
+    android:clickable="true"
+    android:weightSum="2" >
+
+    <ImageButton
+        android:id="@+id/photo_view_voice_choice"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_voice_choice_selector" />
+
+    <View
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dip"
+        android:layout_marginTop="10dip"
+        android:layout_weight="0.01"
+        android:background="@drawable/bg_bottom_bar_line" />
+
+    <ImageButton
+        android:id="@+id/photo_view_text_choice"
+        android:layout_width="0dip"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@android:color/transparent"
+        android:contentDescription="@null"
+        android:src="@drawable/ic_text_choice_selector" />
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/daxiong_studio.iml" filepath="$PROJECT_DIR$/daxiong_studio.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_alipay/library_alipay.iml" filepath="$PROJECT_DIR$/library_alipay/library_alipay.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_cropper/library_cropper.iml" filepath="$PROJECT_DIR$/library_cropper/library_cropper.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_mpchart/library_mpchart.iml" filepath="$PROJECT_DIR$/library_mpchart/library_mpchart.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_viewpagerindicator/library_viewpagerindicator.iml" filepath="$PROJECT_DIR$/library_viewpagerindicator/library_viewpagerindicator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_volley/library_volley.iml" filepath="$PROJECT_DIR$/library_volley/library_volley.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_waterWaveProgress/library_waterWaveProgress.iml" filepath="$PROJECT_DIR$/library_waterWaveProgress/library_waterWaveProgress.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_websocketclient/library_websocketclient.iml" filepath="$PROJECT_DIR$/library_websocketclient/library_websocketclient.iml" />
+    </modules>
+  </component>
+</project>

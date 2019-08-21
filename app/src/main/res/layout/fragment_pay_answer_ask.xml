@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingLeft="14dip"
+            android:paddingRight="14dip" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dip"
+                android:text="@string/text_take_photo_for_ask"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp" />
+
+            <FrameLayout
+                android:layout_width="85dip"
+                android:layout_height="85dip" >
+
+                <ImageView
+                    android:id="@+id/take_photo_btn"
+                    android:layout_width="63dip"
+                    android:layout_height="63dip"
+                    android:layout_gravity="center"
+                    android:contentDescription="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/bg_add_photo_selector" />
+
+                <ImageView
+                    android:id="@+id/question_img_del"
+                    android:layout_width="22dip"
+                    android:layout_height="22dip"
+                    android:layout_gravity="top|right"
+                    android:background="@drawable/ic_camera_choice_del_selector"
+                    android:contentDescription="@null"
+                    android:visibility="gone" />
+            </FrameLayout>
+
+            <EditText
+                android:id="@+id/descript_et_payask"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dip"
+                android:background="@drawable/bg_msg_recv_selector"
+                android:hint="@string/text_ask_des"
+                android:maxLength="24"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="#ababab"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/subject_choice_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dip"
+                android:textColor="#3c3c3c"
+                android:textSize="15sp" />
+
+            <RadioGroup
+                android:id="@+id/ask_subjects_radiogroup"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="15dp" />
+
+            <TextView
+                android:id="@+id/subject_select_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dip"
+                android:text="@string/text_pay_answer_alert_tips_subject"
+                android:textColor="#9e9e9e"
+                android:textSize="11sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_xuanshangxuedian"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginTop="25dip"
+                    android:gravity="left|center_vertical"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/gold_title_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/text_pay_answer_price"
+                        android:textColor="#3c3c3c"
+                        android:textSize="15sp" />
+
+                    <Button
+                        android:id="@+id/chongzhi_btn"
+                        android:layout_width="65dp"
+                        android:layout_height="25dp"
+                        android:layout_marginLeft="20dp"
+                        android:background="@drawable/chongzhi_btn_selector" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="159dip"
+                    android:layout_height="50dip"
+                    android:layout_marginTop="15dip"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/price_minus_btn"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_minus_price_btn_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+
+                    <TextView
+                        android:id="@+id/question_price"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal"
+                        android:text="1.0"
+                        android:textColor="#fb0606"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/price_plus_btn"
+                        android:layout_width="0dip"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/bg_add_price_btn_selector"
+                        android:clickable="true"
+                        android:contentDescription="@null" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="@string/text_pay_answer_price_tips"
+                    android:textColor="#9e9e9e"
+                    android:textSize="11sp" />
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="17dp"
+                android:src="@drawable/ic_tips_pay_ask_laoshi"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/layout_fudaoquan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:gravity="center"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/iv_choice_radio"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/choice_no_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="使用难题券"
+                    android:textColor="#000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <include
+                android:id="@+id/view_fudaoquan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                layout="@layout/each_fudaoquan_item"
+                android:visibility="gone" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

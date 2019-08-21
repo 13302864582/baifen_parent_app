@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/login_guide_three_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_guide_0"
+    android:gravity="bottom|center_horizontal"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/phone_loginorreg_bt"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:background="@drawable/lijitiyan"
+                android:gravity="center"
+                android:maxHeight="25dp"
+                android:paddingLeft="25dp"
+                android:paddingRight="25dp"
+                android:text="立即体验"
+                android:textColor="#ffffff"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <Button
+                android:id="@+id/login_bt"
+                style="@style/dialog_btn"
+                android:text="@string/text_login_by_qq" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/start_todo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="65dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Button
+            android:id="@+id/start_todo_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_start_ask_btn_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login_info_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:singleLine="true"
+        android:text="@string/login_guide_info"
+        android:textColor="@color/black"
+        android:textSize="13sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+           android:layout_weight="1"
+            android:gravity="center_vertical|right"
+
+            >
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="心心"
+                android:textColor="@color/color4d4d4d"
+                android:textSize="22sp" />
+
+
+            <TextView
+                android:id="@+id/tv_study"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="学号309069 四年级"
+                android:textColor="@color/color8d8d8d"
+                android:textSize="14sp" />
+
+
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="江苏 无锡"
+                android:textColor="@color/color8d8d8d"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            >
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout_record"
+                android:layout_width="100dp"
+                android:layout_height="40dip"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/selector_guide_voice"
+                android:visibility="visible"
+                android:layout_marginLeft="20dp"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_voice"
+                    android:layout_width="15.1dip"
+                    android:layout_height="25.2dip"
+                    android:layout_gravity="left|center_vertical"
+                    android:layout_marginLeft="15dp"
+                    android:contentDescription="@null"
+                    android:layout_centerVertical="true"
+                    android:src="@drawable/ic_play2"
+                    android:visibility="visible" />
+
+                <TextView
+                    android:id="@+id/tv_voice_seconds"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="17'"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="8dp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

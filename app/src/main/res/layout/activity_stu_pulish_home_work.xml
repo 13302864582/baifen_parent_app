@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/welearn_header_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/homework_publish_parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="@string/student_publish_home_work_add_img_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tip_title_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tip_title"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/student_publish_home_work_add_img_sub_title"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="12sp" />
+
+                <com.daxiong.fun.view.MyGridView
+                    android:id="@+id/home_work_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tip_title_desc"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:splitMotionEvents="false" />
+
+                <TextView
+                    android:id="@+id/home_work_desc_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_work_gridview"
+                    android:layout_marginTop="10dp"
+                    android:singleLine="true"
+                    android:text="@string/student_publish_home_work_desc_title"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/home_work_descript_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_work_desc_title"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/bg_edittext"
+                    android:paddingLeft="3dp"
+                    android:paddingRight="3dp"
+                    android:singleLine="true"
+                    android:textColor="#ababab"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/home_work_subject_choose_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_work_descript_et"
+                    android:layout_marginTop="30dp"
+                    android:singleLine="true"
+                    android:text="科目选择"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/home_work_subjects_radiogroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_work_subject_choose_title"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp" />
+
+                <TextView
+                    android:id="@+id/subject_select_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/home_work_subjects_radiogroup"
+                    android:layout_marginTop="12dip"
+                    android:text="@string/text_pay_answer_alert_tips_subject"
+                    android:textColor="#9e9e9e"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:id="@+id/layout_xuanshangxuedian"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/subject_select_tips"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:id="@+id/gold_title_ll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="30dp" >
+
+                        <TextView
+                            android:id="@+id/gold_title_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text=""
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/chongzhi_btn"
+                            android:layout_width="65dp"
+                            android:layout_height="25dp"
+                            android:layout_marginLeft="20dp"
+                            android:background="@drawable/chongzhi_btn_selector" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/gold_title_desc_tv"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="2dp"
+                        android:singleLine="true"
+                        android:text="@string/student_publish_home_work_pay_sub_title"
+                        android:textColor="@color/TextColorGray"
+                        android:textSize="12sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="15dip"
+                        android:orientation="horizontal" >
+
+                        <ImageButton
+                            android:id="@+id/home_work_gold_minus_ibtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/bg_minus_price_btn_selector"
+                            android:clickable="true"
+                            android:contentDescription="@null" />
+
+                        <TextView
+                            android:id="@+id/home_work_gold_tv"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:gravity="center_horizontal"
+                            android:text="1.0"
+                            android:textColor="#fb0606"
+                            android:textSize="14sp" />
+
+                        <ImageButton
+                            android:id="@+id/home_work_gold_plus_ibtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_add_price_btn_selector"
+                            android:clickable="true"
+                            android:contentDescription="@null" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/layout_fudaoquan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_xuanshangxuedian"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="horizontal" >
+
+                    <ImageView
+                        android:id="@+id/iv_choice_radio"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/choice_no_icon" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="使用难题券"
+                        android:textColor="#000"
+                        android:textSize="14sp" />
+                </LinearLayout>
+
+                <include
+                    android:id="@+id/view_fudaoquan"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_fudaoquan"
+                    layout="@layout/each_fudaoquan_item"
+                    android:visibility="gone" />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

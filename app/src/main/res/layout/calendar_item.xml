@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:background="@color/login_background_color"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="vertical"
+        android:gravity="center"
+
+        >
+
+        <TextView
+            android:id="@+id/tv_value"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:background="@color/red"
+            android:gravity="center"
+            android:text="20"
+            android:visibility="visible"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/iv_voice"
+            android:layout_width="15.1dip"
+            android:layout_height="25.2dip"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="0dp"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_play2"
+            android:visibility="gone" />
+    </LinearLayout>
+
+</FrameLayout>

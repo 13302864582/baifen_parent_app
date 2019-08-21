@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent" >
+
+    <TextView
+        android:id="@+id/from_user_send_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"       
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dip"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:paddingTop="1dp"
+        android:paddingBottom="1dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="10sp"
+        android:background="@drawable/time_beijing"
+       android:visibility="gone" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/from_user_send_time"
+        android:layout_marginTop="12dip" >
+
+        <ImageView
+            android:id="@+id/from_user_avatar"
+            android:layout_width="@dimen/msg_list_avatar_size"
+            android:layout_height="@dimen/msg_list_avatar_size"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dip"
+            android:contentDescription="@null"
+            android:scaleType="centerCrop"
+            android:visibility="invisible"
+            android:src="@drawable/default_contact_image" />
+
+        <FrameLayout
+            android:id="@+id/content_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dip"
+            android:layout_marginRight="6dip"
+            android:layout_toLeftOf="@id/from_user_avatar" >
+
+            <TextView
+                android:id="@+id/send_msg_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/information_dialogstudent_icon"
+                android:gravity="center_vertical"
+                android:lineSpacingExtra="3dp"
+                android:maxWidth="250dp"
+                android:minHeight="39dip"
+                android:paddingLeft="7dip"
+                android:paddingRight="9dip"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:visibility="gone"
+                />
+
+            <!-- 图片 -->
+
+            <FrameLayout
+                android:id="@+id/send_msg_img_container"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/information_dialogstudent_icon"
+                android:gravity="center_vertical"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                android:paddingLeft="5dip"
+                android:paddingRight="9dip"
+                android:visibility="gone" >
+
+                <ProgressBar
+                    android:id="@+id/waiting_bar"
+                    style="@android:style/Widget.ProgressBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:visibility="gone" />
+
+                <ImageView
+                    android:id="@+id/send_msg_img"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@null"
+                    android:gravity="center_vertical"
+                    android:maxHeight="120dp"
+                    android:maxWidth="120dp"
+                    android:scaleType="fitCenter" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:id="@+id/voice_send_msg_container"
+                android:layout_width="wrap_content"
+                android:layout_height="39dip"
+                android:background="@drawable/information_dialogstudent_icon"
+                android:gravity="center_vertical"
+                android:paddingRight="22dip"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/ic_voice_send_msg_play"
+                    android:layout_width="15.1dip"
+                    android:layout_height="25.2dip"
+                    android:layout_gravity="right|center_vertical"
+                    android:contentDescription="@null"
+                    android:src="@drawable/ic_voice_msg_play3" />
+            </FrameLayout>
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/msg_audiotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/content_container" />
+
+        <ImageView
+            android:id="@+id/ic_send_error"
+            android:layout_width="48dip"
+            android:layout_height="48dip"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:layout_marginRight="1dip"
+            android:layout_toLeftOf="@id/content_container"
+            android:contentDescription="@null"
+            android:src="@drawable/ic_send_err"
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

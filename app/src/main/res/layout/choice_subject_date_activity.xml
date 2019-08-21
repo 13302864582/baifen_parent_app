@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"     
+    >
+
+    <ScrollView
+        android:id="@+id/combo_scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingBottom="15dp" >
+
+        <LinearLayout
+            android:id="@+id/combo_info_container_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="0dp"
+            android:background="@drawable/prom_line_bg"
+            android:fastScrollEnabled="true"
+            android:orientation="vertical" />
+    </ScrollView>
+
+</RelativeLayout>

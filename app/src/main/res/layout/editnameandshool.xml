@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color"
+    android:orientation="vertical">
+
+    <include layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_line" />
+
+
+        <com.daxiong.fun.view.edittext.ClearEditText
+            android:id="@+id/et_shool"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@null"
+            android:editable="true"
+            android:focusable="true"
+            android:hint="请直接输入您的学校名称"
+            android:maxLength="16"
+            android:paddingLeft="15dp"
+            android:singleLine="true"
+            android:layout_marginRight="15dp"
+
+            android:textSize="14sp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/login_line" />
+    </LinearLayout>
+
+</LinearLayout>

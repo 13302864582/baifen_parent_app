@@ -1,0 +1,726 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.daxiong.fun">
+    <!--android:versionCode="3036"
+    android:versionName="1.3.6"
+    tools:replace="android:versionName,android:versionCode"-->>
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.MANAGE_DOCUMENTS" />
+    <uses-permission android:name="android.hardware.sensor.accelerometer" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.WRITE_MEDIA_STORAGE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.MEDIA_CONTENT_CONTROL" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <!--<uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />-->
+    <!--<uses-permission android:name="android.permission.DISABLE_KEYGUARD" />
+    -->
+
+
+    <application
+        android:name="com.daxiong.fun.MyApplication"
+        android:allowBackup="true"
+        android:allowClearUserData="false"
+        android:hardwareAccelerated="false"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:theme="@style/AppThemeNew"
+        tools:replace="android:theme,android:label">
+
+        <!-- android:theme="@android:style/Theme.Material" -->
+        <activity
+            android:name="com.tencent.connect.common.AssistActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity android:name="com.tencent.connect.avatar.ImageActivity" />
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="tencent1104989540" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote">
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+
+        <!-- meta-data需要写在application中 -->
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="p0z0nG1C7i3nEwlSscXV3Y3Q" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="5652c977e0f55a4d79001430" />
+        <meta-data
+            android:name="UMENG_CHANNEL_VALUE"
+            android:value="welearn" />
+
+        <!-- fabric start -->
+        <meta-data
+            android:name="io.fabric.ApiKey"
+            android:value="f79cdb5f033cd0cc4a1b76b3a95f07a2d63cdd04" />
+        <!-- fabric end -->
+
+        <activity
+            android:name="com.daxiong.fun.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.MainActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+
+            <meta-data
+                android:name="android.app.searchable"
+                android:resource="@xml/searchable" />
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.common.AuthActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name="com.daxiong.fun.function.account.GradeChoiceActivity"
+            android:screenOrientation="portrait" />-->
+        <!--
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerGrabItemActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <activity
+            android:name="com.alipay.sdk.app.H5AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" >
+        </activity>
+        <!--
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        -->
+        <activity
+            android:name="com.alipay.sdk.auth.AuthActivity"
+            android:configChanges="orientation|keyboardHidden|navigation"
+            android:exported="false"
+            android:screenOrientation="behind" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerAlbumActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerImageGridActivity"
+            android:screenOrientation="portrait" />
+        <!-- <activity -->
+        <!-- android:name="com.daxiong.fun.function.question.PayAnswerCameraActivity" -->
+        <!-- android:screenOrientation="portrait" > -->
+        <!-- </activity> -->
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerPhotoViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <!--
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerPhotoCropperViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerTextAnswerActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.study.yeartopic.YearQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.OneQuestionMoreAnswersDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerQuestionDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.communicate.ChatMsgViewActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.daxiong.fun.function.partner.TeacherInfoActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.partner.StudentInfoActivityNew"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.partner.SingleEditTextActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.PersonHomePageActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.daxiong.fun.group.ProvinceActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.group.CityActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.question.QAHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerAskGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerAskActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerQuestionPhotoViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerAppendAskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.MyQuestionActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.SystemSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.FeedbackActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.AboutActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.partner.AddContactsActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.GuideActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait" />
+
+        <!--
+        <activity
+            android:name="com.daxiong.fun.ChoicGreamActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.partner.SearchSchoolActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.vip.SelectRechargeCardActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.goldnotless.PayActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.goldnotless.GoldNotLessActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.goldnotless.FriendGoldActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.welearn.goldnotless.InvitateActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+        <activity
+            android:name="com.welearn.goldnotless.SignInActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.account.PhoneLoginActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan" />
+        <activity
+            android:name="com.daxiong.fun.function.account.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.PhoneRegisterActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.goldnotless.PhoneCardPayAcvitity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateVisible|adjustResize" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.DoNotDisturbActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.PreSendPicReViewActivity"
+            android:screenOrientation="portrait" />
+       <!-- <activity
+            android:name="com.alipay.android.app.sdk.WapPayActivity"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.daxiong.fun.util.DebugActvity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan|stateHidden" />
+
+        <service
+            android:name="com.daxiong.fun.service.PushService"
+            android:enabled="true"
+            android:exported="false"
+            android:persistent="true" />
+
+        <receiver
+            android:name="com.daxiong.fun.receiver.NetworkReceiver"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+                <action android:name="com.welearn.reveiver.startconn" />
+            </intent-filter>
+        </receiver>
+
+        <!--
+             <service android:name="com.yzx.service.ConnectionControllerService" >
+        </service>
+
+        <receiver android:name="com.yzx.service.AlarmReceiver" >
+        </receiver>
+        <receiver android:name="com.yzx.service.MsgBackReceiver" >
+        </receiver>
+
+
+
+
+
+        -->
+
+
+        <!--
+        <activity
+            android:name="com.daxiong.fun.function.homework.teacher.TecHomeWrokCheckActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.homework.teacher.TecHomeWorkDetail_OnlyReadActivity"
+            android:screenOrientation="portrait" />
+        <!--
+        <activity
+            android:name="com.daxiong.fun.function.homework.teacher.TecHomeWorkCheckDetailActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.function.homewrok.teacher.TecHomeWorkCheckGrabItemActivity"
+            android:screenOrientation="portrait" >
+        </activity>
+
+
+
+
+
+        -->
+        <activity
+            android:name="com.daxiong.fun.function.homework.teacher.TecHomeWorkSingleCheckActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.daxiong.fun.function.study.StuHomeWorkCheckDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.HomeWorkHallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.PublishHomeWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.StuPublishHomeworkGuideActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.study.HomeWorkStudyAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.study.StuHomeWorkSingleCheckActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.SelectPicPopupWindow"
+            android:screenOrientation="portrait"
+            android:theme="@style/my_pop_activity_style" />
+        <activity
+            android:name="com.daxiong.fun.function.ShareActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/my_pop_activity_style" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.CropImageActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name="com.daxiong.fun.UploadActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.HomeWorkReadOnlyActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.LearningSituationAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.study.yeartopic.SearchKnowledgeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.QADetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.ChoiceListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.CourseDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.MastersCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.BuyCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.SearchCourseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.CharpterDetailActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.course.SingleStudentQAActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.cram.MyCramSchoolActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.cram.CramSchoolDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.cram.FamousTeacherListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PayAnswerAskVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.PublishHomeWorkVipActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.cram.GoodsNotesActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.cram.ChoiceFudaoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.StuModifiedInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.partner.StudentAssessmentActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.CropPhotoActivity"
+            android:screenOrientation="portrait" />
+      <!--  <activity
+            android:name="com.daxiong.fun.function.agent.AgentPublishSubjectActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>-->
+        <activity
+            android:name="com.daxiong.fun.function.homework.ChoicePublisherActivity"
+            android:screenOrientation="portrait" />
+    <!--    <activity
+            android:name="com.daxiong.fun.function.agent.ProblemAndSolveActivity"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.daxiong.fun.function.homework.WaibaoHomeWorkActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.WaibaoPayAnswerAskActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.study.QRCodeScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.study.yeartopic.SearchKnowLedgeResultActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.myfudaoquan.MyFudaoquanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.myfudaoquan.ExpireFudaoquanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.ModifyPassActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.answer.JiuCuoActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.homework.HomeworkAnalysisActivity"
+            android:screenOrientation="portrait" />
+        <!--<activity
+            android:name="com.daxiong.fun.function.homework.ChoiceSubjectAndDateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MyDialogStyle" />-->
+        <activity
+            android:name="com.daxiong.fun.common.WebViewActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.SelectCityActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxb8e24a3bc0167f3a" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.daxiong.fun.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <data android:scheme="wxb8e24a3bc0167f3a" />
+            </intent-filter>
+        </activity>
+
+        <receiver android:name="com.daxiong.fun.receiver.AppRegister">
+            <intent-filter>
+                <action android:name="com.tencent.mm.plugin.openapi.Intent.ACTION_REFRESH_WXAPP" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name="com.daxiong.fun.function.homework.PublishHwActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.PublishQuestionActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.MyHomeWorkListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.GradeChooseActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.communicate.MessageMainListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.question.MyQuestionListActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.ChangePhoneActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.MessageSettingActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.SingleAnalysisActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name="com.daxiong.fun.function.account.EditNameAndShool"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.MyInfoActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.ForgetPasswordActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.BanzhurenActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.account.vip.MyOrderListActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.function.homework.TakePhoteActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+
+        <!--<activity
+            android:name="com.daxiong.fun.common.camera2.CameraActivity"
+            android:configChanges="orientation|keyboard|keyboardHidden|screenSize"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.daxiong.fun.common.camera2.CropPhotoActivity"
+            android:screenOrientation="portrait" />-->
+        <activity
+            android:name="com.daxiong.fun.function.account.RoleChooseActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.ForgetPasswordNextActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.GradeChooseNextActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.UserAvatarActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.view.clippicture.ClipPictureActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.ChangePhoneNextActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.ChooseGenderActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.daxiong.fun.function.account.setting.AboutAppActivity"
+            android:screenOrientation="portrait" />
+
+
+        <activity
+            android:name="com.daxiong.fun.function.account.vip.VipIndexActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.vip.BuyDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <activity
+            android:name="com.daxiong.fun.function.account.vip.VipPlanDetailActivity"
+            android:screenOrientation="portrait" />
+
+        <!--讯飞start-->
+        <activity
+            android:name="com.daxiong.fun.function.learninganalysis.iflytek.util.activity.TtsDemoActivity"
+            android:configChanges="mcc|mnc|locale|touchscreen|keyboard|keyboardHidden|navigation|orientation|screenLayout|fontScale"
+            android:screenOrientation="portrait" />
+        <activity android:name="com.daxiong.fun.function.learninganalysis.iflytek.util.activity.TtsSettings" />
+        <!-- 移动统计分析 -->
+        <meta-data
+            android:name="IFLYTEK_APPKEY"
+            android:value="'5786eeab'" />
+        <meta-data
+            android:name="IFLYTEK_CHANNEL"
+            android:value="fireEye" />
+
+        <!--讯飞end-->
+        <activity
+            android:name="com.daxiong.fun.function.account.RegisterNextActivity"
+            android:screenOrientation="portrait" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/cramschooldetail_tilte"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/welearn_header_view" />
+
+    <ScrollView
+        android:id="@+id/cramschooldetail_sv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fadingEdge="vertical"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/cramschool_detail_icon"
+                android:layout_width="@dimen/cramschool_detail_icon"
+                android:layout_height="@dimen/cramschool_detail_icon"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="36dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_avatar" />
+
+            <TextView
+                android:id="@+id/cramschool_detail_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="32dp"
+                android:textColor="#000000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/cramschool_detail_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="20dp"
+                android:ellipsize="end"
+                android:lineSpacingExtra="10dp"
+                android:maxLines="2"
+                android:textColor="#6d6d6d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cramschool_detail_switch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:clickable="true"
+                android:text="全文"
+                android:textColor="#28b9b9"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/cramschool_detail_address"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="28dp"
+                android:text="@string/cramschool_detail_address"
+                android:textColor="#6d6d6d"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/cramschool_detail_phonenumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="26dp"
+                android:layout_marginTop="13dp"
+                android:text="@string/cramschool_detail_phonenumber"
+                android:textColor="#6d6d6d"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/cramschool_detail_fengcai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="50dp"
+                android:background="@drawable/teacherfc_btn_selector"
+                android:gravity="center"
+                android:text="@string/cramschool_detail_fengcai"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+
+            <Button
+                android:id="@+id/cramschool_detail_jingpin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="34dp"
+                android:layout_marginRight="34dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/explain_class_btn_selector"
+                android:gravity="center"
+                android:text="@string/cramschool_detail_jingpin"
+                android:textColor="#ffffff"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

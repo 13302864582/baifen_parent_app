@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<dimen name="top_title_height">42dip</dimen>
+	
+	<dimen name="welearn_title_bar_and_status_hight">48dip</dimen>
+	
+	<!-- 状态栏高度 -->
+    <dimen name="welearn_status_bar_height">0dp</dimen>
+    
+    <dimen name="welearn_title_bar_hight">48dip</dimen>
+    <dimen name="welearn_title_bar_back_padding_left">6dip</dimen>
+    
+    <dimen name="dialog_padding">40dp</dimen>
+
+    <dimen name="menu_persion_icon_size">64dp</dimen>
+    <dimen name="info_persion_icon_size">54dp</dimen>
+    <dimen name="msg_list_avatar_size">40dp</dimen>
+    <dimen name="communicate_contacts_list_avatar_size">48dp</dimen>
+    <dimen name="group_contacts_list_avatar_size">41dp</dimen>
+    <dimen name="one_question_more_answer_detail_item_avatar_size">35dp</dimen>
+    <dimen name="pay_answer_user_avatar_size">30dp</dimen>
+    <dimen name="avatar_size_homework_check_common">48dp</dimen>
+    <dimen name="avatar_size_homeworkhall_item_common">35dp</dimen>
+    
+    <dimen name="append_user_avatar_size">35dp</dimen>
+    <dimen name="student_info_avatar_size">56dp</dimen>
+    <dimen name="teacher_center_avatar_size">59dp</dimen>
+    <dimen name="teacher_info_avatar_size">56dp</dimen>
+    <dimen name="question_list_avatar_size">35dp</dimen>
+    <dimen name="search_friends_list_avatar_size">47dp</dimen>
+
+ 	<dimen name="welearn_detail_head_height">200dp</dimen>
+<!--     <dimen name="welearn_detail_move_min">73dp</dimen> -->
+
+	<dimen name="master_list_icon_size">64dp</dimen>
+	<dimen name="edu_list_icon_size">49dp</dimen>
+	<dimen name="cramschool_detail_icon">80dp</dimen>
+	<dimen name="itme_nv_icon">49dp</dimen>
+
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="picker_default_text_size">12sp</dimen>
+    <dimen name="picker_toolbar_height">40dp</dimen>
+    <dimen name="picker_dialog_height">190dp</dimen>
+    <dimen name="textview_default_padding">5dp</dimen>
+    <dimen name="picker_line_width">1dp</dimen>
+    <dimen name="picker_line_mar">15dp</dimen>
+    <dimen name="picker_height">230dp</dimen>
+
+    
+    
+</resources>

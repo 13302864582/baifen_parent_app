@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical" >
+    <TextView
+		android:id="@+id/tv_meiyou"
+		android:layout_width="fill_parent"
+		android:layout_height="fill_parent"
+		android:textSize="14sp"
+		android:gravity="center"
+		android:textColor="#8d8d8d"
+		android:text="你还没有好友"/>
+    <FrameLayout
+		android:id="@+id/fl"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+     
+	    <ListView
+	        android:id="@+id/contactsList"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:gravity="center_horizontal"
+	        android:divider="@null" 
+	        android:scrollbars="none"
+	        android:headerDividersEnabled="false"
+	        android:footerDividersEnabled="false"/> 
+        <TextView
+            android:id="@+id/dialog"
+            android:layout_width="80.0dip"
+            android:layout_height="80.0dip"
+            android:layout_gravity="center"
+            android:background="@drawable/show_head_toast_bg"
+            android:gravity="center"
+            android:textColor="#ffffffff"
+            android:textSize="30.0dip"
+            android:visibility="invisible" />
+
+        <com.daxiong.fun.function.partner.SideBar
+            android:id="@+id/sidrbar"
+            android:layout_width="30.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="right|center" />
+    </FrameLayout>
+
+</RelativeLayout>

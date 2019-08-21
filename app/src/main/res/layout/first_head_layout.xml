@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_head"
+    android:layout_width="match_parent"
+    android:layout_height="142dp"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddf" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="28dp"
+        android:text="大熊老师在等今天的作业哦！"
+        android:textColor="#8d8d8d"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_remark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+
+        android:textColor="#1e1e1e"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/bt_jiancha"
+        android:layout_width="81dp"
+        android:layout_height="32dp"
+
+        android:layout_marginBottom="28dp"
+        android:layout_marginTop="18dp"
+        android:background="@drawable/selector_jianchatext"
+        android:gravity="center"
+        android:text="开始辅导"
+        android:textColor="@drawable/selector_home_head_font"
+        android:textSize="14sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#dddddf" />
+</LinearLayout>

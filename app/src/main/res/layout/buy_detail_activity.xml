@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/login_background_color"
+    >
+
+     <include layout="@layout/welearn_header_view" />
+
+    <View
+        android:id="@+id/view_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/login_line"
+        android:layout_marginTop="20dp"
+        />
+
+    <com.daxiong.fun.view.XListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radio_group"
+        android:cacheColorHint="@android:color/transparent"
+        android:divider="@color/answer_list_diver"
+        android:fadingEdge="none"
+        android:layout_marginLeft="15dp"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/login_line"
+        android:visibility="gone"
+        />
+
+    <!-- 开始 -->
+
+    <LinearLayout
+        android:id="@+id/empty_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:visibility="visible"
+        >
+        <TextView
+
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="您还没有购买过任何东西"
+            android:textColor="@color/color8d8d8d"
+            android:textSize="14sp" />
+    </LinearLayout>
+    <!-- 结束 -->
+
+</LinearLayout>

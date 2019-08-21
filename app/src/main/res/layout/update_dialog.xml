@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/updatebox"
+        android:orientation="vertical" >
+<Button 
+    android:id="@+id/btn_cancle"
+    android:layout_width="23dp"
+        android:layout_height="23dp"
+        android:background="@drawable/dele"
+        android:layout_gravity="right"
+    />
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="大熊作业版本更新"
+            android:textColor="#000"
+            android:textSize="18sp" />
+        <TextView
+            android:id="@+id/tv_code"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:text="V1.0"
+            android:textColor="@color/RedText"
+            android:textSize="18sp" />
+
+       
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="110dp"
+            android:scrollbars="none" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tv_content"
+                    android:layout_width="256dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="24dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@null"
+                    android:gravity="center_vertical|left"
+                    android:singleLine="false"
+                    android:text="采纳之后不能再追问，请先确定完全懂了之后再采纳喔"
+                    android:textColorHint="#acacac"
+                    android:textSize="14sp" />
+            </LinearLayout>
+        </ScrollView>
+
+       
+
+       
+
+          
+             <Button
+                android:id="@+id/btn_ok"
+                android:layout_width="wrap_content"
+                android:layout_height="37dp"
+                android:background="@drawable/updatebt"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:paddingLeft="45dp"
+                android:paddingRight="45dp"
+               android:gravity="center"
+                android:text="立即升级"
+                android:textColor="#ffffff"
+                android:textSize="18sp" /> 
+         
+
+       
+    </LinearLayout>
+
+</LinearLayout>

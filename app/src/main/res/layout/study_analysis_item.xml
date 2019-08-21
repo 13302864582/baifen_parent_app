@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:padding="0dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal" >
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2" >
+
+            <Button
+                android:id="@+id/s_wrong_analysis_btn_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:background="@drawable/adopt_homework_btn_selector"
+                android:drawableRight="@drawable/goto_right_jiantou_icon"
+                android:gravity="center"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#000000" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1" >
+
+            <Button
+                android:id="@+id/k_wrong_analysis_btn_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center"
+                android:background="@drawable/adopt_homework_btn_selector"
+                android:drawableRight="@drawable/goto_right_jiantou_icon"
+                android:gravity="center"
+                android:text="查看"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="1dp"
+            android:layout_height="40dp"
+            android:background="#000000" />
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="2" >
+
+            <Button
+                android:id="@+id/kpoint_analysis_btn_item"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="11dp"
+                android:background="@drawable/publish_btn_selector"
+                android:gravity="center"
+                android:text="知识点"
+                android:textColor="@color/white"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="1dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:background="#000000" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#000000" />
+
+</RelativeLayout>

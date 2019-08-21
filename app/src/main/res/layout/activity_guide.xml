@@ -1,0 +1,28 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000"
+    android:orientation="vertical" >
+
+    <com.daxiong.fun.view.MyViewPager
+        android:id="@+id/guide_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:id="@+id/dots_ll"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#00000000"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:visibility="visible" 
+        android:layout_alignParentBottom="true"
+        />
+    
+
+</RelativeLayout>

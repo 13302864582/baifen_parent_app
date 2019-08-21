@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical">
+
+    <include layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="0dp"
+        android:background="#f5f5f5"
+        android:orientation="horizontal"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+
+
+            android:layout_weight="111">
+
+            <EditText
+                android:id="@+id/add_contacts_et"
+                android:layout_width="match_parent"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_vertical"
+                android:layout_marginRight="52dp"
+                android:background="@drawable/isearch_bg"
+                android:layout_marginLeft="15dp"
+                android:hint="@string/text_search_hint"
+                android:imeOptions="actionSearch"
+                android:maxLength="15"
+                android:paddingLeft="10dp"
+                android:singleLine="true"
+                android:textColor="#1e1e1e"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/add_contacts_delete_iv"
+                android:layout_width="15dp"
+                android:layout_height="32dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+
+                android:layout_gravity="center_horizontal"
+                android:layout_marginRight="91dp"
+                android:contentDescription="@string/app_name"
+                android:visibility="gone"
+                android:src="@drawable/bg_dele_btn_qq"
+                 />
+
+            <Button
+                android:id="@+id/add_contacts_search_bt"
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:layout_centerVertical="true"
+               android:layout_alignParentRight="true"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/bg_normal_btn_selector"
+                android:gravity="center"
+                android:text="@string/text_search_btn"
+                android:textColor="@drawable/selector_home_head_font"
+
+                android:textSize="13sp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_alignParentBottom="true"
+                android:background="#cccccc"
+                android:layout_height="0.2dp"/>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/search_user_listview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:cacheColorHint="@android:color/transparent"
+
+        android:divider="@color/answer_list_diver"
+        android:background="#F2F2F2"
+        ></ListView>
+<View
+    android:layout_width="match_parent"
+    android:layout_height="0.5dp"
+    android:background="#dddddf"
+    />
+</LinearLayout>

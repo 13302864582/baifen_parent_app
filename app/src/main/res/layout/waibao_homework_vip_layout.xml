@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pay_answer_hint"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/home_work_subjects_radiogroup"
+        android:layout_marginTop="77dp"
+        android:text="温馨提示："
+        android:textColor="#ff2a2a"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/pay_answer_hint_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/pay_answer_hint"
+        android:layout_marginTop="13dp"
+        android:lineSpacingExtra="6dp"
+        android:text="一定要正确选择你在机构报名的科目哦， 否则老师不能回答的。"
+        android:textColor="#000000"
+        android:textSize="14sp" />
+
+</LinearLayout>

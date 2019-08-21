@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dip"
+    android:background="@android:color/transparent" >
+
+    <!-- 空白的View  70% 透明度 -->
+
+    <View
+        android:id="@+id/share_popup_bg_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/share_popup_menu_view" />
+
+    <com.daxiong.fun.function.SharePopupMenuView
+        android:id="@+id/share_popup_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>

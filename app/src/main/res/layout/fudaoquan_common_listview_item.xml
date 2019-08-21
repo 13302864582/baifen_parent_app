@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="6.5dp"
+    android:paddingLeft="12dp"
+    android:paddingTop="6.5dp"
+
+    android:paddingRight="12dp">
+
+
+    <ImageView
+        android:id="@+id/iv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:src="@drawable/ticket_task_bg"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+
+        android:textColor="#99ffffff"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/tv_youxiaoqi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="14dp"
+        android:text="有效期至"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_youxiaoqi"
+        android:layout_marginLeft="92dp"
+
+android:gravity="top"
+
+        android:textColor="#ffffff"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/tv_laizi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="92dp"
+        android:layout_marginTop="6dp"
+
+
+        android:textColor="#99ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/tv_shengyu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="270dp"
+        android:layout_marginTop="14dp"
+
+        android:text="剩余"
+        android:textColor="#ccffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tv_zhangshu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shengyu"
+        android:layout_marginLeft="270dp"
+
+
+        android:text="22"
+        android:textColor="#ccffffff"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_zhang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_shengyu"
+
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="4dp"
+        android:layout_toRightOf="@+id/tv_zhangshu"
+
+        android:text="张"
+        android:textColor="#ccffffff"
+        android:textSize="12sp" />
+
+</RelativeLayout>

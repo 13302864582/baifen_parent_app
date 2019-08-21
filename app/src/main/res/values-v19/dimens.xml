@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 标题栏高度 -->
+    <dimen name="welearn_title_bar_and_status_hight">48dip</dimen>
+    <!-- 状态栏高度 -->
+    <dimen name="welearn_status_bar_height">0dp</dimen>
+
+</resources>

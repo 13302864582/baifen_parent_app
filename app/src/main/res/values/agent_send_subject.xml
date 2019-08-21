@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="no_network">请检查你的网络</string>
+    <string name="homework_check">作业检查</string>
+    <string name="public_homework">发布作业</string>
+    <string name="re_mark">备注</string>
+    <string name="choice_send_person">选择发题者</string>
+
+</resources>

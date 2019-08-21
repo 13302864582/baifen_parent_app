@@ -1,0 +1,40 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/ll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ececec"
+        android:orientation="vertical" >
+
+        <include layout="@layout/welearn_header_view" />
+
+        <LinearLayout
+            android:id="@+id/dots_ll2"
+            android:layout_width="match_parent"
+            android:layout_height="12dp"
+            android:background="#ececec"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+        <com.daxiong.fun.view.MyViewPager
+            android:id="@+id/detail_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="11" />
+
+        <LinearLayout
+            android:id="@+id/homework_asker_info_container"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@color/black"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

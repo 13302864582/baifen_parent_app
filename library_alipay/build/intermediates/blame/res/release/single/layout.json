@@ -1,0 +1,14 @@
+[
+    {
+        "merged": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\build\\intermediates\\res\\merged\\release\\layout\\dialog_alert.xml",
+        "source": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\src\\main\\res\\layout\\dialog_alert.xml"
+    },
+    {
+        "merged": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\build\\intermediates\\res\\merged\\release\\layout\\alipay_title.xml",
+        "source": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\src\\main\\res\\layout\\alipay_title.xml"
+    },
+    {
+        "merged": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\build\\intermediates\\res\\merged\\release\\layout\\alipay.xml",
+        "source": "C:\\Users\\fz\\Documents\\360\\daxiong_studio\\library_alipay\\src\\main\\res\\layout\\alipay.xml"
+    }
+]

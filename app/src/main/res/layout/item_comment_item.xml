@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="92dp"
+    android:background="@color/white"
+    android:orientation="vertical"
+
+    >
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#dddddf" />
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/comm_user_info_layout"
+        android:layout_width="match_parent"
+        android:layout_height="91dp"
+        android:paddingLeft="16dp"
+        android:paddingTop="14dp">
+
+        <ImageView
+            android:id="@+id/comm_user_avatar"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+
+            />
+
+        <TextView
+            android:id="@+id/comm_user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/comm_user_avatar"
+android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/comm_user_avatar"
+            android:gravity="center"
+
+
+            android:textColor="#1e1e1e"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/comm_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comm_user_name"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/comm_user_avatar"
+            android:gravity="center"
+
+
+            android:textColor="@color/welearn_gray"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/comm_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/comm_time"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="14dp"
+            android:layout_toRightOf="@+id/comm_user_avatar"
+
+            android:textColor="#1e1e1e"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+
+        android:background="#dddddf" />
+</LinearLayout>

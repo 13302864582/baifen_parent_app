@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:paddingLeft="22dip"
+        android:paddingRight="22dip" >
+
+        <FrameLayout
+            android:layout_width="85dip"
+            android:layout_height="85dip"
+            android:layout_marginTop="18dp" >
+
+            <ImageView
+                android:id="@+id/pay_answer_take_photo_btn"
+                android:layout_width="63dip"
+                android:layout_height="63dip"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/carema_icon" />
+
+            <ImageView
+                android:id="@+id/pay_answer_question_img_del"
+                android:layout_width="22dip"
+                android:layout_height="22dip"
+                android:layout_gravity="top|right"
+                android:background="@drawable/ic_camera_choice_del_selector"
+                android:contentDescription="@null"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/pay_answer_descript_et_payask"
+            android:layout_width="match_parent"
+            android:layout_height="52dp"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/pay_answer_et_selector"
+            android:hint="@string/text_ask_des"
+            android:maxLength="24"
+            android:paddingLeft="18dp"
+            android:singleLine="true"
+            android:textColor="#6f6f6f"
+            android:textSize="14sp" />
+
+        <RelativeLayout
+            android:id="@+id/choice_fudao_btn_ask"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/pay_answer_et_selector" >
+
+            <TextView
+                android:id="@+id/fudao_tv_ask"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:hint="@string/choice_fudao_text"
+                android:maxLength="24"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="#6f6f6f"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/fudao_iv_ask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/class_more_icon" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout_choice_publisher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/choice_fudao_btn_ask"
+            android:layout_marginTop="25dip"
+            android:background="@drawable/pay_answer_et_selector"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_publisher"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:gravity="center_vertical"
+                android:hint="@string/choice_publisher"
+                android:maxLength="24"
+                android:paddingLeft="18dp"
+                android:singleLine="true"
+                android:textColor="#6f6f6f"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/iv_publiser_arrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="13dp"
+                android:src="@drawable/class_more_icon" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/pay_answer_choice_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dip"
+            android:textColor="#3c3c3c"
+            android:textSize="15sp" />
+
+        <RadioGroup
+            android:id="@+id/pay_answer_subjects_radiogroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="15dp" />
+
+        <TextView
+            android:id="@+id/pay_answer_hint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="77dp"
+            android:text="温馨提示："
+            android:textColor="#ff2a2a"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/pay_answer_hint_content"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:lineSpacingExtra="6dp"
+            android:text="一定要正确选择你在机构报名的科目哦， 否则老师不能回答的。"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</LinearLayout>

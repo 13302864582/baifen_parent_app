@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="52dip" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/pay_answer_user_avatar"
+            android:layout_width="@dimen/pay_answer_user_avatar_size"
+            android:layout_height="@dimen/pay_answer_user_avatar_size"
+            android:layout_marginLeft="16.8dip"
+            android:layout_marginTop="14dip"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_default_avatar" />
+
+        <TextView
+            android:id="@+id/pay_answer_nick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dip"
+            android:layout_marginTop="20dip"
+            android:layout_toRightOf="@id/pay_answer_user_avatar"
+            android:maxWidth="110dp"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:textColor="#302f2f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/pay_answer_credit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="29dip"
+            android:layout_marginTop="20dip"
+            android:textColor="#302f2f"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:id="@+id/pay_answer_role_frameview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip" >
+
+            <TextView
+                android:id="@+id/pay_answer_role"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/new_user"
+                android:textColor="#ff0000"
+                android:textSize="15sp"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/pay_answer_role_viptag"
+                android:layout_width="30dp"
+                android:layout_height="18dp"
+                android:contentDescription="@string/app_name"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_vip_tag"
+                android:visibility="invisible" />
+        </FrameLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5.6dip"
+        android:layout_marginRight="5.6dip"
+        android:background="#ececec" />
+
+    <FrameLayout
+        android:id="@+id/question_subject_img_container"
+        android:layout_width="match_parent"
+        android:layout_height="214dip"
+        android:layout_marginLeft="16.8dip"
+        android:layout_marginRight="16.8dip"
+        android:layout_marginTop="8dip"
+        android:background="@drawable/bg_grab_img" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/pay_answer_question_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="1dip"
+            android:adjustViewBounds="true"
+            android:contentDescription="@null"
+            android:maxHeight="214dip"
+            android:scaleType="fitCenter" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="96dip"
+        android:layout_marginTop="10dip"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/pay_answer_voice_play_container"
+            android:layout_width="165dip"
+            android:layout_height="44dip"
+            android:layout_marginLeft="16.8dip" >
+
+            <ImageView
+                android:id="@+id/pay_answer_voice_play"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/bg_voice_play_selector"
+                android:contentDescription="@null" />
+
+            <ImageView
+                android:id="@+id/pay_answer_ic_play"
+                android:layout_width="15dip"
+                android:layout_height="15dip"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_play2" />
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/pay_answer_desc"
+            android:layout_width="wrap_content"
+            android:layout_height="44dip"
+            android:layout_marginLeft="16.8dip"
+            android:layout_marginRight="16.8dip"
+            android:background="@drawable/bg_voice_play_selector"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:focusable="true"
+            android:ellipsize="marquee"
+            android:marqueeRepeatLimit="marquee_forever"
+            android:textColor="@android:color/white"
+            android:textSize="12.5sp"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dip" >
+
+            <TextView
+                android:id="@+id/pay_answer_grade"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="50dip"
+                android:textColor="#585858"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pay_answer_subject"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12.6dip"
+                android:layout_toRightOf="@id/pay_answer_grade"
+                android:textColor="#585858"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pay_answer_reward_val"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="50dip"
+                android:textColor="#fc1f1f"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/pay_answer_reward"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10.5dip"
+                android:layout_toLeftOf="@id/pay_answer_reward_val"
+                android:text="@string/text_pay_asnwer_reward"
+                android:textColor="#585858"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginLeft="5.6dip"
+        android:layout_marginRight="5.6dip"
+        android:background="#ececec" />
+
+</LinearLayout>

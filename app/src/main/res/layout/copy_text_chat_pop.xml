@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="101dp"
+    android:layout_height="46dp"
+    android:background="@drawable/bg_msg_text_content"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/copy_text_btn_chat"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="@string/text_copy"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/delete_text_btn_chat"
+        android:layout_width="50dp"
+        android:layout_height="46dp"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:text="@string/text_delete_chat"
+        android:textColor="#ffffff"
+        android:textSize="14sp" />
+
+</LinearLayout>

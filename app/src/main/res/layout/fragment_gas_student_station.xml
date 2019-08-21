@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ebebeb"
+    android:clipChildren="false"
+    android:padding="5dp" >
+
+    <com.daxiong.fun.view.XListView
+        android:id="@+id/x_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ip_change_debug_bt"
+        android:layout_below="@+id/func_gridView"
+        android:layout_marginTop="5dp"
+        android:cacheColorHint="@android:color/transparent"
+        android:clipChildren="false"
+        android:divider="@color/answer_list_diver"
+        android:dividerHeight="1dip"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+    <com.daxiong.fun.view.MyGridView
+        android:id="@+id/func_gridView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="#E6FFFFFF"
+        android:listSelector="@color/transparent"
+        android:numColumns="4"
+        android:scrollbars="none"
+        android:scrollingCache="false"
+        android:splitMotionEvents="false" />
+
+    <Button
+        android:id="@+id/ip_change_debug_bt"
+        android:layout_width="match_parent"
+        android:layout_height="56dip"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_add_answer_btn_selector"
+        android:text="改IP"
+        android:textColor="#000000"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white" >
+
+    <include
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/title_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_layout" >
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none" >
+
+            <RelativeLayout
+                android:id="@+id/homework_publish_parent_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="8dp" >
+
+                <TextView
+                    android:id="@+id/tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="@string/student_publish_home_work_add_img_title"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tip_title_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tip_title"
+                    android:layout_marginTop="2dp"
+                    android:singleLine="true"
+                    android:text="@string/student_publish_home_work_add_img_sub_title"
+                    android:textColor="@color/TextColorGray"
+                    android:textSize="12sp" />
+
+                <com.daxiong.fun.view.MyGridView
+                    android:id="@+id/home_work_gridview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tip_title_desc"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="4"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:splitMotionEvents="false" />
+
+                <EditText
+                    android:id="@+id/et_remark"
+                    android:layout_width="match_parent"
+                    android:layout_height="52dp"
+                    android:layout_below="@id/home_work_gridview"
+                    android:layout_marginTop="10dip"
+                    android:background="@drawable/pay_answer_et_selector"
+                    android:hint="@string/re_mark"
+                    android:maxLength="24"
+                    android:paddingLeft="18dp"
+                    android:singleLine="true"
+                    android:textColor="#6f6f6f"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:id="@+id/layout_send_subject_person"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/et_remark"
+                    android:layout_marginTop="25dip"
+                    android:background="@drawable/pay_answer_et_selector" >
+
+                    <TextView
+                        android:id="@+id/tv_choice_send_person"
+                        android:layout_width="match_parent"
+                        android:layout_height="52dp"
+                        android:gravity="center_vertical"
+                        android:hint="@string/choice_send_person"
+                        android:maxLength="24"
+                        android:paddingLeft="18dp"
+                        android:singleLine="true"
+                        android:textColor="#6f6f6f"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_arrow_send_subject_person"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="13dp"
+                        android:src="@drawable/class_more_icon" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/tv_subject_choice_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_send_subject_person"
+                    android:layout_marginTop="30dp"
+                    android:singleLine="true"
+                    android:text="科目选择"
+                    android:textSize="14sp" />
+
+                <RadioGroup
+                    android:id="@+id/rg_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_subject_choice_title"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp" />
+
+                <TextView
+                    android:id="@+id/pay_answer_hint"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_work_subjects_radiogroup"
+                    android:layout_marginTop="77dp"
+                    android:text="温馨提示："
+                    android:textColor="#ff2a2a"
+                    android:textSize="18sp" 
+                    android:visibility="gone"
+                    />
+
+                <TextView
+                    android:id="@+id/pay_answer_hint_content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/pay_answer_hint"
+                    android:layout_marginTop="13dp"
+                    android:lineSpacingExtra="6dp"
+                    android:text="一定要正确选择你在机构报名的科目哦， 否则老师不能回答的。"
+                    android:textColor="#000000"
+                    android:textSize="14sp"
+                     android:visibility="gone"
+                     />
+            </RelativeLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</RelativeLayout>

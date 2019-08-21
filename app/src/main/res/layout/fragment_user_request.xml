@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color"
+    android:orientation="vertical"
+
+    >
+
+    <include layout="@layout/welearn_header_view" />
+
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line"
+            />
+
+        <EditText
+            android:id="@+id/user_request_text"
+            android:layout_width="match_parent"
+            android:layout_height="190dip"
+            android:layout_marginTop="15dip"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:gravity="top"
+            android:paddingLeft="10dp"
+            android:hint="@string/content_too_short"
+            android:inputType="textMultiLine"
+            android:maxLength="200"
+            android:minHeight="100dp"
+            android:text=""
+            android:textSize="14sp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="@color/login_line"
+            />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:visibility="visible">
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/selector_login_btn"
+            android:gravity="center"
+            android:minHeight="40dp"
+            android:text="@string/text_commit"
+            android:textColor="@color/selector_logout_font"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

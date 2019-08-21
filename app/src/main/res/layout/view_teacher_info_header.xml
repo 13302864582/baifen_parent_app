@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/top_parent_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/welearn_detail_head_height"
+        android:layout_below="@+id/header_layout"
+        android:background="@color/welearn_blue_heavy" >
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/tec_info_bg_iv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@color/welearn_blue_heavy"
+            android:scaleType="fitXY" />
+
+        <RelativeLayout
+            android:id="@+id/head_bg_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/head_bg"
+            android:padding="2dp" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/tec_info_head_iv"
+                android:layout_width="@dimen/menu_persion_icon_size"
+                android:layout_height="@dimen/menu_persion_icon_size"
+                android:layout_centerInParent="true"
+                android:src="@drawable/default_contact_image" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/tec_info_nick_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/head_bg_layout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:singleLine="true"
+            android:text="我是昵称"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tec_info_school_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tec_info_nick_tv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="7dp"
+            android:singleLine="true"
+            android:text="高三"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <RelativeLayout
+            android:id="@+id/tec_gold_cridte_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tec_info_school_tv"
+            android:layout_marginTop="7dp" >
+
+            <View
+                android:id="@+id/tec_middle_view"
+                android:layout_width="0.1dp"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:id="@+id/tec_credit_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tec_middle_view"
+                android:background="@drawable/adopt_homework_btn_selector"
+                android:drawableLeft="@drawable/icon_credit"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/tec_answer_count_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tec_middle_view"
+                android:background="@drawable/adopt_homework_btn_selector"
+                android:drawableLeft="@drawable/icon_question"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:minWidth="120dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tec_info_more_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_parent_layout"
+        android:layout_marginBottom="5dp"
+        android:orientation="vertical"
+        android:padding="20dp" >
+
+        <LinearLayout
+            android:id="@+id/tec_good_subject_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#AFAFAF"
+            android:orientation="vertical"
+            android:padding="0.3dp" >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:background="@color/white"
+                    android:minHeight="30dp"
+                    android:padding="5dp"
+                    android:text="@string/good_subjects"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/item_arrow_iv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/menu_arror" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tec_good_subject_xiao_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:text="@string/good_subjects"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tec_good_subject_chu_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:text="@string/good_subjects"
+                android:textSize="14sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tec_good_subject_gao_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F4F4F4"
+                android:gravity="left|center_vertical"
+                android:padding="5dp"
+                android:text="@string/good_subjects"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/org_line1_tecinfo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="-30dp"
+            android:layout_marginTop="12dp"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/org_btn_tecinfo"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:visibility="gone" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="工作："
+                android:textColor="#636363"
+                android:textSize="13sp" />
+
+            <TextView
+                android:id="@+id/org_name_tv_tecinfo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="11"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="他的补习班"
+                android:textColor="#636363"
+                android:textSize="13sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:src="@drawable/class_more_icon" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/org_line2_tecinfo"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#eeeeee"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp" >
+
+            <TextView
+                android:id="@+id/tec_comm_count_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:gravity="left|center_vertical"
+                android:text="@string/tec_info_comm_count"
+                android:textSize="13sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toLeftOf="@+id/tec_start_rb"
+                android:gravity="left|center_vertical"
+                android:text="@string/tec_info_star"
+                android:textSize="13sp" />
+
+            <RatingBar
+                android:id="@+id/tec_start_rb"
+                style="@style/tec_star_RatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center_horizontal"
+                android:clickable="false" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

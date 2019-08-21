@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/welearn_title_bar_and_status_hight"
+        android:background="@color/white"
+
+
+        >
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_alignParentBottom="true"
+            android:background="#dddddf" />
+
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_centerVertical="true"
+            android:padding="15dp"
+            android:src="@drawable/icon_back"
+            android:visibility="gone" />
+
+        <RadioGroup
+            android:id="@+id/radio_group"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:orientation="horizontal"
+            android:visibility="visible">
+
+            <RadioButton
+                android:id="@+id/radio_keyongquan"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_keyongquan_btn"
+                android:button="@null"
+                android:checked="true"
+                android:gravity="center"
+                android:text="可用券"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_guoqiquan"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_guoqiquan_btn"
+                android:button="@null"
+                android:gravity="center"
+
+                android:text="过期券"
+                android:textColor="#f74344"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/radio_suoquan"
+                android:layout_width="75dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_suoquan_btn"
+                android:button="@null"
+                android:gravity="center"
+                android:text="索券"
+                android:textColor="#f74344"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll1"
+        android:layout_width="match_parent"
+        android:layout_height="6.5dp"
+        android:orientation="horizontal"
+        android:visibility="gone"></LinearLayout>
+
+    <com.daxiong.fun.view.XListView
+        android:id="@+id/answer_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6.5dp"
+        android:cacheColorHint="@android:color/transparent"
+
+        android:divider="@color/answer_list_diver"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="false"
+        android:footerDividersEnabled="false"
+        android:headerDividersEnabled="false"
+        android:listSelector="@android:color/transparent"
+        android:scrollbars="none" />
+
+    <TextView
+        android:id="@+id/tv_gengduo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:gravity="center"
+        android:text="没有更多了"
+        android:textColor="#8d8d8d"
+        android:textSize="11sp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/tv_shibai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="230dp"
+        android:gravity="center"
+        android:textColor="#8d8d8d"
+        android:textSize="14sp"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/ll_kongbai"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="您暂时没有可用券，充值可即刻获取"
+            android:textColor="#8d8d8d"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/tv_chongzhi"
+            android:layout_width="77dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/ticket_recharge_btn"
+            android:gravity="center"
+            android:text="立即充值"
+            android:textColor="@drawable/selector_chongzhi_textcolor"
+            android:textSize="12sp" />
+    </LinearLayout>
+</LinearLayout>

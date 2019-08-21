@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="top"
+    android:orientation="vertical"
+    android:background="@color/login_background_color"
+    >
+
+   <View
+       android:layout_width="match_parent"
+       android:layout_height="1dp"
+       />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picker_dialog_height"
+        
+        >
+
+        <LinearLayout
+            android:id="@+id/linear_wheel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/picker_dialog_height"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal"
+            >
+
+            <com.daxiong.fun.function.learninganalysis.pickerview.wheel.WheelView
+                android:id="@+id/year"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"/>
+
+
+            <com.daxiong.fun.function.learninganalysis.pickerview.wheel.WheelView
+                android:id="@+id/month"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"/>
+
+
+            <com.daxiong.fun.function.learninganalysis.pickerview.wheel.WheelView
+                android:id="@+id/day"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"/>
+
+
+            <com.daxiong.fun.function.learninganalysis.pickerview.wheel.WheelView
+                android:id="@+id/hour"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"/>
+
+            <com.daxiong.fun.function.learninganalysis.pickerview.wheel.WheelView
+                android:id="@+id/minute"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1.0"/>
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
+    
+     <include
+        layout="@layout/timepicker_toolbar"
+         android:visibility="visible"
+         />
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/picker_toolbar_height"
+        android:gravity="center|bottom"
+        android:background="@color/white"
+        android:orientation="horizontal"
+        android:paddingBottom="5dp"
+
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:minWidth="100dp"
+            android:background="@drawable/learning_situation_choose_month_concel_btn_normal"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/picker_cancel"
+            android:textColor="@color/colorf74344"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:text="@string/picker_title"
+            android:textColor="@android:color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/tv_sure"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="25dp"
+            android:minWidth="100dp"
+            android:background="@drawable/selector_choose_date_btn"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/picker_sure"
+            android:textColor="@android:color/white"
+            android:textSize="14sp" />
+
+    </LinearLayout>
+
+
+
+
+
+
+</LinearLayout>
+
+

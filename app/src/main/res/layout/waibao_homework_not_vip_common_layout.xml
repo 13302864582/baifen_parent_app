@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/gold_title_ll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/subject_select_tips"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/gold_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:text="悬赏学点"
+            android:textSize="15sp" />
+
+        <Button
+            android:id="@+id/chongzhi_btn"
+            android:layout_width="60dp"
+            android:layout_height="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:background="@drawable/chongzhi_btn_selector" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/gold_title_desc_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gold_title_ll"
+        android:layout_marginTop="2dp"
+        android:singleLine="true"
+        android:text="@string/student_publish_home_work_pay_sub_title"
+        android:textColor="@color/TextColorGray"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gold_title_desc_tv"
+        android:layout_marginTop="15dip"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/home_work_gold_minus_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_minus_price_btn_selector"
+            android:clickable="true"
+            android:contentDescription="@null" />
+
+        <TextView
+            android:id="@+id/home_work_gold_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:gravity="center_horizontal"
+            android:text="1.0"
+            android:textColor="#fb0606"
+            android:textSize="14sp" />
+
+        <ImageButton
+            android:id="@+id/home_work_gold_plus_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_add_price_btn_selector"
+            android:clickable="true"
+            android:contentDescription="@null" />
+    </LinearLayout>
+
+</LinearLayout>

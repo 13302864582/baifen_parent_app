@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <com.daxiong.fun.function.homework.view.TecHomeWorkCheckCommonView
+        android:id="@+id/homework_check_common"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <Button
+            android:id="@+id/grab_btn_homework_check"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/orange_btn_selector"
+            android:gravity="center"
+            android:text="抢"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+
+        <Button
+            android:id="@+id/report_btn_homework_check"
+            android:layout_width="55dp"
+            android:layout_height="20dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/report_btn_homework_selector"
+            android:text="@string/text_report_title"
+            android:textColor="#1c2024"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/change_btn_homework_check"
+            android:layout_width="82dp"
+            android:layout_height="82dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/blue_btn_selector"
+            android:gravity="center"
+            android:text="换"
+            android:textColor="#ffffff"
+            android:textSize="32sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:text="@string/change_homework_text"
+        android:textColor="#636363"
+        android:textSize="12sp" />
+
+</LinearLayout>

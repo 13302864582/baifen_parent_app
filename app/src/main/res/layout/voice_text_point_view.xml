@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="58dip"
+        android:layout_height="58dip" >
+
+        <ImageView
+            android:id="@+id/ic_view_voiceortext"
+            android:layout_width="28dip"
+            android:layout_height="28dip"
+            android:layout_centerVertical="true"
+            android:src="@drawable/v0_11"
+            android:contentDescription="@null"
+            android:gravity="top|right" />
+
+      
+
+        <RelativeLayout
+            android:layout_width="42dip"
+            android:layout_height="15dip"
+            android:layout_alignParentRight="true"
+            android:background="@color/transparent"
+            android:layout_alignParentTop="true" >
+<RelativeLayout
+                android:id="@+id/rl_bc"
+                android:layout_width="42dip"
+                android:layout_height="15dip"
+                android:background="@drawable/t_bt" >
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/ser_num_tv_voiceortext"
+                android:layout_width="13dip"
+                android:layout_height="13dip"
+                android:layout_marginLeft="1dp"
+                android:background="@drawable/num"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="10sp" />
+            <TextView
+                android:id="@+id/tv_subtype"
+                android:layout_width="wrap_content"
+                android:layout_height="15dip"
+                android:layout_marginLeft="1dp"
+                android:layout_centerVertical="true"
+                 android:layout_marginRight="3dp"
+                android:contentDescription="@null"
+                android:gravity="center"
+                android:layout_alignParentRight="true"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</FrameLayout>

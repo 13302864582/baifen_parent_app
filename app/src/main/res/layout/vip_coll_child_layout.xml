@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:clickable="true" >
+
+    <LinearLayout
+        android:id="@+id/product_linear"
+        android:layout_width="match_parent"
+        android:layout_height="33dp"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:background="@drawable/choice_subject_selector"
+         >
+
+        <TextView
+            android:id="@+id/combo_product_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="10dp"
+            android:ellipsize="end"
+            android:paddingLeft="20dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:text=""
+            android:textColor="@color/gray_black"
+            android:textSize="15sp" 
+            android:lineSpacingExtra="13dp"
+            />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.01dp"
+        android:layout_gravity="bottom"
+        android:background="@color/gray" 
+        android:visibility="gone"
+        >
+    </View>
+
+</FrameLayout>

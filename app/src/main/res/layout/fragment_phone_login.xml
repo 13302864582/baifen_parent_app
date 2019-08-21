@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        layout="@layout/welearn_header_view"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/login_background_color"
+        android:fillViewport="true"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#f1f1f1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="75dp"
+                android:layout_height="75dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="35dp"
+                android:src="@drawable/ic_login_logo"
+                android:visibility="visible" />
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="40dp"
+                android:background="@color/white">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:background="@color/login_line" />
+
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_phone"
+                    android:drawablePadding="3dp"
+                    android:hint="@string/login_username"
+                    android:inputType="number"
+                    android:maxLength="14"
+                    android:minHeight="50dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_alignLeft="@id/et_phoneno"
+                    android:layout_below="@id/et_phoneno"
+                    android:background="@color/login_line" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white">
+
+                <com.daxiong.fun.view.edittext.ClearEditText
+                    android:id="@+id/et_pwd"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginLeft="15dp"
+                    android:paddingRight="10dp"
+                    android:background="@null"
+                    android:drawableLeft="@drawable/icon_suo"
+                    android:drawablePadding="3dp"
+                    android:hint="@string/login_password"
+                    android:inputType="textPassword"
+                    android:maxLength="15"
+                    android:minHeight="50dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textColorHint="@color/login_input_color"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="fill_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_below="@id/et_pwd"
+                    android:background="@color/login_line" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="30dp"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1111"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/los_psw_tv_phonelogin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:textColor="@color/login_forget_pwd_textcolor"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/phone_login_btn_phonelogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="0dp"
+                    android:background="@drawable/selector_login_btn"
+                    android:text="@string/text_login"
+                    android:textColor="@drawable/selector_login_btn_textcolor"
+                    android:textSize="17sp" />
+
+                <Button
+                    android:id="@+id/non_num_tv_phonelogin"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/selector_register_btn"
+                    android:clickable="true"
+                    android:enabled="true"
+                    android:focusable="true"
+                    android:text="@string/register_str"
+                    android:textColor="@color/selector_register_btn_font"
+                    android:textSize="17sp" />
+
+                <ImageView
+                    android:layout_width="9dp"
+                    android:layout_height="13dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="4dp"
+                    android:layout_toRightOf="@id/non_num_tv_phonelogin"
+                    android:src="@drawable/ic_choic_jiantou"
+                    android:visibility="gone" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/btn_modify_ip"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="35dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="修改ip"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/btn_service_tel"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginBottom="35dp"
+                android:gravity="center_horizontal|bottom"
+                android:text="全国服务电话: 400-6755-222"
+                android:textColor="@color/login_forget_pwd_textcolor"
+                android:visibility="visible" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

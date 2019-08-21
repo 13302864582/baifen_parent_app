@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    &lt;!&ndash;<item android:drawable="@color/colore5e5e5" android:state_focused="true" />&ndash;&gt;
+
+    &lt;!&ndash;<item android:drawable="@color/colore5e5e5" android:state_enabled="false" android:state_pressed="true" />&ndash;&gt;
+
+    &lt;!&ndash;<item android:drawable="@color/white" />-->
+
+
+    <item android:drawable="@color/colore5e5e5" android:state_pressed="true"/>
+
+    <item android:drawable="@color/white"/>
+
+
+
+</selector>

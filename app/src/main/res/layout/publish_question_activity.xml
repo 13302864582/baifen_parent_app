@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_background_color"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/welearn_header_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:id="@+id/homework_publish_parent_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="0dp">
+
+
+            <!--第一部分start-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="@string/publish_question_photo_tip"
+                    android:textColor="@color/color1e1e1e"
+                    android:textStyle="bold"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="@string/publish_question_photo_tip_more"
+                    android:textColor="@color/color8d8d8d"
+                    android:textSize="12sp" />
+
+                <FrameLayout
+                    android:layout_width="65dip"
+                    android:layout_height="65dip"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/pay_answer_take_photo_btn"
+                        android:layout_width="65dip"
+                        android:layout_height="65dip"
+                        android:layout_gravity="center"
+                        android:contentDescription="@null"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/publish_add_image_selector"
+
+                        />
+
+                    <ImageView
+                        android:id="@+id/pay_answer_question_img_del"
+                        android:layout_width="15dip"
+                        android:layout_height="15dip"
+                        android:layout_gravity="bottom|right"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/ic_camera_choice_del_selector"
+                        android:contentDescription="@null"
+                        android:visibility="gone" />
+                </FrameLayout>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:background="@color/login_line" />
+            <!--第一部分end-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login_line" />
+            <!--第二部分start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_choice_publisher"
+                    android:layout_marginRight="10dp"
+                    android:singleLine="true"
+                    android:text="学科"
+                    android:textStyle="bold"
+                    android:textColor="@color/color1e1e1e"
+                    android:textSize="16sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:singleLine="true"
+                    android:text="@string/publish_question_subject_tip_more"
+                    android:textColor="@color/color8d8d8d"
+                    android:textSize="12sp" />
+
+                <RadioGroup
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/home_work_subject_choose_title"
+                    android:layout_marginBottom="8dp"
+                    android:orientation="horizontal"
+                    android:paddingTop="15dp"
+                    android:visibility="gone" />
+
+
+                <com.daxiong.fun.view.MyGridView
+                    android:id="@+id/rg_subject"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_below="@id/home_work_subject_choose_title"
+                    android:layout_marginBottom="5dp"
+                    android:layout_marginTop="5dp"
+                    android:cacheColorHint="#00000000"
+                    android:listSelector="@color/transparent"
+                    android:numColumns="3"
+                    android:paddingLeft="0dp"
+                    android:paddingRight="0dp"
+                    android:scrollbars="none"
+                    android:scrollingCache="false"
+                    android:splitMotionEvents="false" />
+
+            </LinearLayout><!--第二部分end-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/login_line" />
+
+
+            <!--第三部分start-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/login_line" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="0dp"
+                android:background="@color/white"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:id="@+id/tip_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="0dp"
+                    android:singleLine="true"
+                    android:text="想对老师说什么"
+                    android:textStyle="bold"
+                    android:textColor="@color/color1e1e1e"
+                    android:textSize="16sp" />
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="5dip"
+                    android:background="@drawable/bg_talkteacher"
+                    android:gravity="left"
+                    android:hint="@string/text_ask_des"
+                    android:maxLength="24"
+                    android:minHeight="60dp"
+                    android:padding="5dp"
+                    android:paddingLeft="18dp"
+                    android:singleLine="true"
+                    android:textColor="@color/color1e1e1e"
+                    android:textSize="14sp" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_marginTop="0dp"
+                android:background="@color/login_line" />
+
+            <!--第四部分start-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="0dp"
+                >
+
+                <TextView
+                    android:id="@+id/tv_fudaoquan_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textColor="@color/color8d8d8d"
+                    android:textSize="11sp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_fudaoquan_tip"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="您可拨打400-6755-222 "
+                        android:textColor="#828282"
+                        android:textSize="11sp" />
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="或"
+                        android:textColor="#828282"
+                        android:textSize="11sp"
+                         />
+
+                    <TextView
+                        android:id="@+id/tv_chongzhi_tip"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text='"充值"'
+                        android:textColor="@color/colorf74344"
+                        android:textSize="11sp" />
+                </LinearLayout>
+            </LinearLayout>
+            <!--第四部分end-->
+
+            <include
+                android:id="@+id/layout_fudaoquan"
+                layout="@layout/layout_parent_fudaoquan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <Button
+                android:id="@+id/btn_publish_question"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/selector_login_btn"
+                android:text="@string/publish"
+                android:textColor="@drawable/selector_xiadingdan_btn_textcolor"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

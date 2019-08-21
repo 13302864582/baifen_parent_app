@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_grab_dialog"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e8000000" >
+
+    <RelativeLayout
+        android:id="@+id/yaoyiyao_container_grabred"
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/red_circle_icon"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_horizontal"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/zanzhushang_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:textColor="#fffba4"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="摇一摇抢红包"
+                android:textColor="#ffffff"
+                android:textSize="25sp" />
+
+            <TextView
+                android:id="@+id/haisheng_ci_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="还剩3次机会"
+                android:textColor="#fffba4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tomorrow_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center_horizontal"
+                android:singleLine="true"
+                android:text="明天继续"
+                android:textColor="#fffba4"
+                android:textSize="30sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cancel_btn_grab"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/cancel_btn_red_selector" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/result_container_grabred"
+        android:layout_width="240dp"
+        android:layout_height="320dp"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="320dp"
+            android:layout_centerInParent="true"
+            android:background="@mipmap/ic_launcher"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/result_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="130dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="遗憾"
+                android:textColor="#fffba4"
+                android:textSize="65sp" />
+
+            <TextView
+                android:id="@+id/resultmsg_text_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/result_text_tv"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="#fffba4"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/tips_text_tv_grabred"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/resultmsg_text_tv"
+                android:layout_marginTop="8dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/tips_grabred_text"
+                android:textColor="#fffba4"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/cancel_btn_open"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="40dp"
+            android:src="@drawable/cancel_btn_red_selector" />
+    </RelativeLayout>
+
+</RelativeLayout>

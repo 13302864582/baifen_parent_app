@@ -1,0 +1,6 @@
+include ':app', ':library_mpchart', ':library_waterWaveProgress'
+include ':library_alipay'
+include ':library_cropper'
+include ':library_viewpagerindicator'
+include ':library_volley'
+include ':library_websocketclient'

@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">大熊作业</string>
+    <!-- <string name="menu_settings">Settings</string> -->
+    <string name="search_hint"></string>
+    <string name="version_format_str">V%s</string>
+    <string name="text_ok">确定</string>
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载. . .</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="goip_120_text">192.168.1.100:7001</string>
+    <string name="pyip_120_text">192.168.1.100:6000</string>
+    <string name="goip_172_text">192.168.1.100:7001</string>
+    <string name="pyip_172_text">192.168.1.100:6000</string>
+    <string name="shang">172.16.1.15:10000</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <!-- 名师课程模块 -->
+    <string name="masters_course">微课辅导</string>
+    <string name="course_details">课程详情</string>
+    <string name="buy_course">购买课程</string>
+    <string name="add_handout_view_text">在关键步骤旁的空白位置，点击，添加追问</string>
+    <string name="tec_course_tag_text">新时代的省心辅导模式</string>
+    <string name="add_course_title_text">添加课程</string>
+    <string name="purchase_student_title_text">已购学生</string>
+    <string name="upload_class_text">上传课时</string>
+    <string name="edit_class_text">编辑课时</string>
+    <string name="class_catalog_title_text">课时目录</string>
+    <string name="save_text">"保存"</string>
+    <string name="submit_text">"提交"</string>
+    <string name="knowledge_query">知识点</string>
+    <string name="add_handout_view_text1">温馨提示：</string>
+    <string name="add_handout_view_text2">请在讲义旁边随意点击，可添加语音或文字</string>
+    <string name="done_this_page_text">完成本页</string>
+    <string name="click_to_record_text">请点击开始录音</string>
+    <string name="recording_text">录音中...</string>
+    <string name="click_to_stop_text">点击停止录音</string>
+    <string name="saving_record_text">保存录音中...</string>
+
+    <!-- 作业检查模块 -->
+
+    <string name="homework_check_common_credit_text">信用：%s</string>
+    <string name="homework_check_title_text">作业检查</string>
+    <string name="homework_detail_title_text">作业详情</string>
+    <string name="single_homework_title_text">单题批注</string>
+    <string name="homework_check_ask_time_text">2分钟前</string>
+    <string name="homework_check_answer_time_text">完成时间：s%</string>
+    <string name="submit_homework_check_text">提交作业检查</string>
+    <string name="goto_this_homework_check_text">进入作业检查</string>
+    <string name="time_limit_homework_check_text1">作业检查限时</string>
+    <string name="time_limit_homework_check_text2">分钟，还剩</string>
+    <string name="time_limit_homework_check_text3">分钟</string>
+    <string name="homewrok_hall_title_text">作业大厅</string>
+    <string name="my_homework_title_text">我的作业检查</string>
+    <string name="my_checkhomework_title_text">我检查的作业</string>
+    <string name="fabu_homewrok_btn_text">发布作业</string>
+    <string name="answer_quality_text">详细程度%s星</string>
+    <string name="answer_time_text">%s分钟解决</string>
+    <string name="desc_homework_text">请老师详细给出解题过程哦~~</string>
+    <string name="change_homework_text">诚信抢答，抢到后放弃作答将被扣除1个信用</string>
+    <string name="detail_homework_desc_text">请在单题位置点击，评估答案是否正确</string>
+    <string name="detail_homework_desc2_text">请评估此题答案</string>
+    <string name="ask_num_text">作业检查次数：%s</string>
+    <string name="answer_num_text">检查作业次数：%s</string>
+    <string name="help_info_text1">1：答案正确，可以描述本题知识点或者表扬鼓励学生。答案错误，请拍照上传纸面解题过程</string>
+    <string name="help_info_text2">2：此页面专属本题，你可以随意位置打点讲解本题</string>
+    <string name="help_info_text3">3：长按某个注释，即可删除</string>
+    <string name="help_info_text_wrong1">1：你可以在关键步骤点击讲解本题</string>
+    <string name="help_info_text_wrong2">2：长按某个注释，即可删除</string>
+    <string name="check_point_view_text1">请在关键步骤点击</string>
+    <string name="check_point_view_text2">添加语音/文字讲解</string>
+    <string name="collect_homework_text">收藏</string>
+    <string name="collect_homework_text_quxiao">取消收藏</string>
+    <string name="please_evaluate_tec_lessons">请评价老师此次的讲解</string>
+    <string name="please_add_comment">填写评论</string>
+    <string name="go_back_text">返回</string>
+    <string name="apply_arbitration_text">申请仲裁</string>
+    <string name="giveup_arbitration_text">放弃仲裁</string>
+    <string name="study_analysis_text">分析</string>
+    <string name="this_analysis_text">本次分析</string>
+    <string name="month_analysis_title_text">月度学情分析</string>
+    <string name="month_analysis_text">月度分析</string>
+    <string name="s_type_wrong_text">S型（技巧型）错题</string>
+    <string name="s_type_wrong_num_text">S型错题合计：</string>
+    <string name="k_type_wrong_text">K型（知识点型）错题</string>
+    <string name="k_type_wrong_num_text">K型错题合计：</string>
+    <string name="look_homework_text">查看作业</string>
+    <string name="userid_text">学号：%d</string>
+    <string name="grabred_times_text">还剩%d次机会</string>
+    <string name="share_title">大熊作业-学情分析</string>
+    <string name="share_desc">作业辅导不犯愁，让孩子成绩好起来！</string>
+    <string name="tips_grabred_text">学点已经自动存入您的账户</string>
+    <string name="search_timu_text_hint">请输入题目ID/考点关键字搜索</string>
+    <string name="search_timu_text">按考题ID/考点关键字搜索：</string>
+    <string name="search_timu_text2">按考点条件搜索：</string>
+    <string name="grade_text1">初一</string>
+    <string name="grade_text2">初二</string>
+    <string name="grade_text3">初三</string>
+    <string name="grade_text4">高一</string>
+    <string name="grade_text5">高二</string>
+    <string name="grade_text6">高三</string>
+    <string name="text_ask_des">麻烦老师解答下，谢谢老师。(24个字之内)</string>
+    <string name="choice_fudao_text">选择辅导机构</string>
+    <string name="choice_publisher">选择发题者</string>
+    <string name="text_qa_hall">问答广场</string>
+    <string name="text_qa_hall_tag1">火热问答，累计答疑</string>
+    <string name="text_qa_hall_tag3">道</string>
+    <string name="text_pay_answer">悬赏问答</string>
+    <string name="text_ask_title">难题答疑</string>
+    <string name="text_question_submit">发布问题</string>
+    <string name="text_question_submiting">正在发布问题,请稍候</string>
+    <string name="text_pay_answer_price">悬赏价格</string>
+    <string name="text_pay_answer_price_tips">*1个学点等于1块钱，价格太低可能导致答题较慢！</string>
+    <string name="text_pay_answer_alert">一次问一题，拍整张试卷的将被直接删除！</string>
+    <string name="text_pay_answer_alert_tips">*温馨提示：一次问一题，拍整张试卷的将被直接删除！</string>
+    <string name="text_pay_answer_alert_tips_subject">*温馨提示：选错科目可能会被举报，被举报会被直接删除</string>
+    <string name="text_grade_subject_choice">选择擅长科目(可多选)</string>
+    <string name="text_campus_scenery">校园风光</string>
+    <string name="text_campus_scenery_tip">征集校园风采照</string>
+    <string name="text_my_qpad">我的问答</string>
+    <string name="text_my_qpad_stu">我的提问</string>
+    <string name="text_my_qpad_tea">我的回答</string>
+    <string name="text_excellent_selction">历年考题</string>
+    <string name="text_gold_selction">我的学点</string>
+    <string name="text_current_gold">当前余额</string>
+    <string name="text_pay_asnwer_reward">酬金: </string>
+    <string name="text_login">登录</string>
+    <string name="text_login_by_qq">QQ直接登录</string>
+    <string name="text_login_by_qq_1">QQ登录</string>
+    <string name="text_login_by_phone">手机登录</string>
+    <string name="text_login_regist_by_phone">手机号/学号登录</string>
+    <string name="text_login_tips_title">*温馨提示：</string>
+    <string name="text_login_tips_content1">大学生请登录</string>
+    <string name="text_login_tips_content2">huoyanzuoye.com</string>
+    <string name="text_login_tips_content3">进行认证后，方可登录使用。</string>
+    <string name="text_pay_gold">充值</string>
+    <string name="text_friend_gold">邀请好友</string>
+    <string name="text_dayday_signin">天天签到</string>
+    <string name="text_report">请选择举报类型</string>
+    <string name="text_report_desc">如果举报正确，奖励一个学点，反之扣除一个学点一个信用</string>
+    <string name="text_report_success">举报成功</string>
+    <string name="text_report_title">举报</string>
+    <string name="text_unlogin">用户没有登录！</string>
+    <string name="grade_choice_text">年级选择：</string>
+    <string name="subject_choice_text">科目选择：</string>
+    <string name="chapter_choice_text">章节选择：</string>
+    <string name="kpoint_choice_text">知识点选择：</string>
+    <string name="search_timu_btn_text">查找考题</string>
+    <string name="all_text">全部</string>
+    <string name="text_report_reason1">图片与提问无关</string>
+    <string name="text_report_reason2">图片看不清或不完整</string>
+    <string name="text_report_reason3">一次提问超过一题</string>
+    <string name="text_report_reason4">年级与科目设置有误</string>
+    <string name="text_excellent_selction_tip_student">名校大学生讲解，思路胜过任何教辅</string>
+    <string name="text_excellent_selction_tip_teacher">一题多讲，最好的家教备课助手</string>
+    <string name="text_pay_answer_tip_teacher">赚快钱，50个学点可提现</string>
+    <string name="text_dayday_signin_tip">连续签到可领更多学点</string>
+    <string name="text_pay_answer_tip_student">15分钟解决难题，追问不限次</string>
+    <string name="text_gold_not_less">签到分享领学点，当前可用学点</string>
+    <string name="text_my_qpad_tip_student">我的学习记录和同学们关心的问题</string>
+    <string name="text_my_qpad_tip_teacher">向学生和家长证明你的辅导能力</string>
+    <string name="text_pay_answer_grab_tip">诚信抢题，抢到题目后如放弃，将扣除一个信用。</string>
+    <string name="text_question_description">请给出详细的解答过程哦~</string>
+    <string name="text_grab_title">抢题</string>
+    <string name="text_grab_answer_submit_area">答案提交区</string>
+    <string name="text_grab_item_submit">提交答案</string>
+    <string name="text_camera_popupwindow_photo">拍照</string>
+    <string name="text_camera_popupwindow_alnum">从相册中获取</string>
+    <string name="text_resend_popupwindow_resend">重发</string>
+    <string name="text_camera_popupwindow_cancel">取消</string>
+    <string name="text_album">相册</string>
+    <string name="text_take_photo">拍照</string>
+    <string name="text_nav_submit">确定</string>
+    <string name="text_nav_cancel">取消</string>
+    <string name="text_photo_view_tip">在每个关键步骤空白位置, 长按,添加语音/文字讲解</string>
+    <string name="text_toast_have_not_enough">sdcard没有多余的空间，请清除部分文件后再试</string>
+    <string name="text_toast_sdcard_not_available">没有找到SD卡，请重试</string>
+    <string name="text_toast_grade_subject_choice">请选择擅长的科目</string>
+    <string name="text_toast_grade_question_robbed">该题目已被抢走，请换题</string>
+    <string name="text_toast_svr_error">服务器错误</string>
+    <string name="text_toast_not_answer">请先长按图片输入文字或语音答案</string>
+    <string name="text_toast_send_answer_error">发送答案失败，请重试</string>
+    <string name="text_toast_send_answer_ing">正在提交，请稍候</string>
+    <string name="text_toast_append_answer_ing">正在提问，请稍候</string>
+    <string name="text_toast_querying_question">正在选题，请稍候！</string>
+    <string name="text_toast_can_not_connect">无法连接服务器</string>
+
+    <string name="text_toast_select_subject">请选择问题所属科目</string>
+    <string name="select_fudao_toast_text">请选择辅导机构</string>
+    <string name="text_toast_upload_question_pic">请上传问题图片</string>
+    <string name="text_toast_empty_msgcontent">聊天消息不能为空</string>
+    <string name="text_toast_already_praise">您已经点过赞了</string>
+    <string name="text_del_msg_list_item">删除该聊天</string>
+    <string name="text_del_msg_with_name">是否删除与%s的聊天？</string>
+    <string name="text_send_timeout">发送超时</string>
+    <string name="text_image_saved_path">图片成功保存至:%s</string>
+    <string name="text_commit_timeout">提交超时</string>
+    <string name="text_commit_failed_please_retry">上传超时，请重新提交</string>
+    <string name="text_commit_success">提交答案成功!</string>
+    <string name="text_answer_timeout_question_well_be_back">回答超时，该问题已重新放入抢题池。</string>
+    <string name="text_file_not_exists">文件不存在</string>
+    <string name="text_please_choose_satisfaction">请先选择满意度</string>
+    <string name="text_read_count">%s看过</string>
+    <string name="text_minutes_to_answer">%s分钟解决</string>
+    <string name="text_question_id_format">%1$s&#032;%2$s&#032;&#032;&#032;题号:%3$s</string>
+    <string name="text_send_confirm">确认发送</string>
+    <string name="text_image_not_exists">该图片不存在</string>
+    <string name="text_report_unleagal_pic">违法图片</string>
+    <string name="text_report_no_question_pic">非问题图片</string>
+    <string name="text_report_more_question_pic">一次问多个问题</string>
+    <string name="text_toast_append_ask">请添加你要追问的问题</string>
+    <string name="text_dialog_alarm">提示</string>
+    <string name="text_question_photo_view_tip">用手指在屏幕滑动,选中问题区域</string>
+    <string name="text_add_voiceanswer_dialog_tips">按步骤语音思路讲解</string>
+    <string name="text_say_touch">按住大声说话</string>
+    <string name="text_btn_cancel">取消</string>
+    <string name="text_btn_confirm">确定</string>
+    <string name="text_btn_record">重录</string>
+    <string name="text_commit_answer_btn">提交答案</string>
+    <string name="text_toast_abour_answer">是否放弃回答的答案与思路？</string>
+    <string name="text_grade_primary">小学</string>
+    <string name="text_grade_middle">初中</string>
+    <string name="text_grade_high">高中</string>
+    <string name="text_subject_english">英语</string>
+    <string name="text_subject_math">数学</string>
+    <string name="text_subject_physical">物理</string>
+    <string name="text_subject_chemistry">化学</string>
+    <string name="text_subject_biology">生物</string>
+
+    <string name="text_grade">年级：</string>
+    <string name="text_subject">科目</string>
+    <string name="text_subject_all">所有</string>
+    <string name="text_be_resolved">待解决</string>
+    <string name="text_commit">提交</string>
+    <string name="text_dialog_tips_del_carmera_frame">是否进行删除？</string>
+    <string name="text_dialog_tips_give_up">您确认放弃吗？将扣除一个信用！</string>
+    <string name="text_dialog_sure_answer">是否确定已经回答解释清楚？</string>
+    <string name="text_dialog_submit_answer">是否确认提交答案？</string>
+    <string name="text_answer_list_tab_text_questions">同级问题</string>
+    <string name="text_answer_list_tab_text_collection">我的问题</string>
+    <string name="text_idea">思路</string>
+    <string name="text_teacher_answer">学长讲解</string>
+    <string name="text_student_question">学生问题</string>
+    <string name="text_same_grade_question">同级问题</string>
+    <string name="text_my_question">我的问题</string>
+    <string name="text_one_qus_more_ans">历年考题</string>
+    <string name="text_my_collect">我的收藏</string>
+    <string name="text_fast_use">[快用]</string>
+    <string name="text_dialog_tips_adopt">确定采纳该答案?</string>
+    <string name="text_dialog_tips_refuse">确定拒绝该答案?</string>
+    <string name="text_dialog_tips_arbitration_apply">确定对该答案进行仲裁？</string>
+    <string name="text_dialog_tips_arbitration_abour">确定放弃对该答案的仲裁吗？</string>
+    <string name="text_knowledge_point">知识点</string>
+    <string name="text_knowledge_all">全部</string>
+    <string name="text_show_tips">显示点注</string>
+    <string name="text_hide_tips">隐藏点注</string>
+    <string name="text_loading_data">正在加载数据</string>
+    <string name="text_no_question">暂时没有此类例题</string>
+    <string name="text_question_just_have">此类只有本页&#032;%s&#032;个例题</string>
+    <string name="text_input_voice_explain">请输入语音讲解</string>
+    <string name="text_no_audio_play">没有可播放的音频</string>
+    <string name="text_input_voice_btn">请按住说话</string>
+    <string name="text_toast_quit">按两下退出大熊作业</string>
+    <string name="text_subject_choice_with_grade">请选择科目 ：(%1$s)</string>
+    <string name="text_choice_grade">请选择年级</string>
+    <string name="text_take_photo_for_ask">拍照问题题目</string>
+    <string name="text_del_question_pic">确定删除问题图片吗？</string>
+    <string name="text_image_processing">图像处理</string>
+    <string name="text_retake">重拍</string>
+    <string name="text_cancel_send">松开手指，取消滑动</string>
+    <string name="text_cancel_end">松开结束</string>
+    <string name="text_append_ask">追问</string>
+    <string name="text_adopt">采纳</string>
+    <string name="text_effect">答题思路：</string>
+    <string name="text_attitude">讲解态度：</string>
+    <string name="refuse_text">拒绝</string>
+    <string name="text_abour">拒绝</string>
+    <string name="text_arbitration_apply">申请仲裁</string>
+    <string name="text_arbitration_abour">放弃仲裁</string>
+    <string name="text_reply">回答的问题</string>
+    <string name="text_check">批改的作业</string>
+    <string name="text_default_audio">[语音]</string>
+    <string name="text_default_image">[图片]</string>
+    <string name="text_status_grabing">正在抢答中</string>
+    <!-- <string name="text_tittle_role_choice">大熊作业-角色选择</string> -->
+    <string name="text_audio_is_playing_please_waiting">语音讲解正在下载中，请稍候······</string>
+    <string name="text_slide_the_screen_to_crop">在屏幕滑动进行裁剪</string>
+    <string name="contact_person_info">个人主页</string>
+    <string name="modify_info_text">修改资料</string>
+    <string name="my_info_text">基本资料</string>
+    <string name="contact_add_friend">添加朋友</string>
+    <string name="fiter_title_text">历年考题集</string>
+    <string name="contact_unknow">陌生人</string>
+    <string name="contact_unfocus">删除好友</string>
+    <string name="contact_focus">添加好友</string>
+    <string name="contact_friend">好友</string>
+    <string name="contact_reward">悬赏</string>
+    <string name="contact_gold">学点：</string>
+    <string name="contact_gredit">信用：</string>
+    <string name="contact_relation">个学伴</string>
+    <string name="contact_userid">ID：</string>
+    <string name="contact_format_userid">%1$s【%2$s】</string>
+    <string name="contact_name">昵称：</string>
+    <string name="contact_talkwithhe">与Ta沟通</string>
+    <string name="contact_area">地区：</string>
+    <string name="contact_qpane">的问答</string>
+    <string name="contact_check">的批改</string>
+    <string name="contact_base_setting">基本信息</string>
+    <string name="sextype_man">男</string>
+    <string name="sextype_women">女</string>
+    <string name="sextype_unknown">未知</string>
+    <string name="edulevel1">大专</string>
+    <string name="edulevel2">本科</string>
+    <string name="edulevel3">硕士</string>
+    <string name="edulevel4">博士</string>
+    <string name="modifyinfosuccessful">修改成功！</string>
+    <string name="modifyinfofailed">修改失败！</string>
+    <string name="modifyinfo">数据正在提交……</string>
+    <string name="contact_edit">修改</string>
+    <string name="student_id">学号：%s</string>
+    <string name="welearn_id">辅导号：</string>
+    <string name="welearn_id_text">辅导号：%s</string>
+    <string name="credit_text">经验值：%s</string>
+    <string name="org_id_text">机构号：%s</string>
+    <string name="avatar">头像</string>
+    <string name="nickname">昵称</string>
+    <string name="base_settings">基本设置</string>
+    <string name="sex">性别：</string>
+    <string name="total_cast">累计花费学点</string>
+    <string name="good_subjects">擅长科目</string>
+    <string name="job_experience">从业经历</string>
+    <string name="name">名字</string>
+    <string name="text_education_student1">真人互动讲解，理解当然更透彻</string>
+    <string name="text_education_student2">一题多讲，（电子）题库的终结者</string>
+    <string name="text_education_teacher1">一分钟玩转大熊作业</string>
+    <string name="text_education_teacher2">大熊作业，让大学生坐着把钱赚了！</string>
+    <string name="login_message_show">要先登陆才能问他/她问题！</string>
+    <string name="network_connect_fail_msg">网络轻轻波动，连接有点不稳 :-)</string>
+    <string name="about1">"         大熊作业是第一款为家长开发的家庭作业辅导应用。旨在为家长提供一个标准化的家庭作业辅导工具，极大降低家长辅导作业的难度，极大提升辅导效率。"</string>
+    <string name="about2">"		  有了大熊作业，家长只需要把整页作业拍上去就好。拍完后15分钟内，专业老师会在线对每道题都检查，每个错题都详细讲解，每周有专属学管师根据作业情况向家长反馈学习问题以及改进建议，让家长心中有数。"</string>
+    <string name="about3">"		  大熊作业就是家长的作业检查助手，学生的作业辅导朋友。"</string>
+    <string name="text_teacher">老师</string>
+    <string name="you_are_not_a_parents">你不是家长，请使用家长客户端</string>
+    <string name="system_setting_open">开</string>
+    <string name="system_setting_close">关</string>
+    <string name="invite_code">邀请码</string>
+    <string name="invite_ad">邀请1个好友得1学点！</string>
+    <string name="invite_id">邀请ID：</string>
+    <string name="invite_achievement">邀请成就</string>
+    <string name="invite_tips">（将使用你的用户ID作为邀请码）</string>
+    <string name="invite_friends_count">成功邀请%s位</string>
+    <string name="invite_directed_to_invite">定向邀请</string>
+    <string name="invite_wechat_friends">微信好友</string>
+    <string name="invite_qq_friends">QQ好友</string>
+    <string name="invite_share">分享邀请</string>
+    <string name="invite_circle_of_friends">朋友圈</string>
+    <string name="invite_q_zone">QQ空间</string>
+    <string name="invite_desc">高效、透彻、热情的数理化作业辅导神器！邀请码：%s，谢啦</string>
+    <string name="invite_title">大熊作业-邀请码：%s</string>
+    <string name="invite_error">分享出错</string>
+    <string name="invite_success">分享成功</string>
+    <string name="invite_cancel">分享取消</string>
+    <string name="invite_commit_failed_retry">提交失败，请重试</string>
+
+    <string name="pay_ad">充得多，送得多！</string>
+    <string name="pay_use_alipay_union">推荐使用支付宝、银行卡充值</string>
+    <string name="pay_use_alipay">支付宝充值</string>
+    <string name="pay_use_union">银行卡充值</string>
+    <string name="pay_use_phone_card">手机充值卡</string>
+    <string name="pay_weixin">微信支付</string>
+    <string name="pay_use_phone_card_tips">(温馨提示:手机卡充值,运营商将收取10%手续费)</string>
+    <string name="pay_input_phone_card_snum">请输入充值卡序列号：</string>
+    <string name="pay_input_phone_card_num">充值卡号</string>
+    <string name="pay_input_phone_card_password">请输入充值卡密码：</string>
+    <string name="pay_recharge_password">充值密码</string>
+    <string name="pay_input_denomination">请输入充值卡面额：</string>
+    <string name="pay_denomination_hint">充值卡面额（如：30,50,100）</string>
+    <string name="pay_now">立即充值</string>
+    <string name="pay_tips_title">温馨提示：</string>
+    <string name="pay_tips_select_count">请先选择要充值的学点数量</string>
+    <string name="pay_user_x_pay">用户%s学点充值</string>
+    <string name="getting_prepayid">正在获取预支付订单...</string>
+    <string name="pay_for_others_user_x_pay">用户%1$s为用户%2$s学点充值</string>
+    <string name="recharge">充值</string>
+    <string name="phonecard_pay_text1">1、请务必使用面额大于当前充值金额的充值卡，否则会导致支付不成功。</string>
+    <string name="phonecard_pay_text11">1、请务必使用与此面额相同的充值卡，否则会导致支付不成功，或支付金额丢失。（使用100元的充值卡但选择50元，高于50元部分不返还；使用50元充值卡但选择100元，支付失败。）</string>
+    <string name="phonecard_pay_text2">2、如充值卡面额大于等于当次充值金额，充值卡余额将保留在当前充值卡中，建议充值金额与充值卡面额保持一致，避免不必要的损失。</string>
+    <string name="menu_recharge">学点充值</string>
+    <string name="menu_microcoach">微课辅导</string>
+    <string name="menu_my_ask">我的提问</string>
+    <string name="menu_my_homework">我的作业检查</string>
+    <string name="menu_my_fudaoquan">我的辅导券</string>
+    <string name="menu_learning_situation_analysis">作业学情分析</string>
+    <string name="persion_info">个人资料</string>
+    <string name="settings">设置</string>
+    <string name="about_us">关于大熊作业</string>
+    <string name="check_updata">检查更新</string>
+    <string name="system_settings">系统设置</string>
+    <string name="set_class_time_dnd">上课时间免打扰</string>
+    <string name="set_turn_off_the_sound_and_vibration">周一周五8:00&#8211;12:00 14:00&#8211;17:00</string>
+    <string name="set_dnd_breaks">休息时间免打扰</string>
+    <string name="set_turn_off_the_sound_and_vibration_23_6">每天23:00&#8211;6:00</string>
+    <string name="contact_us">联系我们</string>
+    <string name="products_investment">产品|投资：</string>
+    <string name="official_email"> 官方邮箱:</string>
+    <string name="official_email_value">huoyan@welearn.com</string>
+    <string name="priducts_mail_address">daming@welearn.com</string>
+    <string name="market_and_channels">市场&amp;渠道：</string>
+    <string name="market_mail_address">cheng@welearn.com</string>
+    <string name="qq_group_title">大学生认证QQ群：</string>
+    <string name="office_tel">客服电话：</string>
+    <string name="office_tel_value">400-6755-222</string>
+    <string name="office_qq">客服QQ:</string>
+    <string name="office_qq_value">1217932313</string>
+    <string name="office_chat">家长交流群:</string>
+
+    <string name="text_change_nickname">更改昵称</string>
+    <string name="text_change_school">更改学校</string>
+    <string name="text_change_major">更改专业</string>
+    <string name="text_choose_dream_school_tips">请选择你的梦想大学，我们会推荐该校的大学生为你答题。让你有机会和未来学长学姐亲密接触!</string>
+    <string name="text_choose_dream_school">选择梦想大学</string>
+    <string name="text_choose_dream_school_tip">请选择你的梦想大学再提交</string>
+    <string name="text_dream_school_1">梦想大学1</string>
+    <string name="text_dream_school_2">梦想大学2</string>
+    <string name="text_dream_school_3">梦想大学3</string>
+    <string name="text_commiting_please_wait">正在提交,请稍候</string>
+    <string name="text_search_school">搜索大学</string>
+    <string name="text_choose">选择</string>
+    <string name="text_not_choose">未选</string>
+    <string name="text_skip_later">先跳过，稍后再填！</string>
+    <string name="text_skip">跳过</string>
+    <string name="refuse_choose_reject_reason">请选择拒绝原因</string>
+    <string name="refuse_third_party_arbitration">如果拒绝，老师有权申请第三方仲裁</string>
+    <string name="refuse_answer_error">答案错误</string>
+    <string name="refuse_the_step_is_not_necessary">没有必要的步骤讲解</string>
+    <string name="refuse_can_not_see_answer">拍的讲解看不清楚</string>
+    <string name="please_evaluate_their_lessons">请评价老师的讲解</string>
+    <string name="text_input_search_key">请输入您要查找的用户昵称或学号</string>
+    <string name="text_search_timeout">搜索超时</string>
+    <string name="text_search_hint">输入辅导号/昵称</string>
+    <string name="text_search_btn">搜索</string>
+    <string name="text_area">区域</string>
+    <string name="text_educational_background">学历</string>
+    <string name="text_school">学校</string>
+    <string name="text_csu">CSU</string>
+    <string name="text_major">专业</string>
+    <string name="text_search_school_hint">请输入大学名称</string>
+    <string name="text_search_result">搜索结果</string>
+    <string name="new_user">新人</string>
+    <string name="text_unkonw">未知</string>
+    <string name="text_releation">关系</string>
+    <string name="text_delete_chat">删除</string>
+    <string name="text_copy">复制</string>
+    <string name="text_save_image">保存图片</string>
+    <string name="text_connecting_please_wait">正在连接,请稍候</string>
+    <string name="text_connection_timeout">连接失败,请重试</string>
+    <string name="text_logging_timeout">登陆超时</string>
+    <string name="text_logging_out">正在注销&#8230;</string>
+
+    <string name="text_sign">签到</string>
+    <string name="text_cumulative_attendance_days">累计签到天数：</string>
+    <string name="text_cumulative_gift_learn">累计赠送学点：</string>
+    <string name="text_input_phone_num_tip">请输入已注册手机号码</string>
+
+    <string name="text_get_verification_code">获取验证码</string>
+    <string name="re_get_validate_code">重新获取验证码</string>
+    <string name="text_get_verification_code_fail">获取验证码失败！</string>
+    <string name="text_get_verification_code_success">获取验证码成功，请留意短信！</string>
+    <string name="text_next_step">下一步</string>
+    <string name="text_phone_num">手机号码</string>
+    <string name="phone_num_text">手机号：</string>
+    <string name="text_find_password">找回密码</string>
+    <string name="text_login_tips">没有账号？先用手机注册</string>
+
+
+    <string name="text_input_right_phone_num">请输入正确的手机号码</string>
+    <string name="text_input_password">请输入密码</string>
+    <string name="text_password_too_short">密码长度过短</string>
+    <string name="text_password_comfirm">请重复密码</string>
+    <string name="text_password_not_same">两次输入密码不一致</string>
+
+
+
+    <string name="text_reset">重置</string>
+    <string name="text_reset_password_hint">重置新密码</string>
+    <string name="text_bind_password_hint">设置手机登录密码：6&#8211;14位，建议数字字母组合</string>
+    <string name="text_confirm_password">确认密码：重复密码</string>
+    <string name="text_reset_password_success">重置成功，请登录</string>
+    <string name="text_reset_password_fail">重置失败</string>
+    <string name="text_logining">登录中</string>
+    <string name="text_login_timeout">登录超时，请重试</string>
+
+
+    <string name="text_done">完成</string>
+    <string name="text_binding_info">绑定手机</string>
+    <string name="text_binding_info_first">首次绑定手机号</string>
+    <string name="first_bingding_song_text">首次绑定送学点</string>
+    <string name="text_binding_skip">跳过></string>
+    <string name="text_binding_phone">绑定手机</string>
+    <string name="text_binding_phone_item">绑定手机号送学点</string>
+    <string name="text_has_binding_phone">已绑定手机%s</string>
+    <string name="text_binding_phone_item_sub"></string>
+    <string name="text_binding">绑定</string>
+    <string name="change_binding_text">更换</string>
+    <string name="text_binding_success">绑定成功！</string>
+    <string name="text_register_success">注册成功，请登录！</string>
+
+    <!-- <string name="channel_str_res">welearn</string> -->
+
+    <string name="welearn_msg_default_status">将条码放入框内，即可自动扫描</string>
+    <string name="student_home_func_class">微课\n辅导</string>
+    <string name="student_home_func_photo">拍照\n提问</string>
+    <string name="student_home_func_work_check">作业\n检查</string>
+    <string name="student_home_func_questions">历年\n考题</string>
+    <string name="student_publish_home_work_title">发布作业</string>
+    <string name="student_publish_home_work_confirm">确定发布？</string>
+    <string name="student_publish_delete_home_work_confirm">确定删除这张作业？</string>
+    <string name="student_publish_home_work_publish">发布</string>
+    <string name="student_publish_home_work_uploading">正在上传作业</string>
+    <string name="student_publish_home_work_publish_failed">作业发布失败！</string>
+    <string name="student_publish_home_work_publish_server_error">服务器异常！</string>
+
+    <string name="student_publish_home_work_publish_server_error_taskid">服务器异常,无法获取taskid！</string>
+
+
+    <string name="student_publish_home_work_add_image">请添加作业照片</string>
+    <string name="student_publish_nograde_text">请先设置您的年级</string>
+    <string name="student_publish_home_work_choose_subject">请选择科目</string>
+    <string name="student_publish_home_work_publish_success">成功发布作业！</string>
+    <string name="student_publish_home_work_publish_img_index">第%s张图片上传完成！</string>
+    <string name="student_publish_home_work_publish_img_upload_finish">全部图片上传完成！</string>
+    <string name="student_publish_home_work_add_img_title">最多可拍4张作业</string>
+    <string name="publish_hw_photo_tip_more">清晰拍照、只可拍单科作业、空题不能超过2道</string>
+
+    <string name="publish_question_subject_tip_more">选错科目会被举报或删除</string>
+    <string name="student_publish_home_work_add_img_sub_title">(请清晰拍照单张作业分页，只允许拍单科的作业)</string>
+    <string name="student_publish_home_work_desc_title">作业描述：（选填项）</string>
+    <string name="student_publish_home_work_pay_title">悬赏学点：（当前可用学点%s）</string>
+    <string name="student_publish_home_work_pay_sub_title">（悬赏越高，老师抢答越快）</string>
+    <string name="server_error">服务器走神了，请重试！</string>
+    <string name="give_up">放弃</string>
+    <string name="teacher_home_work_func_title">作业检查</string>
+    <string name="teacher_home_work_func_sub_title">每天检查学生作业，收入可观</string>
+    <string name="teacher_home_work_my_homework_func_title">我检查的作业</string>
+    <string name="teacher_home_work_my_homework_func_sub_title">作业检查历史记录</string>
+    <string name="teacher_home_work_all_check_give_up_info">是否放弃此次作业检查？放弃将被扣除%s个信用。</string>
+    <string name="teacher_home_work_all_check_confirm">确定已经完成全部作业检查？</string>
+    <string name="teacher_home_work_single_check_give_up_info">是否放弃对此题检查的追问？</string>
+    <string name="teacher_home_work_single_check_confirm">确定已经完成该题的追问？</string>
+    <string name="teacher_home_work_single_check_done">完成作业检查</string>
+    <string name="get_cards_info">正在获取数据&#8230;</string>
+    <string name="get_cards_error">数据请求失败！</string>
+    <string name="elevate_scores_card">提分卡</string>
+    <string name="elevate_scores_now">马上提分</string>
+    <string name="card_price">1学点=1元，输入学号可以为他人充值</string>
+    <string name="recharge_num_title">充值学号：</string>
+    <string name="recharge_num_hint">请输入充值学号</string>
+    <string name="recharge_num_error">学号有误！</string>
+    <string name="recharge_card_title">充值金额：</string>
+    <string name="select_recharge_page_title">购买提分卡</string>
+    <string name="select_recharge_page_info">名师在线课业辅导\n学情实时量化分析</string>
+    <string name="pay_info">购买%1$s，需要支付%2$s元</string>
+    <string name="params_error">参数错误！</string>
+    <string name="share">&#160;&#160;分&#160;&#160;享&#160;&#160;</string>
+    <string name="login_guide_info">老师/大学生认证，请前往www.fudaotuan.com</string>
+    <string name="upload_failed">上传失败!</string>
+    <string name="userid_error">用户ID错误</string>
+    <string name="select_sex_title">选择性别</string>
+    <string name="stu_info_item_title_hes_question">他的问答：</string>
+    <string name="question_ask_text">提问</string>
+    <string name="homework_ask_text">作业</string>
+    <string name="stu_info_item_title_hes_homework">他的作业：</string>
+    <string name="stu_info_item_title_stu_number">学号：</string>
+    <string name="stu_info_item_title_area">所在地：</string>
+    <string name="stu_info_item_title_credit">信用：</string>
+    <string name="stu_info_item_title_total_cast">累计花费学点：</string>
+    <string name="stu_info_item_title_sex">性别：</string>
+
+    <string name="stu_info_item_title_gold">学点：</string>
+    <string name="stu_info_item_title_nick">昵称：</string>
+    <string name="tec_info_comm_count">学生评价：%s条</string>
+    <string name="stu_evaluation_text">学生的评价</string>
+    <string name="tec_info_credit">信用：%s</string>
+    <string name="tec_info_answer_count">答题数：%s</string>
+    <string name="tec_info_star">平均星数：</string>
+    <string name="stu_homework_title">%s的作业</string>
+    <string name="contact_list_extraInfo">%1$s&#160;&#160;&#160;&#160;&#160;&#160;&#160;%2$s&#160;&#160;&#160;&#160;&#160;&#160;&#160;%3$s</string>
+
+    <!-- 微课辅导 -->
+    <string name="master_tv_mycourse">我的课程</string>
+    <string name="master_tv_teachercourse">发现新课</string>
+    <string name="master_course_tv_des1">进入 “</string>
+    <string name="master_course_tv_des2">发现课程</string>
+    <string name="master_course_tv_des3">”</string>
+    <string name="master_course_tv_des4">找到合适你的名师课程！</string>
+    <string name="search_course_et_input_hint">搜索你想要的老师或课程</string>
+    <string name="search_course">搜索课程</string>
+    <string name="search_course_tv_warn">提示：可以输入老师昵称、老师编号、课程年级、科目、课程名称进行搜索</string>
+
+    <!-- 加载更多 -->
+    <string name="load_error">加载失败,点击重试</string>
+    <string name="load_more">加载中...</string>
+    <string name="search_bt">搜索</string>
+    <string name="search_input_null_hint">请输入你搜索想要的老师或课程</string>
+    <string name="buycourse_bt_buy">确定购买</string>
+    <string name="dialog_buy_course_title">确认购买该课程？</string>
+    <string name="dialog_buy_course_ok">确认</string>
+    <string name="dialog_buy_course_cancel">取消</string>
+    <string name="details_item_item_tv_learned">已学</string>
+    <string name="details_item_item_tv_freetrial">试听</string>
+    <string name="course_catalogue">课程目录</string>
+    <string name="details_item_buycourse_tv_go">购买课程</string>
+    <string name="details_item_tv_referral">课程介绍</string>
+    <string name="buycourse_tv_gorecharge">去充值</string>
+    <string name="tv_current_learn">当前学点</string>
+    <string name="tv_spend_learn">花费学点</string>
+    <string name="teacher_name">老师昵称</string>
+    <string name="master_item_tv_state">已购买</string>
+    <string name="partner_tv_friend">好友</string>
+    <string name="partner_tv_edu">机构</string>
+    <string name="edu_tv_hint">你还没有关注任何辅导机构哦</string>
+    <string name="menu_cramschool">我的补习班</string>
+    <string name="unfollow">取消关注</string>
+    <string name="follow_edu">关注机构</string>
+    <string name="unfollow_hint">已取消</string>
+    <string name="follow_edu_hint">已关注</string>
+    <string name="cramschool_detail_fengcai">名师风采</string>
+    <string name="cramschool_detail_jingpin">精品讲义</string>
+    <string name="cramschool_detail_address">地址:{0}</string>
+    <string name="cramschool_detail_phonenumber">联系方式:{0}</string>
+    <string name="cramschool_switch_on">收起</string>
+    <string name="cramschool_switch_off">全文</string>
+    <string name="famous_teacher">名师风采</string>
+    <string name="good_notes">{0}讲义</string>
+    <string name="scan_text">将二维码放入框内, 即可自动扫描</string>
+
+    <string name="modify_pass">修改密码</string>
+    <string name="qiangda">抢答</string>
+
+    <string name="tab_radio_message">消息</string>
+    <string name="tab_radio_friend">好友</string>
+    <string name="tab_radio_zixun">资讯</string>
+    <string name="tab_radio_mycollection">我的收藏</string>
+    <string name="chongzhixieyi">&#60;&#60;充值协议&#62;&#62;</string>
+
+    <!--角色选择start -->
+    <string name="choose_role_dialog_parent_txt">我确定是家长身份加入大熊作业，帮助孩子养成良好学习习惯</string>
+    <string name="choose_role_dialog_student_txt">我确定是学生身份加入大熊作业，积极主动完成自己作业  </string>
+    <!--角色选择end -->
+
+
+    <!--登录界面start -->
+    <string name="login_username">手机号码</string>
+    <string name="login_password">密码</string>
+    <string name="login_forget_pwd">忘记密码</string>
+    <string name="register_str">注册</string>
+    <!--登录界面end -->
+    <!--注册界面start -->
+    <string name="register_text_register">注册</string>
+    <string name="text_input_phone_num">输入手机号码</string>
+    <string name="text_password_hint">6-20位密码,建议数字、字母组合</string>
+    <string name="register_confirm_pwd">确认密码</string>
+    <string name="register_verification_code">验证码</string>
+    <!--注册界面end -->
+
+    <!--重置密码start -->
+    <string name="text_reset_title">重置密码</string>
+    <string name="forget_pwd_next_btn">下一步</string>
+    <string name="text_regist_confirm">注册</string>
+    <string name="foreget_pwd_complete">完成</string>
+    <string name="forget_input_pwd">输入新密码</string>
+    <string name="forget_input_newpwd">确认新密码</string>
+    <!--重置密码end -->
+
+
+    <!--主界面start-->
+    <string name="main_tab_homework">作业</string>
+    <string name="main_tab_xueqing">学情</string>
+    <string name="main_tab_quan">券</string>
+    <string name="main_tab_wo">我</string>
+    <!--主界面end-->
+
+    <!--发布问题start-->
+    <string name="publish_question_photo_tip">点击拍照</string>
+    <string name="publish_question_photo_tip_more">清晰拍照方便老师解答</string>
+    <string name="publish">发布难题</string>
+
+    <!--发布问题end-->
+
+    <!--主tab我start-->
+    <string name="chongzhi">购买</string>
+    <string name="my_fudaoquan">我的辅导券</string>
+    <string name="my_homework">我的作业</string>
+    <string name="my_question">我的难题</string>
+    <string name="setting">设置</string>
+    <string name="daizhifudingdan">待支付订单</string>
+    <string name="suoquan">索券</string>
+    <string name="baoyuebuxianci">包月不限次</string>
+    <string name="order_count">1笔</string>
+    <string name="suoqumianfeiquan">索取免费券</string>
+    <!--主tab我end-->
+
+    <!--个人资料start-->
+    <string name="avatar_string">头像</string>
+    <string name="nick">昵称</string>
+    <string name="gender">性别</string>
+    <string name="suozai_location">所在地区</string>
+    <string name="haizi_school">孩子学校</string>
+    <string name="haizi_grade">孩子年级</string>
+    <string name="phone_no">手机号</string>
+    <string name="modify_pwd">修改密码</string>
+    <string name="stu_info_item_title_grade">年级：</string>
+    <string name="text_grade_choice">选择年级</string>
+    <string name="choose_gender">选择性别</string>
+    <string name="text_toast_select_grade">请选择年级</string>
+    <string name="text_toast_select_gender">请选择性别</string>
+    <string name="hao">好</string>
+    <string name="modify_phone_tip">更换手机后，下次登录可使用新手机号登录</string>
+    <string name="input_validate_code">输入验证码</string>
+
+    <!--个人资料end-->
+
+    <!--设置start-->
+    <string name="office_chat_value">512213586</string>
+    <string name="qq_group">213353597</string>
+    <string name="two_dimensional_code_download">QQ扫描分享赢学点</string>
+    <string name="question_feedback">意见反馈</string>
+    <string name="user_feedback">意见反馈</string>
+    <string name="please_enter_content">请输入您要反馈的内容</string>
+    <string name="content_too_short">说出您想对我们说的话(200字以内)</string>
+    <string name="tks_for_feedback">谢谢您的反馈,我们会尽快处理</string>
+    <string name="version">版本</string>
+    <string name="all_rights_reserved">版权所有</string>
+    <string name="group_name">深圳威兹讯科技有限公司</string>
+    <string name="copy_right">Copyright@ 2014 huoyanzuoye.com  All rights reserved</string>
+    <string name="message_settings">声音开关设置</string>
+    <string name="voice">声音</string>
+    <string name="vibration">振动</string>
+    <string name="dnd_settings">免打扰设置</string>
+    <string name="cache_settings">清除缓存</string>
+    <string name="user_xieyi">用户协议</string>
+    <string name="about">关于</string>
+    <string name="text_logout">退出登录</string>
+    <!--设置end-->
+
+
+    <!-- 辅导券 -->
+    <string name="tab_radio_question">难题券</string>
+    <string name="tab_radio_homework">作业券</string>
+    <string name="choice_fudaoquan">选择辅导券</string>
+    <string name="expire_fudaoquan">过期辅导券</string>
+    <string name="event">活动</string>
+
+    <!--vip充值start-->
+    <string name="taocan_detail"><u>套餐详情</u></string>
+    <string name="lijizhifu">立即支付</string>
+    <string name="zhifubao">支付宝</string>
+    <string name="weixin">微信</string>
+    <string name="keyongshijian">可用时间:</string>
+    <string name="xiadingdan">下订单</string>
+    <string name="banzhuren">班主任</string>
+    <string name="you">优</string>
+    <string name="zhengquelv">正确率</string>
+    <string name="xueqingbaogao">学情报告</string>
+    <string name="zuoyezhuli">作业助理</string>
+    <string name="cuotifenbu">错题分布</string>
+    <!--vip充值end-->
+
+
+
+    <string name="picker_sure">确定</string>
+    <string name="picker_cancel">取消</string>
+    <string name="picker_title">选择时间</string>
+
+    <string name="picker_year">年</string>
+    <string name="picker_month">月</string>
+    <string name="picker_day">日</string>
+    <string name="picker_hour">时</string>
+    <string name="picker_minute">分</string>
+
+
+
+
+
+    <string name="all">ALL</string>
+    <string name="year_month_day">YEAR-MONTH-DAY</string>
+    <string name="year_month">YEAR-MONTH</string>
+    <string name="month_day_hour_minute">MONTH-DAY-HOUR-MINUTE</string>
+    <string name="hour_minute">HOUR-MINUTE</string>
+    <string name="user_info_text">个人资料</string>
+    <string name="tip">提示</string>
+    <string name="zhidaole">知道了</string>
+    <string name="publish_homework">发布作业</string>
+    <string name="yaoqingma">邀请码</string>
+    <string name="input_invite_code">输入邀请码 没有可不填</string>
+    <string name="please_chongzhi_buy">请充值购买</string>
+
+</resources>

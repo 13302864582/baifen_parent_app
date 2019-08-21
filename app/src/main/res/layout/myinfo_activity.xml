@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <include layout="@layout/welearn_header_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@null"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/dayuan"
+            android:layout_width="69dp"
+            android:layout_height="69dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="38dp"
+            android:src="@drawable/index_btn_questions" />
+
+        <ImageView
+            android:id="@+id/avatar_iv_modified"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+        <TextView
+            android:id="@+id/change_avatar_btn_modified"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/avatar_iv_modified"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="13dp"
+            android:text="更换头像"
+            android:padding="5dp"
+            android:textColor="#000"
+            android:background="@drawable/change_avatar_bg" 
+            android:visibility="gone"
+            />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#27000000" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:id="@+id/change_name_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_nike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/name_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_nicheng_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_nike"
+                    android:text="昵称："
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/name_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="40dp"
+                    android:layout_toRightOf="@id/tv_nicheng_lable"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:text="wowow"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_sex_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/famle_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_gender_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_gender"
+                    android:text="@string/stu_info_item_title_sex"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/sex_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_gender_lable"
+                    android:layout_marginRight="40dp"
+                    android:text="男"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03" 
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_adress_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_location"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/location_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_distion_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_location"
+                    android:text="所在地区："
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/adress_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tv_distion_lable"
+                    android:layout_marginRight="40dp"
+                    android:text="广东 深圳  福田"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03"
+                    android:visibility="gone"
+                     />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_school_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_school"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/shool_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_school_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_school"
+                    android:text="孩子学校："
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/school_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="20dp"
+               android:layout_toRightOf="@id/tv_school_lable"
+                    android:layout_marginRight="40dp"
+                    android:background="@null"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="wowow"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03"
+                    android:visibility="gone" />
+                
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03" 
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_grade_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_grade"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/wo_class_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_grade_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_grade"
+                    android:text="@string/stu_info_item_title_grade"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/grade_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="40dp"
+                    android:text="初三"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp"
+                    android:layout_toRightOf="@id/tv_grade_lable"
+                     />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/leader_icon_03" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_tel_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_phone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/phonenumber_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_tel_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_phone"
+                    android:text="@string/phone_num_text"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/tel_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_tel_lable"
+                    android:layout_marginRight="40dp"
+                    android:text="15811357529"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:visibility="gone"
+                    android:src="@drawable/leader_icon_03" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <RelativeLayout
+                android:id="@+id/change_password_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:gravity="center_vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_icon_pass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="10dp"
+                    android:background="@drawable/changesec_icon"
+                    android:scaleType="centerCrop" />
+
+                <TextView
+                    android:id="@+id/tv_modify_lable"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@id/iv_icon_pass"
+                    android:text="修改密码："
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <TextView
+                    android:id="@+id/password_tv_modified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@id/tv_modify_lable"
+                    android:layout_marginRight="40dp"
+                    android:text="*******"
+                    android:textColor="#6f6f6f"
+                    android:textSize="13sp" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/leader_icon_03" 
+                    android:visibility="gone"
+                    />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1px"
+                android:background="#27000000" />
+
+            <Button
+                android:id="@+id/save_btn_modified"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginBottom="11dp"
+                android:layout_marginLeft="35dp"
+                android:layout_marginRight="35dp"
+                android:layout_marginTop="39dp"
+                android:background="@drawable/buy_class_btn_selector"
+                android:gravity="center"
+                android:text="保存"
+                android:textColor="#ffffff"
+                android:textSize="20sp" 
+                android:visibility="gone"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

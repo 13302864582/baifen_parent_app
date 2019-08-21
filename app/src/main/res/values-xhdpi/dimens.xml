@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="MyRatingBarWid">135dip</dimen>
+    <dimen name="MyRatingBarHei">18dip</dimen>
+    <dimen name="MyRatingBarStartWid">27dip</dimen>
+    <dimen name="MyRatingBarStartHei">18dip</dimen>
+    
+    
+    <dimen name="welearn_title_bar_hight">48dip</dimen>
+    <dimen name="welearn_title_bar_back_padding_left">6dip</dimen>
+    <dimen name="stu_publish_homework_image_size">70dp</dimen>
+    
+    
+    <dimen name="adoptHomeWorkRatingBarStartWid">38dip</dimen>
+    <dimen name="adoptHomeWorkRatingBarStartHei">25dip</dimen>
+<!--     <dimen name="adopt_dialog_width">318dp</dimen>
+    <dimen name="adopt_dialog_height">283dp</dimen>
+    <dimen name="adopt_edit_width">277dp</dimen>
+    <dimen name="adopt_edit_height">48dp</dimen>
+    <dimen name="adopt_submit_width">137dp</dimen>
+    <dimen name="adopt_submit_height">40dp</dimen>
+    
+    <dimen name="adopt_margintop_1">23dp</dimen>
+    <dimen name="adopt_margintop_2">28dp</dimen>
+    <dimen name="adopt_margintop_3">25dp</dimen>
+    <dimen name="adopt_margintop_4">36dp</dimen> -->
+</resources>

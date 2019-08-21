@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:color="@drawable/selector_login_btn_color_xiadingdan_normal" android:state_pressed="true"/>
+    <item android:color="@drawable/login_btn_color_checked" android:state_focused="false" android:state_pressed="false"/>
+    <item android:color="@drawable/selector_login_btn_color_xiadingdan_normal" android:state_focused="true"/>
+    <item android:color="@drawable/login_btn_color_checked" android:state_focused="false"/>
+
+
+</selector>

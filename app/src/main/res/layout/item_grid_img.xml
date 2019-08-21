@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+     >
+
+    <RadioButton
+        android:id="@+id/checkedView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/bg_subject_selector"
+        android:button="@null"
+        android:clickable="false"
+        android:focusable="false"
+        
+        android:focusableInTouchMode="false"
+        android:gravity="center_horizontal"
+        android:maxLength="3"
+        android:text="5学点" />
+
+</FrameLayout>

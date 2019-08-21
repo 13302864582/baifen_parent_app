@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#e6e6e6" />
+
+    <RelativeLayout
+        android:id="@+id/combo_title_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/gray_white_01" >
+
+        <TextView
+            android:id="@+id/combo_num_text_01"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:background="@drawable/shuliang_image"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/combo_nick_name_text"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"            
+            android:ellipsize="end"
+            android:gravity="center_vertical"
+            android:singleLine="true"
+            android:text="fdsfa"
+            android:textColor="@color/orange"
+            android:textSize="18sp" />
+
+        <ImageView
+            android:id="@+id/combo_arrow_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerInParent="true"
+            android:layout_toRightOf="@id/combo_nick_name_text"
+            android:scaleType="center"
+            android:src="@drawable/arrow_bottom_black" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.1dp"
+        android:background="#e6e6e6" />
+
+    <com.daxiong.fun.function.homework.view.CollapsableLinearLayout
+        android:id="@+id/combo_products_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+    </com.daxiong.fun.function.homework.view.CollapsableLinearLayout>
+
+</LinearLayout>

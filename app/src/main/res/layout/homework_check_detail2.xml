@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ececec"
+    android:orientation="vertical" >
+
+    
+
+        <include layout="@layout/welearn_header_view" />
+
+        <com.daxiong.fun.view.MyViewPager
+            android:id="@+id/detail_pager_homework"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="0dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            android:layout_weight="11"
+            android:background="#ececec" />
+
+        <RelativeLayout
+            android:id="@+id/homework_detail_bottom_container_stu"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:background="#3C3C39"
+           >
+
+            
+
+                    <TextView
+                        android:id="@+id/tv_stu_userid"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                      android:layout_centerInParent="true"
+                        android:text="请点击选择有错误批改的批注，完成后点击右上“发送”"
+                        android:textColor="#F86F1D"
+                        android:textSize="12sp"
+                         />
+
+                 
+        </RelativeLayout>
+  
+
+</LinearLayout>

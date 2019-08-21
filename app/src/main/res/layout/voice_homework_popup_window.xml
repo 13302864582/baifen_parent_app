@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dip"
+    android:background="@android:color/transparent" >
+
+    <!-- 空白的View  70% 透明度 -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/record_popup_menu_view" />
+
+    <LinearLayout
+        android:id="@+id/record_popup_menu_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/popup_menu_bg"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/add_voice_answer_container"
+            android:layout_width="match_parent"
+            android:layout_height="42dip"
+            android:layout_marginLeft="16.8dip"
+            android:layout_marginRight="16.8dip"
+            android:layout_marginTop="21dip"
+            android:background="@drawable/bg_add_answer_btn_selector"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/add_voice_answer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/text_say_touch"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+            <ImageView
+                android:id="@+id/icon_answer_audio"
+                android:layout_width="30dip"
+                android:layout_height="30dip"
+                android:layout_gravity="center"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_play2"
+                android:visibility="gone" />
+
+            <ProgressBar
+                android:id="@+id/audio_load_progressbar"
+                style="@android:style/Widget.ProgressBar.Small"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dip"
+            android:layout_gravity="bottom"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/audio_cancel"
+                android:layout_width="90dip"
+                android:layout_height="46dip"
+                android:layout_alignParentLeft="true"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16.8dip"
+                android:layout_marginTop="37dip"
+                android:gravity="center"
+                android:text="@string/text_btn_cancel"
+                android:textColor="@color/voice_input_menu_view_selector"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/audio_record"
+                android:layout_width="90dip"
+                android:layout_height="46dip"
+                android:layout_centerInParent="true"
+                android:layout_marginLeft="16.8dip"
+                android:layout_marginTop="37dip"
+                android:gravity="center"
+                android:text="@string/text_btn_record"
+                android:textColor="@color/voice_input_menu_view_record_selector"
+                android:textSize="24sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/audio_confirm"
+                android:layout_width="90dip"
+                android:layout_height="46dip"
+                android:layout_alignParentRight="true"
+                android:layout_centerInParent="true"
+                android:layout_marginRight="16.8dip"
+                android:layout_marginTop="37dip"
+                android:gravity="center"
+                android:text="@string/text_btn_confirm"
+                android:textColor="@color/voice_input_menu_view_selector"
+                android:textSize="24sp" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>

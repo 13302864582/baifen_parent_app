@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/edu_bg_selector"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:id="@+id/edu_item_iv_head_icon"
+        android:layout_width="@dimen/edu_list_icon_size"
+        android:layout_height="@dimen/edu_list_icon_size"
+        android:layout_marginBottom="7dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="7dp"
+        android:adjustViewBounds="false"
+        android:contentDescription="@null"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_contact_image" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="9dp"
+        android:layout_weight="10000"
+        android:gravity="center_vertical" >
+
+        <TextView
+            android:id="@+id/edu_item_tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:maxWidth="200dp"
+            android:text="你好"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp">
+
+            <TextView
+                android:id="@+id/edu_tv_type_normal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/class_concerned_bg"
+                android:gravity="center"
+                android:text="关注"
+                android:textColor="#ffffff"
+                android:textSize="11sp" 
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/edu_tv_type_vip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/class_member_bg"
+                android:gravity="center"
+                android:text="SVIP"
+                android:textColor="#ffffff"
+                android:textSize="11sp"
+                android:visibility="gone" />
+        </FrameLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_weight="1"
+        android:src="@drawable/class_more_icon" />
+
+</LinearLayout>

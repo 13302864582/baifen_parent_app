@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="title_name_array">
+        <item>学习</item>
+        <item>沟通</item>
+        <item>学伴</item>
+    </string-array>
+
+</resources>

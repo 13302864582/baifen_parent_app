@@ -1,0 +1,119 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:id="@+id/rl1"
+
+    android:layout_width="match_parent"
+    android:layout_height="149dp"
+
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/tv_ganggang"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:text="刚刚"
+            android:textColor="#8d8d8d"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/studname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_ganggang"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:textColor="#4d4d4d"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/studname"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="6dp"
+
+            android:text="的作业批改完成"
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+
+        <TextView
+
+            android:id="@+id/chakan"
+            android:layout_width="51dp"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="19dp"
+            android:background="@drawable/selector_chakantext"
+            android:gravity="center"
+            android:text="查看"
+            android:textColor="#4d4d4d"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="72dp"
+            android:layout_height="72dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/banzhuren_icon_pre" />
+
+        <com.daxiong.fun.view.HoloCircularProgressBar
+            android:id="@+id/holoCircularProgressBar"
+            android:layout_width="88dp"
+            android:layout_height="88dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:visibility="gone"
+            app:marker_visible="false"
+            app:progress_aa="0"
+            app:progress_background_color="#DBDBDB"
+            app:progress_color="#17CA09"
+            app:stroke_width="1dp" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/avatar"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp"
+            android:textColor="#1e1e1e"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_pigai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_below="@+id/name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:textColor="#8d8d8d"
+            android:textSize="10sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>
+
+
+

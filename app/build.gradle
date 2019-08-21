@@ -1,0 +1,279 @@
+apply plugin: 'com.android.application'
+/*apply plugin: 'com.jakewharton.butterknife'*/
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    aaptOptions.cruncherEnabled = false
+    aaptOptions.useNewCruncher = false
+
+    //api 23 时候处理 httpclient 过时
+    useLibrary 'org.apache.http.legacy'
+
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_7
+        targetCompatibility JavaVersion.VERSION_1_7
+    }
+
+   /* task clean(type: Exec) {
+        ext.lockhunter = '\"D:\\Program Files\\LockHunter.exe\"'
+        def buildDir = file(new File("build"))
+        commandLine 'cmd', "$lockhunter", '/delete', '/silent', buildDir
+    }*/
+
+    // 移除lint检查的error
+    //执行lint检查，有任何的错误或者警告提示，都会终止构建，我们可以将其关掉
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+        // 防止在发布的时候出现因MissingTranslation导致Build Failed!
+        disable 'MissingTranslation'
+
+    }
+
+
+    dexOptions {
+        //incremental true
+        javaMaxHeapSize "4g" //specify the heap size for the dex process
+        preDexLibraries = false //delete the already predexed libraries
+
+    }
+
+    allprojects {
+        gradle.projectsEvaluated {
+            tasks.withType(JavaCompile) {
+                options.compilerArgs << "-Xlint:unchecked" << "-Xlint:deprecation"
+            }
+        }
+    }
+
+
+    packagingOptions {
+        exclude 'META-INF/DEPENDENCIES.txt'
+        exclude 'META-INF/LICENSE.txt'
+        exclude 'META-INF/NOTICE.txt'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/DEPENDENCIES'
+        exclude 'META-INF/notice.txt'
+        exclude 'META-INF/license.txt'
+        exclude 'META-INF/dependencies.txt'
+        exclude 'META-INF/LGPL2.1'
+        exclude 'META-INF/ASL2.0'
+    }
+
+
+    defaultConfig {
+        applicationId "com.daxiong.fun"
+        minSdkVersion 17
+        targetSdkVersion 22
+        versionCode 3036
+        versionName "1.3.6"
+        //testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        flavorDimensions "default"
+        // dex突破65535的限制
+        multiDexEnabled true
+        // AndroidManifest.xml 里面channel的value为 ${channel}
+        manifestPlaceholders = [UMENG_CHANNEL_VALUE: "umeng"]
+        //添加如下配置就OK了
+        javaCompileOptions { annotationProcessorOptions { includeCompileClasspath = true } }
+    }
+
+    //签名
+    signingConfigs {
+//        release {
+//            storeFile file('D:/keystore/fudaotuan.keystore')
+//            storePassword 'fudaotuan'
+//            keyAlias 'fudaotuan'
+//            keyPassword 'fudaotuan'
+//        }
+//        debug {
+//            storeFile file('D:/keystore/fudaotuan.keystore')
+//            storePassword 'fudaotuan'
+//            keyAlias 'fudaotuan'
+//            keyPassword 'fudaotuan'
+//
+//
+//        }
+
+    }
+    buildTypes {
+
+        release {
+            // 不显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            //混淆
+            minifyEnabled true
+            //Zipalign优化
+            zipAlignEnabled true
+            // 移除无用的resource文件
+            shrinkResources true
+            //加载默认混淆配置文件 progudard-android.txt在sdk目录里面，不用管，proguard.cfg是我们自己配<span></span>的混淆文件
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            //签名
+            //signingConfig signingConfigs.release
+            //我想把其中的${app_label}替换为@string/app_name
+            manifestPlaceholders = [app_label: "@string/app_name"]
+        }
+        debug {
+            // 显示Log
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            versionNameSuffix "-debug"
+            minifyEnabled false
+            zipAlignEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            shrinkResources false
+            // signingConfig signingConfigs.debug
+            //我想把其中的${app_label}替换为@string/app_name
+            manifestPlaceholders = [app_label: "@string/app_name_debug"]
+        }
+
+    }
+
+//    sourceSets {
+//        main {
+//            jniLibs.srcDirs = ['libs']
+//        }
+//    }
+
+
+    /*productFlavors {
+        // 把dev产品型号的apk的AndroidManifest中的channel替换dev
+        //or批量打包
+
+        _91 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_91"]
+        }
+        _360 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "_360"]
+        }
+        anzhi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhi"]
+        }
+        appchina {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "appchina"]
+        }
+        baidu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "baidu"]
+        }
+        gfan {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "gfan"]
+        }
+        huawei {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "huawei"]
+        }
+        jinshan {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jinshan"]
+        }
+        le {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "le"]
+        }
+        meizu {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "meizu"]
+        }
+        myapp {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "myapp"]
+        }
+        oppo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "oppo"]
+        }
+        tao {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "tao"]
+        }
+        wandou {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wandou"]
+        }
+        welearn {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "welearn"]
+        }
+        xiaomi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "xiaomi"]
+        }
+        guangdiantong {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "guangdiantong"]
+        }
+        zhihuitui {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "zhihuitui"]
+        }
+        jinli {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jinli"]
+        }
+        anzhuo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "anzhuo"]
+        }
+        wangyi {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "wangyi"]
+        }
+        jiazhangbang {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "jiazhangbang"]
+        }
+        sina1 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sina1"]
+        }
+        sina2 {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "sina2"]
+        }
+        samsung {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "samsung"]
+        }
+        vivo {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "vivo"]
+        }
+        yiming {
+            manifestPlaceholders = [UMENG_CHANNEL_VALUE: "yiming"]
+        }
+
+    }*/
+
+//    productFlavors.all {
+//        flavor -> flavor.manifestPlaceholders = [UMENG_CHANNEL_VALUE: name]
+//    }
+
+
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation fileTree(include: ['*/'], dir: 'libsso/armeabi')
+    implementation fileTree(include: ['*/'], dir: 'libsso/armeabi-v7a')
+    implementation fileTree(include: ['*/'], dir: 'libsso/arm64-v8a')
+
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
+  /*  testCompile 'junit:junit:4.12'
+    androidTestCompile 'com.android.support.test.espresso:espresso-core:2.2.2'
+    androidTestCompile 'com.android.support.test:runner:0.5'
+    androidTestCompile 'com.android.support:support-annotations:23.4.0'*/
+    //dex最多65535个方法数的瓶颈
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation project(':library_alipay')
+    implementation project(':library_cropper')
+    implementation project(':library_viewpagerindicator')
+    implementation project(':library_volley')
+    implementation project(':library_mpchart')
+    implementation project(':library_waterWaveProgress')
+    implementation project(':library_websocketclient')
+    implementation 'com.android.support:appcompat-v7:23.4.0'
+    implementation 'com.android.support:design:23.2.0'
+    implementation 'com.readystatesoftware.systembartint:systembartint:1.0.3'
+    implementation 'com.jaeger.statusbaruitl:library:1.0.0'
+    //注解
+    implementation 'com.jakewharton:butterknife:7.0.0'
+    //annotationProcessor 'com.jakewharton:butterknife-compiler:10.1.0'
+    //检查内存泄漏
+    debugCompile 'com.squareup.leakcanary:leakcanary-android:1.4-beta2'
+    releaseCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    testCompile 'com.squareup.leakcanary:leakcanary-android-no-op:1.4-beta2'
+    //Bugly 集成
+    implementation 'com.tencent.bugly:crashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.1.5
+    implementation 'com.tencent.bugly:nativecrashreport:latest.release'
+    //其中latest.release指代最新版本号，也可以指定明确的版本号，例如2.2.0
+
+    //6.0运行时权限检查
+    implementation 'com.lovedise:permissiongen:0.0.6'
+    implementation 'com.nikhilpanju.recyclerviewenhanced:recyclerviewenhanced:1.1.0'
+    implementation files('libs/Msc.jar')
+    implementation files('libs/Sunflower.jar')
+}

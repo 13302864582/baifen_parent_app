@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/header_layout"
+        layout="@layout/welearn_header_view" />
+
+    <LinearLayout
+        android:id="@+id/dots_ll"
+        android:layout_width="match_parent"
+        android:layout_height="23dp"
+        android:background="#000000"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <com.daxiong.fun.view.MyViewPager
+        android:id="@+id/page_viewpager_charpter"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_weight="11"
+        android:background="#000000" />
+
+    <RelativeLayout
+        android:id="@+id/op_layout"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@android:color/white"
+        android:minHeight="55dp" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal" >
+
+            <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/avatar_iv_charpterdetail"
+                android:layout_width="@dimen/avatar_size_homework_check_common"
+                android:layout_height="@dimen/avatar_size_homework_check_common"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="6dip"
+                android:adjustViewBounds="true"
+                android:contentDescription="@null"
+                android:scaleType="fitXY"
+                android:src="@drawable/ic_default_avatar" />
+
+            <TextView
+                android:id="@+id/name_tv_charpterdetail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dip"
+                android:layout_weight="11"
+                android:singleLine="true"
+                android:text="昵称"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/ask_btn_charpterdetail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/class_btn_selector"
+                android:text="追问"
+                android:textColor="#ffffff"
+                android:textSize="15sp"
+                android:visibility="gone" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

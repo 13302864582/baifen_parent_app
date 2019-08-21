@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white" >
+
+    <include
+        android:id="@+id/header_view_1"
+        layout="@layout/welearn_header_view" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_view_1"
+        android:layout_marginTop="10dp" >
+
+        <EditText
+            android:id="@+id/editText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="23dip"
+            android:layout_marginRight="23dip"
+            android:background="@drawable/bg_edittext"
+            android:maxLength="12"
+            android:padding="6dp"
+            android:singleLine="true" >
+        </EditText>
+
+        <ImageView
+            android:id="@+id/delete_iv"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_alignRight="@+id/editText"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="13dp"
+            android:contentDescription="@string/app_name"
+            android:scaleType="fitXY"
+            android:src="@drawable/bt_delete"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+</RelativeLayout>

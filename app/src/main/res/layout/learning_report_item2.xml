@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="163dp"
+    android:background="#ffffff"
+    android:layout_height="122dp">
+
+    <ImageView
+        android:id="@+id/iv_isread"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/learning_situation_report_unread_btn_normal" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="18dp"
+
+        android:textColor="#1e1e1e"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tv_context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_time"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginTop="15dp"
+        android:maxLines="3"
+        android:ellipsize="end"
+        android:textColor="#4d4d4d"
+        android:textSize="14sp" />
+</RelativeLayout>

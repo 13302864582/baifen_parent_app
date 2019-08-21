@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <include
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        layout="@layout/main_header_view"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginLeft="9dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/dialog_load_bg"
+        android:orientation="vertical"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="作业分析" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.2dp"
+                android:layout_marginTop="10dp"
+                android:background="#828282" />
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="18dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="10dp" >
+
+            <ImageView
+                android:id="@+id/iv_teacher_avatar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/teacher_img" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iv_teacher_avatar"
+                android:layout_toRightOf="@id/iv_teacher_avatar"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:id="@+id/layout_edit"
+                    android:layout_width="180dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/teacher_edit"
+                    android:orientation="vertical"
+                    android:visibility="visible"
+                     >
+                    <TextView
+                        android:id="@+id/tv_sumary"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_toRightOf="@id/iv_teacher_avatar"
+                        android:background="@null"                       
+                        android:text=""
+                        android:textColor="#000"
+                        android:textSize="14sp" 
+                        android:maxLength="50"
+                        android:singleLine="false"
+                        android:ellipsize="end"
+                        />
+                </LinearLayout>
+
+                <FrameLayout
+                    android:id="@+id/layout_record"
+                    android:layout_width="180dp"
+                    android:layout_height="30dip"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/bg_qq_login_btn_selector"
+                    android:visibility="visible" >
+
+                    <ImageView
+                        android:id="@+id/iv_voice"
+                        android:layout_width="15.1dip"
+                        android:layout_height="25.2dip"
+                        android:layout_gravity="left|center_vertical"
+                        android:layout_marginLeft="15dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/ic_voice_msg_play3"
+                        android:visibility="visible" />
+                </FrameLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/hw_delete_selector"
+        android:scaleType="centerCrop" />
+
+</RelativeLayout>
