@@ -187,7 +187,7 @@ public class MainActivity extends BaseActivity implements OnClickListener {
     public void initView() {
 
         userApi = new UserAPI();
-        main_container = $(R.id.main_container);
+        main_container = (FrameLayout)this.findViewById(R.id.main_container);
         rl = (RelativeLayout) findViewById(R.id.rl);
 
 
@@ -847,10 +847,10 @@ public class MainActivity extends BaseActivity implements OnClickListener {
             for (int a = 0; a < linearLayouts.size(); a++) {
                 if (index == a) {
                     // linearLayouts.get(a).setBackgroundResource(R.drawable.sport_toolbar_select_bg);
-                    textViews.get(a).setTextColor(Color.parseColor("#ff6666"));
+                    textViews.get(a).setTextColor(Color.parseColor("#57be6a"));
                 } else {
                     // linearLayouts.get(a).setBackgroundResource(R.drawable.sport_toolbar_bg);
-                    textViews.get(a).setTextColor(Color.parseColor("#696969"));
+                    textViews.get(a).setTextColor(Color.parseColor("#1F1F1F"));
                 }
             }
         }
@@ -861,28 +861,28 @@ public class MainActivity extends BaseActivity implements OnClickListener {
         if (null != imageViews) {
             switch (index) {
                 case 0:
-                    imageViews.get(0).setImageResource(R.drawable.homework_icon_pre);
-                    imageViews.get(1).setImageResource(R.drawable.trend_icon);
-                    imageViews.get(2).setImageResource(R.drawable.growup_icon);
-                    imageViews.get(3).setImageResource(R.drawable.home_icon);
+                    imageViews.get(0).setImageResource(R.mipmap.homework_icon_pre);
+                    imageViews.get(1).setImageResource(R.mipmap.trend_icon);
+                    imageViews.get(2).setImageResource(R.mipmap.growup_icon);
+                    imageViews.get(3).setImageResource(R.mipmap.home_icon);
                     break;
                 case 1:
-                    imageViews.get(1).setImageResource(R.drawable.trend_icon_pre);
-                    imageViews.get(0).setImageResource(R.drawable.homework_icon);
-                    imageViews.get(2).setImageResource(R.drawable.growup_icon);
-                    imageViews.get(3).setImageResource(R.drawable.home_icon);
+                    imageViews.get(1).setImageResource(R.mipmap.trend_icon_pre);
+                    imageViews.get(0).setImageResource(R.mipmap.homework_icon);
+                    imageViews.get(2).setImageResource(R.mipmap.growup_icon);
+                    imageViews.get(3).setImageResource(R.mipmap.home_icon);
                     break;
                 case 2:
-                    imageViews.get(2).setImageResource(R.drawable.growup_icon_pre);
-                    imageViews.get(0).setImageResource(R.drawable.homework_icon);
-                    imageViews.get(1).setImageResource(R.drawable.trend_icon);
-                    imageViews.get(3).setImageResource(R.drawable.home_icon);
+                    imageViews.get(2).setImageResource(R.mipmap.growup_icon_pre);
+                    imageViews.get(0).setImageResource(R.mipmap.homework_icon);
+                    imageViews.get(1).setImageResource(R.mipmap.trend_icon);
+                    imageViews.get(3).setImageResource(R.mipmap.home_icon);
                     break;
                 case 3:
-                    imageViews.get(3).setImageResource(R.drawable.home_icon_pre);
-                    imageViews.get(0).setImageResource(R.drawable.homework_icon);
-                    imageViews.get(1).setImageResource(R.drawable.trend_icon);
-                    imageViews.get(2).setImageResource(R.drawable.growup_icon);
+                    imageViews.get(3).setImageResource(R.mipmap.home_icon_pre);
+                    imageViews.get(0).setImageResource(R.mipmap.homework_icon);
+                    imageViews.get(1).setImageResource(R.mipmap.trend_icon);
+                    imageViews.get(2).setImageResource(R.mipmap.growup_icon);
                     break;
 
                 default:

@@ -58,10 +58,7 @@ import java.util.List;
  * @author: sky
  */
 public class HomeFragment extends BaseFragment implements IXListViewListener, INetWorkListener, AdapterView.OnItemClickListener {
-
     public static final String TAG = HomeFragment.class.getSimpleName();
-
-
     private MainActivity activity;
     boolean flag;
     private View view;
@@ -109,7 +106,6 @@ public class HomeFragment extends BaseFragment implements IXListViewListener, IN
         view = inflater.inflate(R.layout.home_fragment, null);
         initView(view);
         initListener();
-
         return view;
     }
 
@@ -139,7 +135,6 @@ public class HomeFragment extends BaseFragment implements IXListViewListener, IN
         titleLayout = (RelativeLayout) view.findViewById(R.id.title_layout);
         iv_choose = (ImageView) view.findViewById(R.id.iv_choose);
         iv_choose.setVisibility(View.GONE);
-
 
 
         xListView = (XListView) view.findViewById(R.id.answer_list);

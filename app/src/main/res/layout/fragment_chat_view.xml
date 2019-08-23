@@ -17,7 +17,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent" 
-        android:paddingBottom="18sp">
+        android:paddingBottom="18dp">
 
         <com.daxiong.fun.view.XListView
             android:id="@+id/chat_list"
