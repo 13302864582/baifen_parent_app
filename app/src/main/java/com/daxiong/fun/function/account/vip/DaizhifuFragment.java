@@ -266,7 +266,6 @@ public class DaizhifuFragment extends BaseFragment implements IXListViewListener
                             orderListview.setEmptyView(emptyView);
                         }
                     }
-
                 }
 
                 @Override

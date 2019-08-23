@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/baifen_parent_app.iml" filepath="$PROJECT_DIR$/baifen_parent_app.iml" />
       <module fileurl="file://$PROJECT_DIR$/daxiong_studio.iml" filepath="$PROJECT_DIR$/daxiong_studio.iml" />
       <module fileurl="file://$PROJECT_DIR$/library_alipay/library_alipay.iml" filepath="$PROJECT_DIR$/library_alipay/library_alipay.iml" />
       <module fileurl="file://$PROJECT_DIR$/library_cropper/library_cropper.iml" filepath="$PROJECT_DIR$/library_cropper/library_cropper.iml" />

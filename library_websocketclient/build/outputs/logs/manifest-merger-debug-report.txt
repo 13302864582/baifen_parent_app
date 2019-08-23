@@ -1,41 +1,41 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:1-7:12
 	package
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:3:7-36
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:3:7-36
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:4:31-56
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:4:31-56
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:4:7-30
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:4:7-30
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
 application
-ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:6:5-57
+ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:6:5-57
 	android:label
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml:6:18-42
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml:6:18-42
 uses-sdk
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_websocketclient\src\main\AndroidManifest.xml

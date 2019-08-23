@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
-INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
+INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:1-6:12
 	package
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:2:5-33
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:2:5-33
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
 	android:versionName
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:4:5-30
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:4:5-30
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:1:11-69
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:1:11-69
 	android:versionCode
-		ADDED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml:3:5-28
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\fz\Documents\360\daxiong_studio\library_cropper\src\main\AndroidManifest.xml
+		ADDED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml:3:5-28
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\fz\Documents\360\baifen_parent_app\library_cropper\src\main\AndroidManifest.xml
