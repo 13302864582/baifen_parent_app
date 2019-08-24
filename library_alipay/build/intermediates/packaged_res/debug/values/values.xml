@@ -15,7 +15,7 @@
     <color name="downLoadTextPressed">#FFFFFFFF</color>
     <color name="secondbtntextColor">#FF496ea3</color>
     <color name="textColorforCheckBox">#FF333333</color>
-    <color name="textColorforItemTitle">#FF666666</color>
+    <color name="textColorforItemTitle">#57be6a66</color>
     <string name="cancel">取消</string>
     <string name="cancel_install_alipay">你已取消安装支付宝钱包</string>
     <string name="cancel_install_msp">你已取消安装移动快捷支付服务</string>
@@ -34,13 +34,9 @@
         <item name="android:windowBackground">@drawable/popup_bg</item>
     </style>
     <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
+        
     </style>
     <style name="AppTheme" parent="AppBaseTheme">
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+        
     </style>
 </resources>

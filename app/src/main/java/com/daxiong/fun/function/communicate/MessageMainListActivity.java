@@ -106,7 +106,7 @@ public class MessageMainListActivity extends BaseActivity implements OnCheckedCh
 //                radio_message.setBackgroundResource(R.drawable.tab_left_checked);
 //                radio_friend.setBackgroundResource(R.drawable.tab_right_normal);
                 radio_message.setTextColor(Color.parseColor("#ffffff"));
-                radio_friend.setTextColor(Color.parseColor("#ff6666"));
+                radio_friend.setTextColor(Color.parseColor("##57be6a"));
                 if (chatFragment == null) {
                     // 如果MessageFragment为空，则创建一个并添加到界面上
                     chatFragment = new CommunicateFragment();
@@ -120,7 +120,7 @@ public class MessageMainListActivity extends BaseActivity implements OnCheckedCh
 //                radio_friend.setBackgroundResource(R.drawable.tab_right_checked);
 //                radio_message.setBackgroundResource(R.drawable.tab_left_normal);
                 radio_friend.setTextColor(Color.parseColor("#ffffff"));
-                radio_message.setTextColor(Color.parseColor("#ff6666"));
+                radio_message.setTextColor(Color.parseColor("##57be6a"));
                 if (friendFragment == null) {
                     // 如果ContactsFragment为空，则创建一个并添加到界面上
                     friendFragment = new PartnerFragment();
@@ -140,8 +140,8 @@ public class MessageMainListActivity extends BaseActivity implements OnCheckedCh
     private void clearSelection() {
 //        radio_message.setBackgroundResource(R.drawable.tab_left_normal);
 //        radio_friend.setBackgroundResource(R.drawable.tab_right_normal);
-        radio_message.setTextColor(Color.parseColor("#00bdbd"));
-        radio_friend.setTextColor(Color.parseColor("#00bdbd"));
+        radio_message.setTextColor(Color.parseColor("#57be6a"));
+        radio_friend.setTextColor(Color.parseColor("#57be6a"));
 
     }
 

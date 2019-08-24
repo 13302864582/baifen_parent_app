@@ -296,7 +296,7 @@ public class GradeChooseNextActivity extends BaseActivity implements OnClickList
             if (i1 == position) {
                 model.setChecked(1);
                 chooseGradeid = model.getGradeid();
-                next_step_btn.setTextColor(Color.parseColor("#f74344"));
+                next_step_btn.setTextColor(Color.parseColor("#57be6a"));
             }
         }
         gradeNextAdapter.notifyDataSetChanged();

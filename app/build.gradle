@@ -276,4 +276,7 @@ dependencies {
     implementation 'com.nikhilpanju.recyclerviewenhanced:recyclerviewenhanced:1.1.0'
     implementation files('libs/Msc.jar')
     implementation files('libs/Sunflower.jar')
+
+    //上下拉
+    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.1.0'  //1.0.5及以前版本的老用户升级需谨慎，API改动过
 }

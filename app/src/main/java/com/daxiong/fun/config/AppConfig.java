@@ -93,11 +93,11 @@ public class AppConfig {
 			PYTHON_URL = "ws://" + WORKURL + "/ws";
             UPDATEURL = "http://manage.baifen.lantel.net/app_version.php?os=2&roleid=3"; // 1是学生 3是家长
 			MAIL_URL = "https://" + WORKURL + "/api/mail/errormail";
-            RECHARGE_CONFIG_URL = "https://" + WORKURL + "/welearn/payment/configure";
-            ALIURL = "https://" + WORKURL + "/welearn/alipay/";
-            YEEURL = "https://" + WORKURL + "/welearn/yeepay/";
-            CARDURL = "https://" + WORKURL + "/welearn/card_yeepay/";
-            GET_WXPAY = "https://" + WORKURL + "/welearn/parentswechat";
+            RECHARGE_CONFIG_URL = "https://" + WORKURL + ":9111/welearn/payment/configure";
+            ALIURL = "https://" + WORKURL + ":9111/welearn/alipay/";
+            YEEURL = "https://" + WORKURL + ":9111/welearn/yeepay/";
+            CARDURL = "https://" + WORKURL + ":9111/welearn/card_yeepay/";
+            GET_WXPAY = "https://" + WORKURL + ":9111/welearn/parentswechat";
             PAY_FOR_OTHER_HOST = "https://" + WORKURL + "/welearn/payment/pay2friend";
             HOMEWORK_STUDY_ANALYSIS_SHARE_URL = FUDAOTUAN_URL + "/share%s-%s.html";
             FUDAOTUAN_URL = "http://web.baifen.lantel.net";

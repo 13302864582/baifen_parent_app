@@ -209,7 +209,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnNegativeListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+                        negativeBtn.setTextColor(Color.parseColor("#57be6a"));
                         tipDialog.dismiss();
                         showDownloadDialog();
                     }
@@ -232,7 +232,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnNegativeListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+                        negativeBtn.setTextColor(Color.parseColor("#57be6a"));
                         tipDialog.dismiss();
                         showDownloadDialog();
                     }
@@ -264,7 +264,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnNegativeListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+                        negativeBtn.setTextColor(Color.parseColor("#57be6a"));
                         tipDialog.dismiss();
                         showDownloadDialog();
                     }
@@ -273,7 +273,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnPositiveListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        positiveBtn.setTextColor(Color.parseColor("#28b9b6"));
+                        positiveBtn.setTextColor(Color.parseColor("#57be6a"));
                         tipDialog.dismiss();
 
                     }
@@ -288,7 +288,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnNegativeListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+                        negativeBtn.setTextColor(Color.parseColor("#57be6a"));
                         tipDialog.dismiss();
                         showDownloadDialog();
                     }
@@ -297,7 +297,7 @@ public abstract class AbstractUpdateManager {
                 tipDialog.setOnPositiveListener(new OnClickListener() {
                     @Override
                     public void onClick(View v) {
-//                        positiveBtn.setTextColor(Color.parseColor("#28b9b6"));
+//                        positiveBtn.setTextColor(Color.parseColor("#57be6a"));
 //                        tipDialog.dismiss();
 
                     }

@@ -1157,7 +1157,7 @@ public class PublishHwActivity extends BaseActivity implements OnItemClickListen
                                         @Override
                                         public void updateDrawState(TextPaint ds) {
                                             super.updateDrawState(ds);
-                                            ds.setColor(Color.parseColor("#f74344"));       //设置文件颜色
+                                            ds.setColor(Color.parseColor("#57be6a"));       //设置文件颜色
                                             ds.setUnderlineText(true); // 设置下划线
                                         }
 

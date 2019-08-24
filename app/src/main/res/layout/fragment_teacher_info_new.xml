@@ -189,7 +189,7 @@
                 android:layout_gravity="center_vertical"
                 android:layout_marginLeft="15dip"
                 android:text="@string/contact_talkwithhe"
-                android:textColor="#00bdbd"
+                android:textColor="#57be6a"
                 android:textSize="17sp" />
         </LinearLayout>
     </RelativeLayout>
@@ -280,7 +280,7 @@
                                     android:maxWidth="170dp"
                                     android:singleLine="true"
                                     android:text=""
-                                    android:textColor="#00bdbd"
+                                    android:textColor="#57be6a"
                                     android:textSize="14sp" />
 
                                 <TextView
@@ -289,7 +289,7 @@
                                     android:layout_height="wrap_content"
                                     android:layout_marginLeft="10dip"
                                     android:text=""
-                                    android:textColor="#00bdbd"
+                                    android:textColor="#57be6a"
                                     android:textSize="14sp" />
                             </LinearLayout>
                         </LinearLayout>

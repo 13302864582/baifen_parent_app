@@ -566,7 +566,7 @@ public class OneQuestionMoreAnswersDetailItemFragment extends CustomFragment imp
 				tipDialog.setOnPositiveListener(new OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+						negativeBtn.setTextColor(Color.parseColor("#57be6a"));
 						tipDialog.dismiss();
 						clickAdopt();
 					}
@@ -574,12 +574,11 @@ public class OneQuestionMoreAnswersDetailItemFragment extends CustomFragment imp
 				tipDialog.setOnNegativeListener(new OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+						negativeBtn.setTextColor(Color.parseColor("#57be6a"));
 						tipDialog.dismiss();
 					}
 				});
 				tipDialog.show();
-
 			}
 			break;
 		case R.id.answer_btn3:
@@ -615,7 +614,7 @@ public class OneQuestionMoreAnswersDetailItemFragment extends CustomFragment imp
 					@Override
 					public void onClick(View v) {
 						if (!TextUtils.isEmpty(editText.getText().toString().trim())) {
-							positiveBtn.setTextColor(Color.parseColor("#28b9b6"));
+							positiveBtn.setTextColor(Color.parseColor("#57be6a"));
 							showDialog("正在处理...");
 							// 处理纠错操作
 							answerApi.execCorrect(requestQueue, goTag, mAnswerDetail.getAnswer_id(),
@@ -631,7 +630,7 @@ public class OneQuestionMoreAnswersDetailItemFragment extends CustomFragment imp
 				dialog.setOnNegativeListener(new OnClickListener() {
 					@Override
 					public void onClick(View v) {
-						negativeBtn.setTextColor(Color.parseColor("#28b9b6"));
+						negativeBtn.setTextColor(Color.parseColor("#57be6a"));
 						dialog.dismiss();
 					}
 				});

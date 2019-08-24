@@ -25,7 +25,7 @@
             android:layout_height="48dp"
             android:layout_centerVertical="true"
             android:padding="15dp"
-            android:src="@drawable/icon_back"
+            android:src="@mipmap/icon_back_normal"
             android:visibility="gone" />
 
         <RadioGroup
@@ -59,7 +59,7 @@
                 android:gravity="center"
 
                 android:text="过期券"
-                android:textColor="#f74344"
+                android:textColor="#57be6a"
                 android:textSize="14sp"
                 android:textStyle="bold" />
 
@@ -71,83 +71,110 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="索券"
-                android:textColor="#f74344"
+                android:textColor="#57be6a"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </RadioGroup>
 
     </RelativeLayout>
 
-    <LinearLayout
-        android:id="@+id/ll1"
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smart_fresh"
         android:layout_width="match_parent"
-        android:layout_height="6.5dp"
-        android:orientation="horizontal"
-        android:visibility="gone"></LinearLayout>
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/ll1"
+                android:layout_width="match_parent"
+                android:layout_height="6.5dp"
+                android:orientation="horizontal"
+                android:visibility="gone"></LinearLayout>
 
-    <com.daxiong.fun.view.XListView
+            <ListView
+                android:id="@+id/answer_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6.5dp"
+                android:cacheColorHint="@android:color/transparent"
+                android:divider="@color/answer_list_diver"
+                android:fadingEdge="none"
+                android:fastScrollEnabled="false"
+                android:footerDividersEnabled="false"
+                android:headerDividersEnabled="false"
+                android:listSelector="@android:color/transparent"
+                android:scrollbars="none" />
+
+            <LinearLayout
+                android:id="@+id/ll_kongbai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="200dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+                android:visibility="visible">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您暂时没有可用券，充值可即刻获取"
+                    android:textColor="#8d8d8d"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/tv_chongzhi"
+                    android:layout_width="77dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="21dp"
+                    android:background="@drawable/chongzhi_bg"
+                    android:gravity="center"
+                    android:text="立即充值"
+                    android:textColor="@drawable/selector_chongzhi_textcolor"
+                    android:textSize="12sp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_gengduo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="29dp"
+                android:gravity="center"
+                android:text="没有更多了"
+                android:textColor="#8d8d8d"
+                android:textSize="11sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_shibai"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="230dp"
+                android:gravity="center"
+                android:textColor="#8d8d8d"
+                android:textSize="14sp"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+   <!-- <com.daxiong.fun.view.XListView
         android:id="@+id/answer_list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="6.5dp"
         android:cacheColorHint="@android:color/transparent"
-
         android:divider="@color/answer_list_diver"
         android:fadingEdge="none"
         android:fastScrollEnabled="false"
         android:footerDividersEnabled="false"
         android:headerDividersEnabled="false"
         android:listSelector="@android:color/transparent"
-        android:scrollbars="none" />
-
-    <TextView
-        android:id="@+id/tv_gengduo"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="29dp"
-        android:gravity="center"
-        android:text="没有更多了"
-        android:textColor="#8d8d8d"
-        android:textSize="11sp"
-        android:visibility="gone" />
-
-    <TextView
-        android:id="@+id/tv_shibai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="15dp"
-        android:layout_marginRight="15dp"
-        android:layout_marginTop="230dp"
-        android:gravity="center"
-        android:textColor="#8d8d8d"
-        android:textSize="14sp"
-        android:visibility="gone" />
-
-    <LinearLayout
-        android:id="@+id/ll_kongbai"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:gravity="center_horizontal"
-        android:orientation="vertical"
-        android:visibility="gone">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="您暂时没有可用券，充值可即刻获取"
-            android:textColor="#8d8d8d"
-            android:textSize="12sp" />
-
-        <TextView
-            android:id="@+id/tv_chongzhi"
-            android:layout_width="77dp"
-            android:layout_height="30dp"
-            android:layout_marginTop="21dp"
-            android:background="@drawable/ticket_recharge_btn"
-            android:gravity="center"
-            android:text="立即充值"
-            android:textColor="@drawable/selector_chongzhi_textcolor"
-            android:textSize="12sp" />
-    </LinearLayout>
+        android:scrollbars="none" />-->
 </LinearLayout>

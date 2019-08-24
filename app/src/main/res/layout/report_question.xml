@@ -122,7 +122,7 @@
                     android:layout_weight="1"
                     android:gravity="center"
                     android:text="提交"
-                    android:textColor="#f74344"
+                    android:textColor="#57be6a"
                     android:textSize="18sp" />
             </LinearLayout>
 

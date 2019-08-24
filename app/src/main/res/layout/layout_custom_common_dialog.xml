@@ -83,7 +83,7 @@
                 android:layout_weight="1"
                 android:gravity="center"
                 android:text="@string/hao"
-                android:textColor="#f74344"
+                android:textColor="#57be6a"
                 android:textSize="14sp" />
         </LinearLayout>
 

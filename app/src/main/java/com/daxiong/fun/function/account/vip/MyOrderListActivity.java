@@ -106,7 +106,7 @@ public class MyOrderListActivity extends BaseActivity implements RadioGroup.OnCh
 //                radio_daizhifu.setBackgroundResource(R.drawable.tab_left_checked);
 //                radio_yizhifu.setBackgroundResource(R.drawable.tab_right_normal);
                 radio_daizhifu.setTextColor(Color.parseColor("#ffffff"));
-                radio_yizhifu.setTextColor(Color.parseColor("#ff6666"));
+                radio_yizhifu.setTextColor(Color.parseColor("#57be6a"));
                 if (daizhifuFragment == null) {
                     // 如果MessageFragment为空，则创建一个并添加到界面上
                     daizhifuFragment = new DaizhifuFragment();
@@ -120,7 +120,7 @@ public class MyOrderListActivity extends BaseActivity implements RadioGroup.OnCh
 //                radio_yizhifu.setBackgroundResource(R.drawable.tab_right_checked);
 //                radio_daizhifu.setBackgroundResource(R.drawable.tab_left_normal);
                 radio_yizhifu.setTextColor(Color.parseColor("#ffffff"));
-                radio_daizhifu.setTextColor(Color.parseColor("#ff6666"));
+                radio_daizhifu.setTextColor(Color.parseColor("#57be6a"));
                 if (yizhifuFragment == null) {
                     // 如果ContactsFragment为空，则创建一个并添加到界面上
                     yizhifuFragment = new YizhifuFragment();
@@ -140,8 +140,8 @@ public class MyOrderListActivity extends BaseActivity implements RadioGroup.OnCh
     private void clearSelection() {
 //        radio_daizhifu.setBackgroundResource(R.drawable.tab_left_normal);
 //        radio_yizhifu.setBackgroundResource(R.drawable.tab_right_normal);
-        radio_daizhifu.setTextColor(Color.parseColor("#00bdbd"));
-        radio_yizhifu.setTextColor(Color.parseColor("#00bdbd"));
+        radio_daizhifu.setTextColor(Color.parseColor("#57be6a"));
+        radio_yizhifu.setTextColor(Color.parseColor("#57be6a"));
 
     }
 

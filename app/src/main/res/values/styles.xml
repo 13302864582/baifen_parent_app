@@ -76,7 +76,7 @@
     </style>
 
     <style name="welearn_actionbar_style" parent="@android:style/Widget.Holo.Light.ActionBar">
-        <item name="android:background">#00bdbd</item>
+        <item name="android:background">#57be6a</item>
         <item name="android:icon">@drawable/bg_actionbar_back_up_selector</item>
         <item name="android:titleTextStyle">@style/AcBar_titleStyle</item>
     </style>

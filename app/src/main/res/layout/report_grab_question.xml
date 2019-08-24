@@ -28,7 +28,7 @@
                 android:layout_marginLeft="18sp"
                 android:layout_marginTop="30dip"
                 android:text="@string/text_report"
-                android:textColor="#00bdbd"
+                android:textColor="#57be6a"
                 android:textSize="20sp" />
 
             <TextView

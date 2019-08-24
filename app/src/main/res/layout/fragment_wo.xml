@@ -24,11 +24,10 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-
             android:orientation="vertical">
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:background="@color/white"
             android:layout_marginTop="16dp"
             android:orientation="vertical">
@@ -46,11 +45,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector_layout_setting"
-                android:padding="12dp"
+                android:paddingLeft="@dimen/top_margin_lr"
+                android:paddingRight="@dimen/top_margin_lr"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp">
 
                 <ImageView
+
                     android:id="@+id/user_avatar"
                     android:layout_width="52dp"
                     android:layout_height="52dp"
@@ -61,7 +62,7 @@
 
                 <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
+                    android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:layout_alignTop="@id/user_avatar"
                     android:layout_marginLeft="10dp"
@@ -147,7 +148,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/selector_layout_setting"
-                android:padding="12dp"
+                android:paddingLeft="@dimen/top_margin_lr"
+                android:paddingRight="@dimen/top_margin_lr"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp">
 
@@ -223,7 +225,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
                 android:background="@color/white"
                 android:paddingBottom="8dp"
                 android:paddingTop="8dp">
@@ -247,7 +248,7 @@
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/icon_wo_chongzhi" />
+                        android:src="@mipmap/icon_wo_chongzhi" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -286,7 +287,7 @@
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/icon_wo_daizhifudingdan" />
+                        android:src="@mipmap/icon_wo_daizhifudingdan" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -326,7 +327,7 @@
                         android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:contentDescription="@string/app_name"
-                        android:src="@drawable/icon_wo_suoquan" />
+                        android:src="@mipmap/icon_wo_suoquan" />
 
                     <TextView
                         android:layout_width="match_parent"
@@ -372,16 +373,16 @@
                     android:id="@+id/rl_myfudaoquan"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
-                    android:paddingLeft="12dp"
+                    android:paddingLeft="@dimen/my_item_padding"
                     android:background="@drawable/selector_layout_setting"
-                    android:paddingRight="12dp">
+                    android:paddingRight="@dimen/my_item_padding">
 
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_centerVertical="true"
                         android:scaleType="centerCrop"
-                        android:src="@drawable/icon_wo_myfudaoquan" />
+                        android:src="@mipmap/icon_wo_myfudaoquan" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -431,15 +432,15 @@
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
                     android:background="@drawable/selector_layout_setting"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
+                    android:paddingLeft="@dimen/my_item_padding"
+                    android:paddingRight="@dimen/my_item_padding"
                     >
 
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/icon_wo_myhomework" />
+                        android:src="@mipmap/icon_wo_myhomework" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -478,8 +479,8 @@
                     android:id="@+id/rl_question"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
-                    android:paddingLeft="12dp"
-                    android:paddingRight="12dp"
+                    android:paddingLeft="@dimen/my_item_padding"
+                    android:paddingRight="@dimen/my_item_padding"
                     android:background="@drawable/selector_layout_setting"
                     >
 
@@ -487,7 +488,7 @@
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/icon_wo_myquestion" />
+                        android:src="@mipmap/icon_wo_myquestion" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -541,16 +542,16 @@
                     android:id="@+id/rl_event"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
-                    android:paddingLeft="12dp"
+                    android:paddingLeft="@dimen/my_item_padding"
                     android:background="@drawable/selector_layout_setting"
-                    android:paddingRight="12dp"
+                    android:paddingRight="@dimen/my_item_padding"
                     >
 
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/icon_wo_myevent" />
+                        android:src="@mipmap/icon_wo_myevent" />
 
                     <TextView
                         android:layout_width="wrap_content"
@@ -578,16 +579,16 @@
                     android:id="@+id/rl_setting"
                     android:layout_width="wrap_content"
                     android:layout_height="45dp"
-                    android:paddingLeft="12dp"
+                    android:paddingLeft="@dimen/my_item_padding"
                     android:background="@drawable/selector_layout_setting"
-                    android:paddingRight="12dp"
+                    android:paddingRight="@dimen/my_item_padding"
                     >
 
                     <ImageView
                         android:layout_width="25dp"
                         android:layout_height="25dp"
                         android:layout_centerVertical="true"
-                        android:src="@drawable/icon_wo_setting" />
+                        android:src="@mipmap/icon_wo_setting" />
 
                     <TextView
                         android:layout_width="wrap_content"

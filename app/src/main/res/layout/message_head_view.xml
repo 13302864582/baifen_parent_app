@@ -94,7 +94,7 @@
                 android:button="@null"
                 android:gravity="center"
                 android:text="@string/tab_radio_friend"
-                android:textColor="#ff6666"
+                android:textColor="@color/login_register_btn_color"
                 android:textSize="14sp"
                 android:textStyle="bold" />
         </RadioGroup>

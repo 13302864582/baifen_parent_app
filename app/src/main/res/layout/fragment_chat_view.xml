@@ -141,7 +141,7 @@
                     android:layout_height="60dip"
                     android:layout_weight="1"
                     android:contentDescription="@null"
-                    android:src="@drawable/homework_camera_add_image_icon_normal" />
+                    android:src="@mipmap/homework_camera_add_image_icon_normal" />
 
                 <ImageView
                     android:id="@+id/chat_album_btn"

@@ -11,7 +11,7 @@
         android:layout_alignParentTop="true"
         layout="@layout/message_head_view" />
 
-    <LinearLayout
+    <FrameLayout
         android:id="@+id/layout_container"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"

@@ -75,7 +75,7 @@ public class DaizhifuOrderListAdapter extends BaseAdapter {
 
         //订单修改后的价格
         float changed_price = item.getChanged_price();
-        /*String moneyStr = "<p>费用：<h2 size='4' color=#f74344>" + changed_price
+        /*String moneyStr = "<p>费用：<h2 size='4' color=#57be6a>" + changed_price
                 + "元</h2></p>";
 
         holder.tvMoney.setText(Html.fromHtml(moneyStr));*/

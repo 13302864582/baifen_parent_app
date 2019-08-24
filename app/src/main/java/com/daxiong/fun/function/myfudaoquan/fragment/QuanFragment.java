@@ -4,6 +4,7 @@ package com.daxiong.fun.function.myfudaoquan.fragment;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -11,6 +12,7 @@ import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.ListView;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.RadioGroup.OnCheckedChangeListener;
@@ -34,6 +36,10 @@ import com.daxiong.fun.model.UserInfoModel;
 import com.daxiong.fun.util.JsonUtil;
 import com.daxiong.fun.util.ToastUtils;
 import com.daxiong.fun.view.XListView;
+import com.scwang.smartrefresh.layout.SmartRefreshLayout;
+import com.scwang.smartrefresh.layout.api.RefreshLayout;
+import com.scwang.smartrefresh.layout.listener.OnRefreshListener;
+import com.scwang.smartrefresh.layout.listener.OnRefreshLoadMoreListener;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -47,7 +53,7 @@ import java.util.List;
  * @author: sky
  */
 public class QuanFragment extends BaseFragment
-        implements OnCheckedChangeListener, XListView.IXListViewListener, AdapterView.OnItemClickListener {
+        implements OnCheckedChangeListener, /*XListView.IXListViewListener,*/ AdapterView.OnItemClickListener , OnRefreshLoadMoreListener {
 
     private BaseActivity activity;
     private HomeListAPI homeListAPI;
@@ -62,7 +68,8 @@ public class QuanFragment extends BaseFragment
     private TextView tv_chongzhi;
     private ImageView iv_back;
 
-    private XListView xListView;
+   // private XListView xListView;
+    private ListView xListView;
     private FudaoquanCommonAdapter adapter;
     private ExpireFudaoquanAdapter adapter2;
     private int LoadMore = 0;
@@ -74,6 +81,7 @@ public class QuanFragment extends BaseFragment
 
 
     private List<FudaoquanModel> list = new ArrayList<FudaoquanModel>();
+    private SmartRefreshLayout smart_fresh;
 
 
     @Override
@@ -107,8 +115,9 @@ public class QuanFragment extends BaseFragment
 
     @Override
     public void initView(View view) {
-
-        xListView = (XListView) view.findViewById(R.id.answer_list);
+        smart_fresh = (SmartRefreshLayout)view.findViewById(R.id.smart_fresh);
+        /*xListView = (XListView) view.findViewById(R.id.answer_list);*/
+        xListView = (ListView) view.findViewById(R.id.answer_list);
         radio_group = (RadioGroup) view.findViewById(R.id.radio_group);
         radio_keyongquan = (RadioButton) view.findViewById(R.id.radio_keyongquan);
         radio_guoqiquan = (RadioButton) view.findViewById(R.id.radio_guoqiquan);
@@ -130,10 +139,13 @@ public class QuanFragment extends BaseFragment
     @Override
     public void initListener() {
         super.initListener();
-        xListView.setXListViewListener(this);
         xListView.setOnItemClickListener(this);
+        smart_fresh.setEnableRefresh(true);
+        smart_fresh.setEnableLoadMore(false);
+        smart_fresh.setOnRefreshListener(this);
+        /*xListView.setXListViewListener(this);
         xListView.setPullRefreshEnable(true);
-        xListView.setPullLoadEnable(false);
+        xListView.setPullLoadEnable(false);*/
 
         tv_chongzhi.setOnClickListener(this);
         iv_back.setOnClickListener(this);
@@ -179,9 +191,9 @@ public class QuanFragment extends BaseFragment
     public void setTabSelection(int index) {
         if (index != checkedId) {
 
-            radio_keyongquan.setTextColor(Color.parseColor("#f74344"));
-            radio_guoqiquan.setTextColor(Color.parseColor("#f74344"));
-            radio_suoquan.setTextColor(Color.parseColor("#f74344"));
+            radio_keyongquan.setTextColor(Color.parseColor("#57be6a"));
+            radio_guoqiquan.setTextColor(Color.parseColor("#57be6a"));
+            radio_suoquan.setTextColor(Color.parseColor("#57be6a"));
         }
         tv_shibai.setVisibility(View.GONE);
         ll_kongbai.setVisibility(View.GONE);
@@ -241,12 +253,13 @@ public class QuanFragment extends BaseFragment
 
 
     public void onLoadFinish() {
-
-        xListView.stopRefresh();
-        xListView.stopLoadMore();
+        smart_fresh.finishRefresh();
+        smart_fresh.finishLoadMore();
+       /* xListView.stopRefresh();
+        xListView.stopLoadMore();*/
         DateFormat sdf = new SimpleDateFormat("HH:mm:ss");
         String time = sdf.format(new Date());
-        xListView.setRefreshTime(time);
+        /*xListView.setRefreshTime(time);*/
     }
 
     @Override
@@ -270,10 +283,12 @@ public class QuanFragment extends BaseFragment
 
                             if (parseArray.size() < 10) {
                                 tv_gengduo.setVisibility(View.VISIBLE);
-                                xListView.setPullLoadEnable(false);
+                                smart_fresh.setEnableLoadMore(false);
+                                //xListView.setPullLoadEnable(false);
                             } else {
                                 tv_gengduo.setVisibility(View.GONE);
-                                xListView.setPullLoadEnable(true);
+                                smart_fresh.setEnableLoadMore(true);
+                                //xListView.setPullLoadEnable(true);
 
                             }
                             list.addAll(parseArray);
@@ -301,10 +316,12 @@ public class QuanFragment extends BaseFragment
 
                             if (parseArray.size() < 10) {
                                 tv_gengduo.setVisibility(View.VISIBLE);
-                                xListView.setPullLoadEnable(false);
+                                smart_fresh.setEnableLoadMore(false);
+                                /*xListView.setPullLoadEnable(false);*/
                             } else {
                                 tv_gengduo.setVisibility(View.GONE);
-                                xListView.setPullLoadEnable(true);
+                                smart_fresh.setEnableLoadMore(true);
+                                /*xListView.setPullLoadEnable(true);*/
 
                             }
                             list.addAll(parseArray);
@@ -334,11 +351,11 @@ public class QuanFragment extends BaseFragment
                                 List<FudaoquanModel> parseArray = JSON.parseArray(listinfos, FudaoquanModel.class);
 
                                 if (parseArray.size() < 10) {
-
-                                    xListView.setPullLoadEnable(false);
+                                    smart_fresh.setEnableLoadMore(false);
+                                    //xListView.setPullLoadEnable(false);
                                 } else {
-
-                                    xListView.setPullLoadEnable(true);
+                                    smart_fresh.setEnableLoadMore(true);
+                                    //xListView.setPullLoadEnable(true);
 
                                 }
                                 list.addAll(parseArray);
@@ -350,7 +367,8 @@ public class QuanFragment extends BaseFragment
                                 String infos = JsonUtil.getString(dataJson, "infos", "");
                                 tv_shibai.setText(infos);
                                 tv_shibai.setVisibility(View.VISIBLE);
-                                xListView.setPullLoadEnable(false);
+                                smart_fresh.setEnableLoadMore(false);
+                                //xListView.setPullLoadEnable(false);
                             }
                         }
                     } else {
@@ -417,7 +435,7 @@ public class QuanFragment extends BaseFragment
     }
 
 
-    @Override
+  /*  @Override
     public void onRefresh() {
         if (radio_suoquan.isChecked()) {
             LoadMore = 1;
@@ -432,7 +450,7 @@ public class QuanFragment extends BaseFragment
     public void onLoadMore() {
         LoadMore++;
         initData();
-    }
+    }*/
 
     @Override
     public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -458,5 +476,22 @@ public class QuanFragment extends BaseFragment
 
         }
 
+    }
+
+    @Override
+    public void onRefresh(@NonNull RefreshLayout refreshLayout) {
+        if (radio_suoquan.isChecked()) {
+            LoadMore = 1;
+        } else {
+            LoadMore = 0;
+        }
+        LoadMore++;
+        initData();
+    }
+
+    @Override
+    public void onLoadMore(@NonNull RefreshLayout refreshLayout) {
+        LoadMore++;
+        initData();
     }
 }

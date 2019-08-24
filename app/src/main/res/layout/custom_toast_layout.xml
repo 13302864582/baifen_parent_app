@@ -37,7 +37,7 @@
             android:layout_gravity="center"
             android:gravity="center"
             android:lineSpacingExtra="3.0dip"
-            android:textColor="#28b9b6"
+            android:textColor="#57be6a"
             android:textSize="17.0sp" 
             android:maxWidth="200dp"
             />

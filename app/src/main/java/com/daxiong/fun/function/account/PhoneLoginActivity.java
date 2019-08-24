@@ -195,7 +195,7 @@ public class PhoneLoginActivity extends BaseActivity implements OnClickListener,
                 Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); // 设置前景色
 
         // 设置字体背景色
-        // spStr.setSpan(new BackgroundColorSpan(Color.parseColor("#00bdbd")),
+        // spStr.setSpan(new BackgroundColorSpan(Color.parseColor("#57be6a")),
         // 0, spStr.length(),
         // Spanned.SPAN_EXCLUSIVE_EXCLUSIVE); // 设置背景色
 

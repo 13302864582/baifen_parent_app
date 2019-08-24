@@ -147,7 +147,7 @@ public class MyQuestionListActivity extends BaseActivity
 //            radio_question.setTextColor(Color.BLACK);
 
             radio_homework.setTextColor(Color.parseColor("#ffffff"));
-            radio_question.setTextColor(Color.parseColor("#ff6666"));
+            radio_question.setTextColor(Color.parseColor("#57be6a"));
             if (clearflag) {
                 list3.clear();
                 list3.addAll(list);
@@ -187,7 +187,7 @@ public class MyQuestionListActivity extends BaseActivity
 //            radio_homework.setTextColor(Color.BLACK);
 
             radio_question.setTextColor(Color.parseColor("#ffffff"));
-            radio_homework.setTextColor(Color.parseColor("#ff6666"));
+            radio_homework.setTextColor(Color.parseColor("#57be6a"));
 
             if (clearflag) {
                 list4.clear();
@@ -522,8 +522,8 @@ public class MyQuestionListActivity extends BaseActivity
 
 
     private void clearSelection() {
-        radio_homework.setTextColor(Color.parseColor("#00bdbd"));
-        radio_question.setTextColor(Color.parseColor("#00bdbd"));
+        radio_homework.setTextColor(Color.parseColor("#57be6a"));
+        radio_question.setTextColor(Color.parseColor("#57be6a"));
 
     }
 }
